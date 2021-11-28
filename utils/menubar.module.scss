@@ -1,0 +1,98 @@
+.menuBar {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: inherit;
+
+  
+ 
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-right: auto;
+    margin-left: 2vh;
+    text-decoration: none;
+
+    &:visited{
+      color: black;
+    }
+  }
+
+/*   .squareInitials {
+    align-self: center;
+    background-color: #0d0107;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    width: 40px;
+    text-align: center;
+  } */
+
+  .name {
+    color: #260316;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  .tab {
+    text-decoration: none;
+    margin-right: 2vw;
+    
+    &:hover {
+      animation: onHover 2s;
+      background-color:'transparent';
+     
+      
+      cursor: pointer;
+    }
+    @keyframes onHover {
+      0% {
+ 
+        background-color:'transparent';
+       
+        
+      }
+     
+      100% {
+    
+        background-color:'transparent';
+       
+        transform: rotate(360deg);
+      }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menuBar {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+  }
+
+  .title {
+    margin: auto;
+  }
+
+  .name {
+    display: none !important;
+  }
+}}
+
+
+
+
+

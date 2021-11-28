@@ -1,0 +1,199 @@
+.homeContainer {
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+  max-width: 100vw;
+
+  .content {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    .intro {
+      min-height: calc(100vh - 100px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .introduction {
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        margin: 40px;
+        min-height: 70vh;
+
+        .profilePicture {
+          border-radius: 30px;
+          overflow: hidden;
+          width: 400px;
+          height: 534px;
+
+          
+            animation: wipe-enter 10s infinite;
+        
+          @keyframes wipe-enter {
+            0% {
+              background-image: url("../../public/Group 1.png");
+              background-size: cover;
+            }
+
+            39% {
+              background-image: url("../../public/Group 1.png");
+              background-size: cover;
+            }
+            40% {
+              background-image: url("../../public/Group 2.png");
+              background-size: cover;
+            }
+            100% {
+              background-image: url("../../public/Group 2.png");
+              background-size: cover;
+            }
+          }
+        }
+
+        @keyframes slideIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+
+      .swipeDownIcon {
+        align-self: center;
+        animation: pulse linear 3s infinite;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 30px;
+        text-align: center;
+        width: 100px;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    %staticLayer {
+      height: 70vh;
+      max-width: 100vw;
+      min-height: 600px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    %rotatedLayer {
+      height: 140vw;
+      margin-left: -150vw;
+      position: absolute;
+      transform-origin: 50% 0;
+      transform: rotate(18deg);
+      width: 300vw;
+    }
+
+    .workHistory {
+      @extend %staticLayer;
+      background-color: #000000;
+
+      .workHistoryBackground {
+        @extend %rotatedLayer;
+        background-color: #0d0107;
+      }
+    }
+
+    .personalProjects {
+      @extend %staticLayer;
+      background-color: #0d0107;
+
+      .personalProjectsBackground {
+        @extend %rotatedLayer;
+        background-color: #000000;
+      }
+    }
+
+    .linkBox {
+      left: 50%;
+      min-width: 300px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+
+      &Title {
+        font-size: 60px;
+      }
+
+      &TextContent {
+        max-width: 500px;
+        margin-bottom: 50px;
+      }
+
+      &Button {
+        border: 3px solid #ff0072;
+        color: #ff0072;
+        display: flex;
+        font-size: 21px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 15px 20px;
+        text-decoration: none;
+
+        &:hover {
+          animation: onHover 3s;
+          background-color: #ff0072;
+          border: 3px solid #ff0072;
+          color: #ffffff;
+          cursor: pointer;
+        }
+
+        @keyframes onHover {
+          0% {
+            background-color: #000000;
+            border: 3px solid #ffffff;
+            color: #ff0072;
+          }
+
+          100% {
+            background-color: #ff0072;
+            border: 3px solid #ff0072;
+            color: #ff0072;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    .technologiesAndTools {
+      align-items: center;
+      background-color: #0d0107;
+      display: flex;
+      flex-direction: column;
+      min-height: 400px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  %rotatedLayer {
+    height: 160vw !important;
+  }
+}

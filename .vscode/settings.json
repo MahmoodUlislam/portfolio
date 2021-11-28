@@ -1,0 +1,90 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "extensionName": ".min.css",
+        "format": "compressed",
+        "savePath": "/assets/plug-ins/bootstrap/css"
+      },
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/assets/css"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+    "liveServer.settings.port": 0,
+    "security.workspace.trust.untrustedFiles": "open",
+    "cSpell.userWords": ["mahmood"],
+    "prettier.enableDebugLogs": true,
+    "eslint.runtime": "ESLint: 7.21.0",
+    "git.enableSmartCommit": true,
+    "json.schemas": [],
+    // emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    // config related to code formatting
+    "editor.fontSize": 15,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.validate.enable": true, //disable all built-in syntax checking
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.tslint": true,
+      "source.organizeImports": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": ["typescript", "typescriptreact"],
+  
+    "terminal.integrated.profiles.windows": {
+      "my-pwsh": {
+        "source": "PowerShell",
+        "args": ["-NoProfile"]
+      }
+    },
+    "terminal.integrated.defaultProfile.windows": "my-pwsh",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.lintTask.enable": true,
+    "eslint.format.enable": true,
+    "eslint.debug": true,
+    "quokka.automaticRestart": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": true,
+      "plaintext": true,
+      "markdown": true,
+      "json": true,
+      "html": true,
+      "css": true,
+      "scss": true,
+      "javascript": true,
+      "javascriptreact": true,
+      "python": true,
+      "typescript": true,
+      "typescriptreact": true
+    },
+    "redhat.telemetry.enabled": true,
+    "material-ui-snippets.showNotesOnStartup": false,
+    "gitlens.advanced.messages": {
+      "suppressImproperWorkspaceCasingWarning": true
+    },
+    "window.zoomLevel": 1,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
+  }
+  

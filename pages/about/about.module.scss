@@ -1,0 +1,251 @@
+.timelineGrid {
+  background-color: #ff0072;
+  display: grid;
+  column-gap: 7px;
+  grid-template-columns: auto auto;
+  min-height: 1500px;
+
+  &Item {
+    align-items: center;
+    background-color:#0d0107;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    padding: 20px 40px;
+
+    &Wide {
+      @extend .timelineGridItem;
+      grid-column-end: 3;
+      grid-column-start: 1;
+      text-align: center;
+    }
+
+    &AdjoiningCard {
+      @extend .timelineGridItem;
+      max-width: 440px;
+    }
+
+    .timelinePoint {
+      background-color: #ffffff;
+      border-radius: 15px;
+      height: 30px;
+      margin: 10px 0;
+      width: 30px;
+    }
+
+    .hoverTip {
+      animation: pulse linear 3s infinite;
+      color:#ff0072;
+    }
+
+    @keyframes pulse {
+      0% {opacity: 0;}
+      50% {opacity: 1;}
+      100% {opacity: 0;}
+    }
+
+    &Card {
+      @extend .timelineGridItem;
+    }
+
+    .cardContent {
+      background-color: #33041c;
+      border-radius: 30px;
+      border: 5px solid #ffffff;
+      min-height: 250px;
+      transition: transform .2s;
+      padding: 15px;
+      width: 32vw;
+      height: 90vh;
+      text-align:center;
+
+      &:hover {
+        transform: scale(2);
+      }
+
+      &Header {
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      .company {
+        &Info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+         
+         
+          
+        }
+
+        &Title {
+          font-size: 20px;
+          margin: 0;
+          color: #ff0072;
+        }
+
+        &Logo {
+          align-items: center;
+         
+          border-radius: 35px;
+          display: flex;
+         
+          justify-content: center;
+          
+         
+          
+        }
+      }
+
+      &Details {
+        font-size: 15px;
+        margin: 0;
+        color: #800a45;
+      }
+
+      &Description {
+        color: #ffffff;
+        font-size: 13px;
+        margin: 10px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .timelineGridItemAdjoiningCard {
+    display: none !important;
+  }
+
+  .timelineGridItem {
+    min-height: 20px;
+  }
+
+  .timelineGridItemCard {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .cardContent {
+    width: auto !important;
+
+    &:hover {
+      transform: none !important;
+    }
+  }
+
+  .hoverTip {
+    display: none;
+    
+  }
+}
+.aboutContainer {
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 80px 0;
+
+    .summary {
+      color: #0d0107;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 300px;
+      max-width: 1500px;
+      text-align: left;
+      width: 70vw;
+    }
+
+    .hobbies {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      max-width: 1500px;
+      width: 70vw;
+
+      .newsletters {
+        align-items: center;
+        background-color: #0d0107;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 780px;
+        min-width: 350px;
+        padding: 20px 40px;
+        text-align: left;
+      }
+
+      .commissions {
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+        min-width: 300px;
+        overflow: hidden;
+        min-height: 820px;
+
+        .scrollGallery {
+          min-height: 500px;
+          overflow: auto;
+          position: relative;
+          white-space: nowrap;
+
+          .hint {
+            animation: pulse linear 3s infinite;
+            color: #0d0107;
+            bottom: auto;
+            left: auto;
+            padding: 10px;
+            position: absolute;
+            z-index: 5;
+          }
+
+          @keyframes pulse {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .photoGallery {
+      max-width: 1500px;
+      min-width: 300px;
+      width: 70vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hobbies {
+    gap: 50px;
+    flex-direction: column !important;
+
+    .newsletters {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 0 !important;
+    }
+
+    .commissions {
+      width: 70vw;
+    }
+  }
+}
