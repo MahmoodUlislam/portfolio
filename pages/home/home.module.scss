@@ -32,9 +32,8 @@
           width: 400px;
           height: 534px;
 
-          
-            animation: wipe-enter 10s infinite;
-        
+          animation: wipe-enter 10s infinite;
+
           @keyframes wipe-enter {
             0% {
               background-image: url("../../public/Group 1.png");

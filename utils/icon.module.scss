@@ -1,15 +1,14 @@
 .iconContainer {
   position: relative;
-  
+
   .icon {
     left: 5px;
     position: absolute;
     top: 0;
-   
 
     &Active {
       @extend .icon;
-      
+
       opacity: 0%;
       z-index: 9;
 

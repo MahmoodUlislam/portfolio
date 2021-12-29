@@ -1,34 +1,45 @@
-export { default as htmlLogo } from './logos/htmlLogo.svg'
-export { default as htmlLogoHover } from './logos/htmlLogoHover.svg'
-export { default as cssLogo } from './logos/cssLogo.svg'
-export { default as cssLogoHover } from './logos/cssLogoHover.svg'
-export { default as sassLogo } from './logos/sassLogo.png'
-export { default as sassLogoHover } from './logos/sassLogoHover.png'
-export { default as jsLogo } from './logos/jsLogo.svg'
-export { default as jsLogoHover } from './logos/jsLogoHover.svg'
-export { default as reactLogo } from './logos/reactLogo.svg'
-export { default as reactLogoHover } from './logos/reactLogoHover.svg'
-export { default as tsLogo } from './logos/tsLogo.svg'
-export { default as tsLogoHover } from './logos/tsLogoHover.svg'
-export { default as gmailLogo } from './logos/gmail.svg'
-export { default as gmailLogoHover } from './logos/gmailHover.svg'
-export { default as npmLogo } from './logos/npmLogo.png'
-export { default as npmLogoHover } from './logos/npmLogoHover.png'
-export { default as yarnLogo } from './logos/yarnLogo.svg'
-export { default as yarnLogoHover } from './logos/yarnLogoHover.svg'
-export { default as gitHubLogo } from './logos/github.svg'
-export { default as gitHubLogoHover } from './logos/githubHover.svg'
-export { default as gitLogo } from './logos/git-logo.svg'
-export { default as gitLogoHover } from './logos/git-logo - hover.svg'
-export { default as jestLogo } from './logos/jestLogo.png'
-export { default as jestLogoHover } from './logos/jestLogoHover.png'
-export { default as linkedInLogo } from './logos/linkedin.svg'
-export { default as linkedInLogoHover } from './logos/linkedinHover.svg'
-export { default as vsLogo } from './logos/vsLogo.svg'
-export { default as vsLogoHover } from './logos/vsLogoHover.svg'
-export { default as nextLogo } from './logos/nextjs-logo.svg'
-export { default as nextLogoHover } from './logos/nextjs-logo -Hover.svg'
-
-export { default as profilePicture } from './Group 1.png'
-export { default as profilePicture1 } from './Group 2.png'
-export { default as chevronDown } from './chevronDown.svg'
+export { default as chevronDown } from "./chevronDown.svg";
+export { default as profilePicture } from "./Group 1.png";
+export { default as profilePicture1 } from "./Group 2.png";
+export { default as adobeXDLogo } from "./logos/adobeXDLogo.svg";
+export { default as adobeXDLogoHover } from "./logos/adobeXDLogoHover.svg";
+export { default as antDesignLogo } from "./logos/antDesignLogo.svg";
+export { default as antDesignLogoHover } from "./logos/antDesignLogoHover.svg";
+export { default as boostrapLogo } from "./logos/boostrapLogo.svg";
+export { default as boostrapLogoHover } from "./logos/boostrapLogoHover.svg";
+export { default as cssLogo } from "./logos/cssLogo.svg";
+export { default as cssLogoHover } from "./logos/cssLogoHover.svg";
+export { default as figmaLogo } from "./logos/figmaLogo.svg";
+export { default as figmaLogoHover } from "./logos/figmaLogoHover.svg";
+export { default as gitLogoHover } from "./logos/git-logo - hover.svg";
+export { default as gitLogo } from "./logos/git-logo.svg";
+export { default as gitHubLogo } from "./logos/github.svg";
+export { default as gitHubLogoHover } from "./logos/githubHover.svg";
+export { default as gmailLogo } from "./logos/gmail.svg";
+export { default as gmailLogoHover } from "./logos/gmailHover.svg";
+export { default as htmlLogo } from "./logos/htmlLogo.svg";
+export { default as htmlLogoHover } from "./logos/htmlLogoHover.svg";
+export { default as jestLogo } from "./logos/jestLogo.svg";
+export { default as jestLogoHover } from "./logos/jestLogoHover.svg";
+export { default as jsLogo } from "./logos/jsLogo.svg";
+export { default as jsLogoHover } from "./logos/jsLogoHover.svg";
+export { default as lessLogo } from "./logos/lessLogo.svg";
+export { default as lessLogoHover } from "./logos/lessLogoHover.svg";
+export { default as linkedInLogo } from "./logos/linkedin.svg";
+export { default as linkedInLogoHover } from "./logos/linkedinHover.svg";
+export { default as materialUILogo } from "./logos/materialUILogo.svg";
+export { default as materialUILogoHover } from "./logos/materialUILogoHover.svg";
+export { default as nextLogoHover } from "./logos/nextjs-logo -Hover.svg";
+export { default as nextLogo } from "./logos/nextjs-logo.svg";
+export { default as reactLogo } from "./logos/reactLogo.svg";
+export { default as reactLogoHover } from "./logos/reactLogoHover.svg";
+export { default as reduxLogo } from "./logos/reduxLogo.svg";
+export { default as reduxLogoHover } from "./logos/reduxLogoHover.svg";
+export { default as sassLogo } from "./logos/sassLogo.svg";
+export { default as sassLogoHover } from "./logos/sassLogoHover.svg";
+export { default as tsLogo } from "./logos/tsLogo.svg";
+export { default as tsLogoHover } from "./logos/tsLogoHover.svg";
+export { default as vsLogo } from "./logos/vsLogo.svg";
+export { default as vsLogoHover } from "./logos/vsLogoHover.svg";
+export { default as yarnLogo } from "./logos/yarnLogo.svg";
+export { default as yarnLogoHover } from "./logos/yarnLogoHover.svg";

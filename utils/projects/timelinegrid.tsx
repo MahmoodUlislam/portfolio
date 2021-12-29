@@ -1,7 +1,7 @@
 import Image from 'next/image'
-
 import { getDate } from '../date'
 import styles from './timelinegrid.module.scss'
+
 
 export function VTimelineGrid() {
   return (

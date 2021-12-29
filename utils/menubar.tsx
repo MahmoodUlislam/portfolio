@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import styles from './menubar.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import BackTop from './BackTop'
+import styles from './menubar.module.scss'
 
 type MenuBarProps = {
   activeTab: "Home" | "Work"| "Projects" | "About" | "Contacts" 

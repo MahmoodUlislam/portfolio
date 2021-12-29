@@ -1,13 +1,13 @@
-import React from 'react'
 import Head from 'next/head'
+import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
   VFooter,
-   VTimelineGrid
+  VTimelineGrid
 } from '../../utils'
-import  Navbar from '../../utils/Navbar'
-import styles from './work.module.scss'
+import Navbar from '../../utils/Navbar'
 import { useTypedText } from '../../utils/typingtext'
+import styles from './work.module.scss'
 
 export default function VWork() {
   return(

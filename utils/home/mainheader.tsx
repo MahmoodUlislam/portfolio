@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './mainheader.module.scss'
 import { useTypedText } from '../typingtext'
+import styles from './mainheader.module.scss'
 
 
 export function VMainHeader() {

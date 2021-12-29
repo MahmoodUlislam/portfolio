@@ -1,6 +1,6 @@
-import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import '../styles/globals.scss';
 
 
 function MyApp({ Component, pageProps }: AppProps) {

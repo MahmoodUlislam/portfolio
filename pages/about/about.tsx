@@ -1,17 +1,13 @@
-import Image from 'next/image'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
-
-
   VFooter
 } from '../../utils'
-import  Navbar from '../../utils/Navbar'
-
-import styles from './about.module.scss'
-
+import Navbar from '../../utils/Navbar'
 import { useTypedText } from '../../utils/typingtext'
+import styles from './about.module.scss'
 
 export default function VAbout() {
   return (

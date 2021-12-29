@@ -20,7 +20,7 @@
       justify-content: center;
       min-width: 300px;
       max-width: 1500px;
-     
+
       width: 70vw;
     }
 
@@ -45,7 +45,7 @@
       }
 
       .commissions {
-        justify-content:center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         margin: 0 30px;
@@ -61,7 +61,7 @@
 
           .hint {
             animation: pulse linear 3s infinite;
-            color: #D5D5D5;
+            color: #d5d5d5;
             bottom: auto;
             left: auto;
             padding: 10px;
@@ -70,9 +70,15 @@
           }
 
           @keyframes pulse {
-            0% {opacity: 0;}
-            50% {opacity: 1;}
-            100% {opacity: 0;}
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
           }
 
           &::-webkit-scrollbar {

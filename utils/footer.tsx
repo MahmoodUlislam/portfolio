@@ -1,15 +1,12 @@
-import { VIcon } from './icon'
-
-
 import {
-  gmailLogo,
+  gitHubLogo,
+  gitHubLogoHover, gmailLogo,
   gmailLogoHover,
   linkedInLogo,
-  linkedInLogoHover,
-  gitHubLogo,
-  gitHubLogoHover
+  linkedInLogoHover
 } from '../assets'
 import styles from './footer.module.scss'
+import { VIcon } from './icon'
 
 export function VFooter() {
   return (

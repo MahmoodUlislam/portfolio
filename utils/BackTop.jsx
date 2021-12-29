@@ -1,14 +1,11 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Fab from '@mui/material/Fab';
-
-import Zoom from '@mui/material/Zoom';
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Fab from "@mui/material/Fab";
+import Toolbar from "@mui/material/Toolbar";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Zoom from "@mui/material/Zoom";
+import PropTypes from "prop-types";
+import * as React from "react";
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -23,13 +20,13 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#back-to-top-anchor',
+      "#back-to-top-anchor"
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
+        behavior: "smooth",
+        block: "center",
       });
     }
   };
@@ -39,7 +36,7 @@ function ScrollTop(props) {
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', right:'5px', bottom:'5px'}}
+        sx={{ position: "fixed", right: "5px", bottom: "5px" }}
       >
         {children}
       </Box>
@@ -60,12 +57,20 @@ export default function BackTop(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      
+
       <Toolbar id="back-to-top-anchor" />
-     
+
       <ScrollTop {...props}>
-        <Fab sx={{color:"#ff0072 !important", fontSize:"50px", paddingTop:"15px"}} size="small" aria-label="scroll back to top">
-         ^
+        <Fab
+          sx={{
+            color: "#ff0072 !important",
+            fontSize: "50px",
+            paddingTop: "15px",
+          }}
+          size="small"
+          aria-label="scroll back to top"
+        >
+          ^
         </Fab>
       </ScrollTop>
     </React.Fragment>

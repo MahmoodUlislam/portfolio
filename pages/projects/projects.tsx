@@ -1,14 +1,12 @@
-import React from 'react'
 import Head from 'next/head'
+import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
-  VFooter,
-  VMenuBar,
-  VTimelineGrid
+  VFooter, VTimelineGrid
 } from '../../utils'
-import  Navbar from '../../utils/Navbar'
-import styles from './projects.module.scss'
+import Navbar from '../../utils/Navbar'
 import { useTypedText } from '../../utils/typingtext'
+import styles from './projects.module.scss'
 
 export default function VProjects() {
   return(
