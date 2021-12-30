@@ -2,8 +2,8 @@ import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import React from "react";
 
 const containerStyle = {
-  width: "80vw",
-  height: "60vh",
+  width: "100vw",
+  height: "80vh",
 };
 
 const center = {
@@ -35,7 +35,7 @@ function VGoogleMap() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={16}
+      zoom={14}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >

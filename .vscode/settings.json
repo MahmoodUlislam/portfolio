@@ -85,5 +85,6 @@
   "window.zoomLevel": 1,
   "[typescriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "material-icon-theme.activeIconPack": "react"
 }
