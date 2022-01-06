@@ -77,8 +77,8 @@ export function VToolsTech() {
         <VIcon
           defaulIcon={reduxLogo}
           onHoverIcon={reduxLogoHover}
-          height="100px"
-          width="100px"
+          height="65px"
+          width="65px"
           name="redux"
           tooltipID="redux-tooltip" />
         
@@ -115,6 +115,13 @@ export function VToolsTech() {
           width="65px"
           name="AntDesign"
           tooltipID="AntDesign-tooltip" />
+          <VIcon
+            defaulIcon={lessLogo}
+            onHoverIcon={lessLogoHover}
+            height="65px"
+            width="65px"
+            name="Less"
+            tooltipID="less-tooltip" />
         <VIcon
           defaulIcon={sassLogo}
           onHoverIcon={sassLogoHover}
@@ -122,13 +129,6 @@ export function VToolsTech() {
           width="65px"
           name="Sass"
           tooltipID="sass-tooltip" />
-        <VIcon
-          defaulIcon={lessLogo}
-          onHoverIcon={lessLogoHover}
-          height="65px"
-          width="65px"
-          name="Less"
-          tooltipID="less-tooltip" />
         <VIcon
           defaulIcon={gitLogo}
           onHoverIcon={gitLogoHover}
