@@ -12,7 +12,6 @@ export function VMenuBar(props: MenuBarProps) {
     <nav className={styles.menuBar}>
       <Link href={`/`}>
         <a className={styles.title}>
-       
           <Image src="/Mi-logoWhite.svg" alt="myFace" width="100px" height="100px"/>
           <h3 className={styles.name}>
             Mahmood ul Islam
