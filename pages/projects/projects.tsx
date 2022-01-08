@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
-  VFooter, VTimelineGrid
+  VFooter
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
 import { useTypedText } from '../../utils/typingtext'
@@ -34,8 +35,19 @@ export default function VProjects() {
         </div>
         <Fade>
           <div className={styles.timelineGridCotainer}>
+          <div>
+            <h1>Obhizatrik Foundation</h1>
+            <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
+            <a target="_blank" rel="stylesheet" >web link of Obhizatrik Foundation</a>
+            </Link>
+          </div>
+          <div>
+            <h1>Akkhor</h1>
+            <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
+            <a target="_blank" rel="stylesheet" >web link of Obhizatrik Foundation</a>
+            </Link>
+          </div>
           
-            <VTimelineGrid/>
           </div>
         </Fade>
       </div>

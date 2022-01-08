@@ -17,16 +17,16 @@ export function VTimelineGrid() {
         <div className={styles.cardContent}>
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
-              <Image
-                alt="Quantic Dynamics logo."
-                src='/Quantic-Dynamics-Logo-Red-4.0-500px.png'
-                height={50}
-                width={150}/>
+            <Image
+                alt="Crown systems logo"
+                src='/only-sign-logo-[Converted].png'
+                height={30}
+                width={50}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Quantic Dynamics ltd.</h1>
-              <h2 className={styles.cardContentDetails}>Senior web developer </h2>
-              <h2 className={styles.cardContentDetails}>(March, 2018 – Present)</h2>
+              <h1 className={styles.companyTitle}>Crown Systems</h1>
+              <h2 className={styles.cardContentDetails}>Support Engineer</h2>
+              <h2 className={styles.cardContentDetails}>(1.2.2018 – 31.5.2018)</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
@@ -45,11 +45,11 @@ export function VTimelineGrid() {
             - creating an asynchronous communication between client and server via <b>REST API</b>,<br/>
             - setting up server with database.<br/>
             <br/>
-            Languages: JavaScript, <b>React.js</b>, <b>Next.js</b>.<br/>
+            Languages: <b>JavaScript</b>, <b>React.js</b>, <b>Next.js</b>.<br/>
             Database: <b>MongoDB</b>,<b>Firebase</b>.<br/>
-            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, SASS, boostrap, CSS.<br/>
-            Version Control System: <b>GitHub.</b><br/>
-            Issue trancing: Trello.
+            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br/>
+            Version Control System: <b>GitHub</b>,<b>GitLab</b><br/>
+            Issue trancing: <b>Trello</b>.
           </p>
         </div>
       </div>
@@ -57,8 +57,8 @@ export function VTimelineGrid() {
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItemWide}>
-        <h1>03.2019 - 03.2020</h1>
-        <h2>Working & learning Web Development in Dhaka</h2>
+        <h1>2018</h1>
+        
       </div>
       <div className={styles.timelineGridItemAdjoiningCard}/>
       <div className={styles.timelineGridItem}/>
@@ -67,16 +67,16 @@ export function VTimelineGrid() {
         <div className={styles.cardContent}>
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
-               <Image
-                alt="Crown systems logo"
-                src='/only-sign-logo-[Converted].png'
-                height={30}
-                width={50}/>
+              <Image
+                alt="CPSD logo"
+                src='/cpsd-logo.png'
+                height={50}
+                width={80}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Crown Systems</h1>
-              <h2 className={styles.cardContentDetails}>Senior web developer </h2>
-              <h2 className={styles.cardContentDetails}>08.2020 - 10.2020</h2>
+              <h1 className={styles.companyTitle}>CPSD</h1>
+              <h2 className={styles.cardContentDetails}>Web Developer</h2>
+              <h2 className={styles.cardContentDetails}>1.06.2018 - 31.08.2018</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
@@ -95,38 +95,42 @@ export function VTimelineGrid() {
             - creating an asynchronous communication between client and server via <b>REST API</b>,<br/>
             - setting up server with database.<br/>
             <br/>
-            Languages: JavaScript, <b>React.js</b>, <b>Next.js</b>.<br/>
+            Languages: <b>JavaScript</b>, <b>React.js</b>, <b>Next.js</b>.<br/>
             Database: <b>MongoDB</b>,<b>Firebase</b>.<br/>
-            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, CSS.<br/>
-            Version Control System: <b>GitHub.</b><br/>
-            Issue trancing: Trello.
+            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br/>
+            Version Control System: <b>GitHub</b>,<b>GitLab</b><br/>
+            Issue trancing: <b>Trello</b>.
           </p>
         </div>
       </div>
+      <div className={styles.timelineGridItemAdjoiningCard}/>
       <div className={styles.timelineGridItem}/>
-      <div className={styles.timelineGridItem}/>
+      
+      
+      <div className={styles.timelineGridItemWide}>
+        <h1>2019</h1>
+        
+      </div>
       <div className={styles.timelineGridItemCard}>
         <div className={styles.cardContent}>
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo} >
-               <Image
-                alt="Crown systems logo"
-                src='/only-sign-logo-[Converted].png'
-                height={30}
-                width={50}/>
+            <Image
+                alt="Quantic Dynamics logo."
+                src='/Quantic-Dynamics-Logo-Red-4.0-500px.png'
+                height={50}
+                width={150}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Crown Systems</h1>
-              <h2 className={styles.cardContentDetails}>Senior web developer</h2>
-              <h2 className={styles.cardContentDetails}>10.2020 - {getDate()}</h2>
+              <h1 className={styles.companyTitle}>Quantic Dynamics ltd.</h1>
+              <h2 className={styles.cardContentDetails}>Senior Web Developer</h2>
+              <h2 className={styles.cardContentDetails}>1.2.2019 – {getDate()}</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
             Building from scratch a complete WebRTC Phone web application, based on SIP.js library. Major functionalities:<br/>
             - making new, answering, and holding calls (conferences as well),<br/>
             - contacts list with functionality of adding, deleting, and editing contacts. Search and sort options applied as well,<br/>
-            - history of calls with summarized data,<br/>
-            - voicemail and DTMF sending,<br/>
             - account and phone input/output audio settings.<br/>
             <br/>
             My main responsibilities on the front-end side of the project:<br/>
@@ -147,13 +151,15 @@ export function VTimelineGrid() {
             -constructing complete translation system which let the user to change language of application
             (if not chosen, language was detected automatically).
             <br/>
-            Agile management: <b>Scrum, Agile</b>.<br/>
-            Version control system: <b>Azure DevOps, GitLab</b>.<br/>
-            Issue tracking tool: <b>Jira, Trelllo</b>.<br/>
+            Languages: <b>JavaScript</b>, <b>React.js</b>, <b>Next.js</b>.<br/>
+            Database: <b>MongoDB</b>,<b>Firebase</b>.<br/>
+            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br/>
+            Version Control System: <b>GitHub</b>,<b>GitLab</b><br/>
+            Issue trancing: <b>Trello</b>.
+            Version control system: <b>GitHub</b>, <b>GitLab</b>.<br/>
             Knowledge repository: <b>Confluence</b>.<br/>
-           Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, SASS, boostrap, CSS.<br/>
             Testing: <b>React Testing Library, JEST</b>, <b>Puppeteer</b><br/>
-            Communication tool: <b>Microsoft Teams, Google meets,  Zoom</b>.
+            Communication tool: <b>Microsoft Teams</b>, <b>Google meets</b>,  <b>Zoom</b>.
           </p>
         </div>
       </div>
