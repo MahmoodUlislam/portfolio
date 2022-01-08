@@ -32,6 +32,9 @@ export default function VHome() {
         <div className={styles.intro}>
           <div className={styles.introduction}>
             <VMainHeader/>
+            <div className={styles.profilePicture}>
+              
+            </div>
           </div>
           <div className={styles.swipeDownIcon}>
             <Image
