@@ -1,20 +1,18 @@
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Drawer,
   IconButton,
   List,
   ListItem,
   ListItemText,
-  makeStyles,
-} from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import MenuIcon from "@material-ui/icons/Menu";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import SearchIcon from "@mui/icons-material/Search";
+} from "@mui/material";
+import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
-import { alpha, styled } from "@mui/material/styles";
+import { alpha, makeStyles, styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
