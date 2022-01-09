@@ -35,3 +35,4 @@ next.config.js
 
 # vercel
 .vercel
+.env
