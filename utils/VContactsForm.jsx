@@ -78,7 +78,7 @@ export default function VContactsForm(...pageProps) {
             name="subject"
           />
 
-          <Quill name="message" />
+          <Quill name="quillRef" />
           <Button
             style={{
               width: "30%",
