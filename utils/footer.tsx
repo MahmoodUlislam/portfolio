@@ -17,7 +17,7 @@ export function VFooter() {
       <h4 className={styles.copyrights}>
         ©2021
         <br/>
-        Build with <span>Next.js/TypeSript</span>
+        Build with <span>Next.js/TypeScript</span>
       </h4>
       <div className={styles.icons}>
         <VIcon
@@ -37,7 +37,7 @@ export function VFooter() {
         <VIcon
           defaulIcon={gitHubLogo}
           onHoverIcon={gitHubLogoHover}
-          href="https://github.com/MahmoodUlislam"
+          href="https://github.com/mahmood-islam"
           
           height="30px"
           width="30px"
