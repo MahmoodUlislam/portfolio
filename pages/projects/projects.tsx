@@ -57,8 +57,7 @@ export default function VProjects() {
 							{' '}
 							<i className='fal fa-envelope' />
 							send email to know more about Akkhor app
-						</a>
- 
+						</a> 
             <Fade>
             <h2>
             {useTypedText("A react native project with expo. This app is made for quiz exam.", 30, 350)}

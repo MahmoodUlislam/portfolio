@@ -65,11 +65,11 @@ export default function VContacts() {
             <h2>
               <a
                 style={{ textDecoration: "none", color: "white" }}
-                href="https://github.com/MahmoodUlislam/"
-                target="_blank"
-                rel="noreferrer"
+                rel={"external"}
+                href="tel:+8801701666300"
               >
-                #GitHub: https://github.com/MahmoodUlislam
+                {" "}
+                <i className="fal fa-phone" /> Contact# +8801717077230
               </a>
             </h2>
           </div>
