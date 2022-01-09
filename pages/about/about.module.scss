@@ -7,7 +7,7 @@
 
   &Item {
     align-items: center;
-    background-color:#0d0107;
+    background-color: #0d0107;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,13 +36,19 @@
 
     .hoverTip {
       animation: pulse linear 3s infinite;
-      color:#ff0072;
+      color: #ff0072;
     }
 
     @keyframes pulse {
-      0% {opacity: 0;}
-      50% {opacity: 1;}
-      100% {opacity: 0;}
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
 
     &Card {
@@ -54,11 +60,11 @@
       border-radius: 30px;
       border: 5px solid #ffffff;
       min-height: 250px;
-      transition: transform .2s;
+      transition: transform 0.2s;
       padding: 15px;
-      width: 32vw;
-      height: 90vh;
-      text-align:center;
+      width: 450px;
+      height: 630px;
+      text-align: center;
 
       &:hover {
         transform: scale(2);
@@ -67,7 +73,6 @@
       &Header {
         display: flex;
         flex-direction: row;
-        
       }
 
       .company {
@@ -75,9 +80,6 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-         
-         
-          
         }
 
         &Title {
@@ -88,14 +90,11 @@
 
         &Logo {
           align-items: center;
-         
+
           border-radius: 35px;
           display: flex;
-         
+
           justify-content: center;
-          
-         
-          
         }
       }
 
@@ -138,7 +137,6 @@
 
   .hoverTip {
     display: none;
-    
   }
 }
 .aboutContainer {
@@ -187,7 +185,7 @@
       }
 
       .commissions {
-        justify-content:center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         margin: 0 30px;
@@ -212,9 +210,15 @@
           }
 
           @keyframes pulse {
-            0% {opacity: 0;}
-            50% {opacity: 1;}
-            100% {opacity: 0;}
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
           }
 
           &::-webkit-scrollbar {
