@@ -28,7 +28,7 @@ export default function VProjects() {
         
             <Fade>
             <h2>
-        {useTypedText("Experienced in HTML, CSS, JavaScript, React-Js, Next-Js, Redux, Node, Express, Mongo-DB, Firebase, React Native, J-Query, PHP (basic level), Sass, Bootstrap, React-bootstrap, Material-UI, Next-UI, Docker, Kubernetes, UX & UI design by adobe-XD & Figma and Search Engine Optimization.", 30, 350)}
+        {useTypedText("Please see bellow for some of my projects to find out my experience regarding to the web & mobile app development", 30, 350)}
       </h2>
           
           </Fade>
@@ -37,15 +37,34 @@ export default function VProjects() {
           <div className={styles.timelineGridCotainer}>
           <div>
             <h1>Obhizatrik Foundation</h1>
+            
             <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
             <a target="_blank" rel="stylesheet" >web link of Obhizatrik Foundation</a>
             </Link>
+            <Fade>
+            <h2>
+        {useTypedText("A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment.", 30, 350)}
+      </h2>
+          
+          </Fade>
           </div>
           <div>
             <h1>Akkhor</h1>
             <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
-            <a target="_blank" rel="stylesheet" >web link of Obhizatrik Foundation</a>
+            <a
+							rel={'external'}
+							href='mailto:obhizatrik@gmail.com'
+						>
+							{' '}
+							<i className='fal fa-envelope' />
+							send email to know more about Akkhor app
+						</a>
             </Link>
+            <Fade>
+            <h2>
+            {useTypedText("A react native project with expo. This app is made for quiz exam.", 30, 350)}
+            </h2>
+            </Fade>
           </div>
           
           </div>
