@@ -2,7 +2,7 @@ import Head from 'next/head'
 export default function Custom404() {
   return (
     <>
-     <Head>
+    <Head>
         <title>404</title>
         <meta name="description" content="Mahmood ul Islam Portfolio: page not found" />
         <meta name="author" content="Mahmood ul Islam"/>

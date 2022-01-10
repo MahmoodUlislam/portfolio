@@ -1,8 +1,9 @@
-import { makeStyles, useTheme } from "@material-ui/core";
+import { useTheme } from "@material-ui/core";
 import AppBar from "@mui/material/AppBar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { makeStyles } from "@mui/styles";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
