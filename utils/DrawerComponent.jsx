@@ -13,7 +13,6 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
 import { alpha, styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +25,7 @@ import {
   linkedInLogo,
   linkedInLogoHover,
 } from "../assets";
+import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";
 
 const Search = styled("div")(({ theme }) => ({
@@ -114,9 +114,9 @@ const DrawerComponent = () => {
             button
             onClick={() => setOpenDrawer(false)}
           >
-            <ListItemText style={{ color: "#ffffff" }}>
+            <ListItemText>
               <Link href={`/`}>
-                <a style={{ textDecoration: "none", color: "#ffffff" }}>HOME</a>
+                <a className={styles.link}>HOME</a>
               </Link>
             </ListItemText>
           </ListItem>
@@ -126,9 +126,9 @@ const DrawerComponent = () => {
             button
             onClick={() => setOpenDrawer(false)}
           >
-            <ListItemText style={{ color: "#ffffff" }}>
+            <ListItemText>
               <Link href={`/work`}>
-                <a style={{ textDecoration: "none", color: "#ffffff" }}>WORK</a>
+                <a className={styles.link}>WORK</a>
               </Link>{" "}
             </ListItemText>
           </ListItem>
@@ -138,11 +138,9 @@ const DrawerComponent = () => {
             button
             onClick={() => setOpenDrawer(false)}
           >
-            <ListItemText style={{ textDecoration: "none", color: "#ffffff" }}>
+            <ListItemText>
               <Link href={`/projects`}>
-                <a style={{ textDecoration: "none", color: "#ffffff" }}>
-                  PROJECTS
-                </a>
+                <a className={styles.link}>PROJECTS</a>
               </Link>{" "}
             </ListItemText>
           </ListItem>
@@ -152,12 +150,10 @@ const DrawerComponent = () => {
             button
             onClick={() => setOpenDrawer(false)}
           >
-            <ListItemText style={{ color: "#ffffff" }}>
+            <ListItemText>
               {" "}
               <Link href={`/about`}>
-                <a style={{ textDecoration: "none", color: "#ffffff" }}>
-                  ABOUT
-                </a>
+                <a className={styles.link}>ABOUT</a>
               </Link>
             </ListItemText>
           </ListItem>
@@ -167,11 +163,9 @@ const DrawerComponent = () => {
             button
             onClick={() => setOpenDrawer(false)}
           >
-            <ListItemText style={{ color: "#ffffff" }}>
+            <ListItemText>
               <Link href={`/contacts`}>
-                <a style={{ textDecoration: "none", color: "#ffffff" }}>
-                  CONTACTS
-                </a>
+                <a className={styles.link}>CONTACTS</a>
               </Link>{" "}
             </ListItemText>
           </ListItem>
@@ -194,43 +188,39 @@ const DrawerComponent = () => {
             />
           </Search>
 
-          <Button
-            style={{
-              color: "#ffffff",
-              fontSize: "16px",
-              borderRadius: "5px",
-              mt: 5,
-              textAlign: "center",
-              marginTop: "3vh",
-              width: "200px",
-              background: "#ff0072",
-              "&:hover": {
-                background: "rgba(255, 152, 0, 0.75)",
-              },
-            }}
-          >
+          <Button>
             <Link href="/contacts">
-              <a style={{ textDecoration: "none", color: "white" }}>
-                send E-mail
-              </a>
+              <a className={styles.button}>send E-mail</a>
             </Link>
           </Button>
 
           <div style={{ marginTop: "3vh" }}>
-            <Typography
-              style={{ color: "#ffffff", display: "flex" }}
-              component="div"
-            >
-              <PhoneInTalkIcon sx={{ width: "50px", marginRight: "1vw" }} />
-              +88-01717077230
-            </Typography>
-            <Typography
-              style={{ color: "#ffffff", display: "flex" }}
-              component="div"
-            >
-              <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
-              mahmood.islam@gmail.com
-            </Typography>
+            <div style={{ display: "flex" }}>
+              <a
+                className={styles.link}
+                style={{ fontSize: "20px" }}
+                rel={"external"}
+                href="tel:+8801717077230"
+              >
+                {" "}
+                <i className="fal fa-phone" />{" "}
+                <PhoneInTalkIcon sx={{ width: "50px" }} />
+                +88-01717077230
+              </a>
+            </div>
+            <div style={{ display: "flex" }}>
+              <a
+                className={styles.link}
+                style={{ fontSize: "16px" }}
+                rel={"external"}
+                href="mailto:mahmood.islam@gmail.com"
+              >
+                {" "}
+                <i className="fal fa-phone" />{" "}
+                <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
+                mahmood.islam@gmail.com
+              </a>
+            </div>
           </div>
           <div style={{ display: "flex", marginTop: "2vh" }}>
             <VIcon
