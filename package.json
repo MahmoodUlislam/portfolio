@@ -33,6 +33,7 @@
     "react": "17.0.2",
     "react-awesome-reveal": "^2.3.1",
     "react-dom": "17.0.2",
+    "react-iframe": "^1.8.0",
     "react-quilljs": "^1.2.17",
     "react-reveal": "^1.2.2",
     "react-scroll-parallax": "^2.4.0",

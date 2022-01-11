@@ -19,6 +19,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/quill1.tsx"],
   "exclude": ["node_modules"]
 }

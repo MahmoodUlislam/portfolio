@@ -92,8 +92,6 @@ export function VToolsTech() {
           tooltipID="jest-tooltip" />
       </div>
       <div className={styles.technologiesIconsRow}>
-       
-       
         <VIcon
           defaulIcon={boostrapLogo}
           onHoverIcon={boostrapLogoHover}

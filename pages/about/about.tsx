@@ -42,17 +42,13 @@ export default function VAbout() {
 •	Mobile application development
 
 	Experience:
-•	HTML, CSS, JavaScript,
-•	React-Js, Next-Js,
-•	Redux,
-•	Node, Express,
-•	Mongo-DB, Firebase,
-•	React Native,
-•	J-Query, PHP (basic level), 
-•	Sass, Bootstrap, React-bootstrap, Material-UI, Next-UI,
-•	Docker, Kubernetes,
-•	UX & UI design by adobe-XD & Figma
-•	Search Engine Optimization.
+•HTML, CSS & JavaScript
+•React js, Next js, Redux, Node, Express
+•Mongo-DB & Firebase
+•React-Native, 
+•Docker, Kubernetes
+•Sass, Bootstrap, React-bootstrap, Material-UI, Ant-Design
+•Search Engine Optimisation
 
 Responsible for all the works that belong to the web development from start to finish.
 `, 30, 350)}

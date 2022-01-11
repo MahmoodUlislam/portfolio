@@ -28,7 +28,13 @@ export default function VWork() {
         
             <Fade>
             <h2>
-        {useTypedText("Experienced in HTML, CSS, JavaScript, React-Js, Next-Js, Redux, Node, Express, Mongo-DB, Firebase, React Native, J-Query, Sass, Bootstrap, React-bootstrap, Material-UI, Next-UI, Docker, Kubernetes, UX & UI design by adobe-XD & Figma and Search Engine Optimization.", 30, 350)}
+        {useTypedText(`Experienced in HTML, CSS & JavaScript
+•React js, Next js, Redux, Node, Express
+•Mongo-DB & Firebase
+•React-Native, 
+•Docker, Kubernetes
+•Sass, Bootstrap, React-bootstrap, Material-UI, Ant-Design
+•Search Engine Optimisation`, 30, 350)}
       </h2>
           
           </Fade>

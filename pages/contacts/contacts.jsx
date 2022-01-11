@@ -66,7 +66,7 @@ export default function VContacts() {
               <a
                 style={{ textDecoration: "none", color: "white" }}
                 rel={"external"}
-                href="tel:+8801701666300"
+                href="tel:+8801717077230"
               >
                 {" "}
                 <i className="fal fa-phone" /> Contact# +8801717077230

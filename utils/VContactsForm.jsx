@@ -38,6 +38,7 @@ export default function VContactsForm(...pageProps) {
           }}
         >
           <TextField
+            required
             color="primary"
             sx={{
               borderRadius: "5px",
@@ -52,7 +53,9 @@ export default function VContactsForm(...pageProps) {
           />
 
           <TextField
+            required
             sx={{
+              borderRadius: "5px",
               width: "60%",
               marginTop: "2vh",
               backgroundColor: "#ff0072",
@@ -65,7 +68,9 @@ export default function VContactsForm(...pageProps) {
             name="reply_to"
           />
           <TextField
+            required
             sx={{
+              borderRadius: "5px",
               width: "60%",
               marginTop: "2vh",
               backgroundColor: "#ff0072",
@@ -78,7 +83,8 @@ export default function VContactsForm(...pageProps) {
             name="subject"
           />
 
-          <Quill name="quillRef" />
+          <Quill placeholder="Enter you message" name="message" />
+          {/* <Quill1 placeholder="Enter you message" name="quillRef" /> */}
           <Button
             style={{
               width: "30%",

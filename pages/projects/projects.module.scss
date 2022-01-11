@@ -23,6 +23,17 @@
     .timelineGridCotainer {
       max-width: 100vw;
     }
+    .link {
+      color: #ff0072;
+      text-decoration: none;
+      &:hover {
+        animation: onHover 3s;
+        background-color: #ff0072;
+        border: 3px solid #ff0072;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
   }
 }
 
