@@ -1,6 +1,6 @@
 import { Wrapper } from "@googlemaps/react-wrapper";
 import Head from "next/head";
-import "quill/dist/quill.snow.css";
+// import "quill/dist/quill.snow.css";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { VFooter } from "../../utils";

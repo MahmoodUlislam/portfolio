@@ -4,11 +4,11 @@ import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
-import ObhizatrikImage from "../../public/obhizatrikLanding.png";
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
+
 export default function VProjects() {
   return (
     <div className={styles.workContainer}>
@@ -56,7 +56,7 @@ export default function VProjects() {
                     rel="stylesheet"
                   >
                     <Image
-                      src={ObhizatrikImage}
+                      src="../../public/obhizatrikLanding.png"
                       alt="Picture of Obhizatrik Landing Page"
                     ></Image>
                   </a>

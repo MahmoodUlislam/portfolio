@@ -1,7 +1,6 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import emailjs from "emailjs-com";
-import Quill from "./quill";
 
 export default function VContactsForm(...pageProps) {
   function sendEmail(e) {
@@ -82,9 +81,25 @@ export default function VContactsForm(...pageProps) {
             variant="filled"
             name="subject"
           />
+          <TextField
+            required
+            sx={{
+              borderRadius: "5px",
+              width: "60%",
+              marginTop: "2vh",
+              backgroundColor: "#ff0072",
+              color: "#ffffff",
+            }}
+            id="outlined-multiline-static"
+            label="Enter Message"
+            multiline
+            rows={4}
+            defaultValue="Please enter your message here..."
+            name="message"
+          />
 
-          <Quill placeholder="Enter you message" name="message" />
-          {/* <Quill1 placeholder="Enter you message" name="quillRef" /> */}
+          {/* <Quill placeholder="Enter you message" name="message" />
+          <Quill1 placeholder="Enter you message" name="quillRef" /> */}
           <Button
             style={{
               width: "30%",
