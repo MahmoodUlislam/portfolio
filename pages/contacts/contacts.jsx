@@ -10,12 +10,6 @@ import VContactsForm from "../../utils/VContactsForm";
 import VGoogleMap from "../../utils/VGoogleMap";
 import styles from "./contacts.module.scss";
 
-// const render = (status: Status): ReactElement => {
-//   if (status === Status.LOADING) return ('Loading...');
-//   if (status === Status.FAILURE) return ('Failed to load');
-//   return null;
-// };
-
 export default function VContacts() {
   return (
     <>

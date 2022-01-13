@@ -91,7 +91,7 @@ export default function VContactsForm(...pageProps) {
               color: "#ffffff",
             }}
             id="outlined-multiline-static"
-            label="Enter Message"
+            
             multiline
             rows={4}
             defaultValue="Please enter your message here..."
