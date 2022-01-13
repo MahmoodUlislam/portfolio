@@ -8,6 +8,7 @@ import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
+import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
 
 export default function VProjects() {
   return (
@@ -56,9 +57,9 @@ export default function VProjects() {
                     rel="stylesheet"
                   >
                     <Image
-                      src="../../public/obhizatrikLanding.png"
+                      src={ObhizatrikLanding}
                       alt="Picture of Obhizatrik Landing Page"
-                    ></Image>
+                    />
                   </a>
                 </Link>
 
