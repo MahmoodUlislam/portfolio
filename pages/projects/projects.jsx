@@ -44,24 +44,7 @@ export default function VProjects() {
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
                   Obhizatrik Foundation
                 </h1>
-                <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
-                  <a
-                    className={styles.link}
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      fontSize: "2rem",
-                      margin: "40px",
-                    }}
-                    target="_blank"
-                    rel="stylesheet"
-                  >
-                    <Image
-                      src={ObhizatrikLanding}
-                      alt="Picture of Obhizatrik Landing Page"
-                    />
-                  </a>
-                </Link>
+                
 
                 <Fade>
                   <h2>
@@ -87,6 +70,36 @@ export default function VProjects() {
                     web link of Obhizatrik Foundation
                   </a>
                 </Link>
+              </div>
+              {/* <Link  href="https://ozf-frontend.dev.quanticdynamics.cloud/">
+                  <a
+                    className={styles.link}
+                    style={{
+                      width:"800px",
+                      height:"400px",
+                      fontSize: "2rem",
+                      margin: "40px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center"
+                    }}
+                    target="_blank"
+                    rel="stylesheet"
+                  >
+                    <Image
+                      src={ObhizatrikLanding}
+                      alt="Picture of Obhizatrik Landing Page"
+                      width="800px"
+                      height="400px"
+                    />
+                  </a>
+                </Link> */}
+                  <Image
+                      src={ObhizatrikLanding}
+                      alt="Picture of Obhizatrik Landing Page"
+                      width="800px"
+                      height="400px"
+                    />
                 <Iframe
                   url="http://www.youtube.com/embed/8riiLr668q4"
                   height="450px"
@@ -95,7 +108,6 @@ export default function VProjects() {
                   display="initial"
                   position="relative"
                 />
-              </div>
             </div>
             <div className={styles.content}>
               <div className={styles.summary}>
