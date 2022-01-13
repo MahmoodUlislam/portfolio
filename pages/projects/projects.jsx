@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
@@ -8,7 +8,7 @@ import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
-import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
+// import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
 
 export default function VProjects() {
   return (
@@ -94,12 +94,7 @@ export default function VProjects() {
                     />
                   </a>
                 </Link> */}
-                  <Image
-                      src={ObhizatrikLanding}
-                      alt="Picture of Obhizatrik Landing Page"
-                      width="800px"
-                      height="400px"
-                    />
+        
                 <Iframe
                   url="http://www.youtube.com/embed/8riiLr668q4"
                   height="450px"
