@@ -102,6 +102,8 @@ export default function VProjects() {
                   className="myClassname"
                   display="initial"
                   position="relative"
+            width="100%"
+                  allowFullScreen ={true}
                 />
             </div>
             <div className={styles.content}>
