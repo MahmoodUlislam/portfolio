@@ -1,15 +1,17 @@
 import Head from "next/head";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
+import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
-// import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
-
+const OzfWebsiteImageLoader = ({ src, width, quality }) => {
+  return `https://ozf-frontend.dev.quanticdynamics.cloud/`;
+};
 export default function VProjects() {
   return (
     <div className={styles.workContainer}>
@@ -44,7 +46,6 @@ export default function VProjects() {
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
                   Obhizatrik Foundation
                 </h1>
-                
 
                 <Fade>
                   <h2>
@@ -71,41 +72,95 @@ export default function VProjects() {
                   </a>
                 </Link>
               </div>
-              {/* <Link  href="https://ozf-frontend.dev.quanticdynamics.cloud/">
+
+              <Image
+                onClick={() => {
+                  window.open(
+                    "https://ozf-frontend.dev.quanticdynamics.cloud/",
+                    "_blank"
+                  );
+                }}
+                src={ObhizatrikLanding}
+                alt="Picture of Obhizatrik Landing Page"
+                width={800}
+                height={400}
+              />
+              <Iframe
+                url="http://www.youtube.com/embed/8riiLr668q4"
+                height="450px"
+                id="myId"
+                className="myClassname"
+                display="initial"
+                position="relative"
+                width="100%"
+                allowFullScreen={true}
+              />
+            </div>
+
+            <div className={styles.content}>
+              <div className={styles.summary}>
+                <h1 style={{ display: "flex", justifyContent: "center" }}>
+                  User Analyzer for food delivery app
+                </h1>
+                <Link href="https://user-analyzer-of-food-delivery-app.vercel.app/">
                   <a
                     className={styles.link}
                     style={{
-                      width:"800px",
-                      height:"400px",
-                      fontSize: "2rem",
-                      margin: "40px",
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "center"
+                      fontSize: "2rem",
+                      margin: "40px",
                     }}
                     target="_blank"
                     rel="stylesheet"
                   >
-                    <Image
-                      src={ObhizatrikLanding}
-                      alt="Picture of Obhizatrik Landing Page"
-                      width="800px"
-                      height="400px"
-                    />
+                    web link of User Analyzer for food delivery app
                   </a>
-                </Link> */}
-        
-                <Iframe
-                  url="http://www.youtube.com/embed/8riiLr668q4"
-                  height="450px"
-                  id="myId"
-                  className="myClassname"
-                  display="initial"
-                  position="relative"
-                  width="100%"
-                  allowFullScreen ={true}
-                />
+                </Link>
+                <Fade>
+                  <h2>
+                    {useTypedText(
+                      "A react.js application for user analysis of food delivery app ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization",
+                      30,
+                      350
+                    )}
+                  </h2>
+                </Fade>
+              </div>
             </div>
+
+            <div className={styles.content}>
+              <div className={styles.summary}>
+                <h1 style={{ display: "flex", justifyContent: "center" }}>
+                  Rental app
+                </h1>
+                <Link href="https://rental-app-beta.vercel.app/">
+                  <a
+                    className={styles.link}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      fontSize: "2rem",
+                      margin: "40px",
+                    }}
+                    target="_blank"
+                    rel="stylesheet"
+                  >
+                    web link of Rental app for electrical equipments
+                  </a>
+                </Link>
+                <Fade>
+                  <h2>
+                    {useTypedText(
+                      "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization",
+                      30,
+                      350
+                    )}
+                  </h2>
+                </Fade>
+              </div>
+            </div>
+
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>

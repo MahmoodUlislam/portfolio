@@ -23,10 +23,10 @@
     "dynamic": "^4.2.2",
     "emailjs-com": "^3.2.0",
     "google-map-react": "^2.1.10",
-    "google-maps-react": "^2.0.6",
+   
     "material-ui-rating": "^4.0.0-beta.2",
     "next": "^11.1.2",
-    "prettier-eslint": "^8.2.2",
+   
     "rc-scroll-anim": "^2.3.1",
     "rc-tween-one": "^3.0.3",
     "react": "17.0.2",
@@ -41,8 +41,6 @@
   "devDependencies": {
     "@types/react": "17.0.11",
     "@vercel/node": "^1.12.1",
-    "eslint": "7.28.0",
-    "eslint-config-next": "11.0.0",
     "next-router-mock": "^0.6.3",
     "typescript": "^4.5.4",
     "typescript-plugin-css-modules": "^3.4.0"

@@ -27,7 +27,7 @@
     "javascript": "javascriptreact"
   },
   // config related to code formatting
-  "editor.fontSize": 15,
+  "editor.fontSize": 12,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {

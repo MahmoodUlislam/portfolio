@@ -44,7 +44,6 @@ export default function VContactsForm(...pageProps) {
               width: "60%",
               backgroundColor: "#ff0072",
             }}
-            color="secondary"
             id="outlined-basic"
             label="Enter your Name"
             variant="filled"
@@ -91,7 +90,6 @@ export default function VContactsForm(...pageProps) {
               color: "#ffffff",
             }}
             id="outlined-multiline-static"
-            
             multiline
             rows={4}
             defaultValue="Please enter your message here..."
