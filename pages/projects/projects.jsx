@@ -4,14 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
+// import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
 // import { ObhizatrikLanding } from "../../assets";
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
-const OzfWebsiteImageLoader = ({ src, width, quality }) => {
-  return `https://ozf-frontend.dev.quanticdynamics.cloud/`;
-};
+
 export default function VProjects() {
   return (
     <div className={styles.workContainer}>
@@ -80,7 +79,7 @@ export default function VProjects() {
                     "_blank"
                   );
                 }}
-                src="/../../public/obhizatrikLanding.png"
+                src="/obhizatrikLanding.png"
                 alt="Picture of Obhizatrik Landing Page"
                 width={800}
                 height={400}
