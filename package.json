@@ -12,7 +12,6 @@
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
     "@googlemaps/react-wrapper": "^1.1.15",
-    "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.2.7",
     "@mui/styles": "^5.2.3",

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
-import ObhizatrikLanding from "../../public/obhizatrikLanding.png";
+import { ObhizatrikLanding } from "../../assets";
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
