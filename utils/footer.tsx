@@ -16,7 +16,7 @@ export function VFooter() {
       </div>
       <h4 className={styles.copyrights}>
         ©2021
-        <br/>
+        <br />
         Build with <span>Next.js/TypeScript</span>
       </h4>
       <div className={styles.icons}>
@@ -26,21 +26,21 @@ export function VFooter() {
           href="https://www.linkedin.com/in/mahmoodislam/"
           height="30px"
           width="30px"
-          name="LinkedIn"/>
+          name="LinkedIn" />
         <VIcon
           defaulIcon={gmailLogo}
           onHoverIcon={gmailLogoHover}
           href="mailto:mahmood.islam@gmail.com"
           height="30px"
           width="30px"
-          name="Gmail"/>
+          name="Gmail" />
         <VIcon
           defaulIcon={gitHubLogo}
           onHoverIcon={gitHubLogoHover}
-          href="https://github.com/MahmoodUlislam"       
+          href="https://github.com/MahmoodUlislam"
           height="30px"
           width="30px"
-          name="GitHub"/>
+          name="GitHub" />
       </div>
     </footer>
   )

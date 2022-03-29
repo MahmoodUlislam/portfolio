@@ -16,13 +16,13 @@ type IconProps = {
 export function VIcon(props: IconProps) {
 
   return (
-    <a data-tip={props.tooltipID ? true : false} data-for={props.tooltipID} href={props.href} target="_blank" className={styles.iconContainer} style={{height: props.height, width: props.width}}>
+    <a data-tip={props.tooltipID ? true : false} data-for={props.tooltipID} href={props.href} target="_blank" className={styles.iconContainer} style={{ height: props.height, width: props.width }}>
       <div className={styles.iconActive}>
         <Image
           alt={`On hover ${props.name} icon.`}
           src={props.onHoverIcon}
           width={props.width}
-          height={props.height}/>
+          height={props.height} />
       </div>
       {
         props.tooltipID &&
@@ -35,7 +35,7 @@ export function VIcon(props: IconProps) {
           alt={`Default ${props.name} icon.`}
           src={props.defaulIcon}
           width={props.width}
-          height={props.height}/>
+          height={props.height} />
       </div>
     </a>
   )

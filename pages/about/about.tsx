@@ -15,20 +15,20 @@ export default function VAbout() {
       <Head>
         <title>About me</title>
         <meta name="description" content="Mahmood ul Islam Portfolio Page" />
-        <meta name="author" content="Mahmood ul Islam"/>
-        <meta name="keywords" content="Mahmood ul Islam, Portfolio, Frontend"/>
-        <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon"/>
+        <meta name="author" content="Mahmood ul Islam" />
+        <meta name="keywords" content="Mahmood ul Islam, Portfolio, Frontend" />
+        <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon" />
       </Head>
-      <Navbar activeTab="About"/>
+      <Navbar activeTab="About" />
       <div className={styles.content}>
         <div className={styles.summary}>
-            <h1>
-              About me
-            </h1>
-            <p style={{color: 'white', fontSize:'40px'}}>Long story short</p>
+          <h1>
+            About me
+          </h1>
+          <p style={{ color: 'white', fontSize: '40px' }}>Long story short</p>
           <Fade>
             <h2>
-        {useTypedText(`An energetic and imaginative Full-stack developer along with the ability to create web & mobile applications of all standards. High awareness of industry issues and trends; particularly regarding accessibility, usability, emerging technologies, and open-source CMS.
+              {useTypedText(`An energetic and imaginative Full-stack developer along with the ability to create web & mobile applications of all standards. High awareness of industry issues and trends; particularly regarding accessibility, usability, emerging technologies, and open-source CMS.
 	Full-stack web development:
 •	Identifying technical solutions
 •	Client facing skills
@@ -52,28 +52,28 @@ export default function VAbout() {
 
 Responsible for all the works that belong to the web development from start to finish.
 `, 30, 350)}
-      </h2>
-            
-        </Fade>
-        
-      <div className={styles.timelineGridItemCard}>
-        <h2 className={styles.hoverTip}>
-          Hover to zoom [CV]...
-        </h2>
-        <div className={styles.cardContent}> 
-            
+            </h2>
+
+          </Fade>
+
+          <div className={styles.timelineGridItemCard}>
+            <h2 className={styles.hoverTip}>
+              Hover to zoom [CV]...
+            </h2>
+            <div className={styles.cardContent}>
+
               <Image
                 alt="CV mahmood"
                 src='/CV-mahmood-for-software-engineering.jpg'
                 layout='fixed'
-                width='430px'
-                height='600px'
-                />
+                width='764px'
+                height='1080px'
+              />
+            </div>
+          </div>
         </div>
-      </div>  
       </div>
-      </div>
-      <VFooter/>
+      <VFooter />
     </div>
   )
 }

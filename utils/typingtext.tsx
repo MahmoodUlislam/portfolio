@@ -5,7 +5,7 @@ export function useTypedText(text: string, speed: number, delayTime?: number) {
   const chars = text.split("")
   let interval = speed
 
-  if(textState.length === 0 && delayTime)
+  if (textState.length === 0 && delayTime)
     interval = speed + delayTime
 
   React.useEffect(() => {

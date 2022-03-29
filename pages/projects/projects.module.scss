@@ -3,7 +3,6 @@
   background-color: #000000;
   flex-direction: column;
 
-
   .content {
     align-items: center;
     display: flex;
@@ -17,8 +16,6 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-  
-      
     }
 
     .timelineGridCotainer {
@@ -27,7 +24,7 @@
     .link {
       color: #ff0072;
       text-decoration: none;
-      
+
       &:hover {
         animation: onHover 3s;
         background-color: #ff0072;

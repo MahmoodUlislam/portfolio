@@ -1,7 +1,7 @@
-import { useTheme } from '@mui/material/styles';
 import AppBar from "@mui/material/AppBar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { useTheme } from '@mui/material/styles';
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { makeStyles } from "@mui/styles";
 import Image from "next/image";

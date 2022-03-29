@@ -7,7 +7,7 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemText,
+  ListItemText
 } from "@mui/material";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
@@ -23,7 +23,7 @@ import {
   gmailLogo,
   gmailLogoHover,
   linkedInLogo,
-  linkedInLogoHover,
+  linkedInLogoHover
 } from "../assets";
 import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";

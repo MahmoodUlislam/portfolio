@@ -5,9 +5,9 @@ import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-  <ParallaxProvider>
-  <Component {...pageProps} />
-  </ParallaxProvider>
+    <ParallaxProvider>
+      <Component {...pageProps} />
+    </ParallaxProvider>
   )
 }
 export default MyApp

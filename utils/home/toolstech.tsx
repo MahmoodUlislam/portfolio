@@ -81,8 +81,8 @@ export function VToolsTech() {
           width="65px"
           name="redux"
           tooltipID="redux-tooltip" />
-        
-        
+
+
         <VIcon
           defaulIcon={jestLogo}
           onHoverIcon={jestLogoHover}
@@ -113,13 +113,13 @@ export function VToolsTech() {
           width="65px"
           name="AntDesign"
           tooltipID="AntDesign-tooltip" />
-          <VIcon
-            defaulIcon={lessLogo}
-            onHoverIcon={lessLogoHover}
-            height="65px"
-            width="65px"
-            name="Less"
-            tooltipID="less-tooltip" />
+        <VIcon
+          defaulIcon={lessLogo}
+          onHoverIcon={lessLogoHover}
+          height="65px"
+          width="65px"
+          name="Less"
+          tooltipID="less-tooltip" />
         <VIcon
           defaulIcon={sassLogo}
           onHoverIcon={sassLogoHover}
@@ -134,7 +134,7 @@ export function VToolsTech() {
           width="65px"
           name="Git"
           tooltipID="git-tooltip" />
- {/* <VIcon
+        {/* <VIcon
           defaulIcon={yarnLogo}
           onHoverIcon={yarnLogoHover}
           height="65px"
@@ -164,8 +164,8 @@ export function VToolsTech() {
           width="50px"
           name="figma"
           tooltipID="figma-tooltip" />
-      
-      
+
+
 
       </div>
     </div>
