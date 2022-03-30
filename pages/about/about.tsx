@@ -65,9 +65,9 @@ Responsible for all the works that belong to the web development from start to f
               <Image
                 alt="CV mahmood"
                 src='/CV-mahmood-for-software-engineering.jpg'
-                layout='fill'
-              // width='764px'
-              // height='1080px'
+                layout='responsive'
+                width='764px'
+                height='1080px'
               />
             </div>
           </div>
