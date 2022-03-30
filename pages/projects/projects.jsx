@@ -81,8 +81,8 @@ export default function VProjects() {
                 }}
                 src="/obhizatrikLanding.png"
                 alt="Picture of Obhizatrik Landing Page"
-                width={800}
-                height={400}
+                width="800px"
+                height="400px"
               />
               <Iframe
                 url="http://www.youtube.com/embed/8riiLr668q4"
