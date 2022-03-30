@@ -65,7 +65,7 @@
       width: 470px;
       height: 640px;
       text-align: center;
-
+      overflow: hidden;
       &:hover {
         transform: scale(2);
       }
@@ -90,10 +90,8 @@
 
         &Logo {
           align-items: center;
-
           border-radius: 35px;
           display: flex;
-
           justify-content: center;
         }
       }
