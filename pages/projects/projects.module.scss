@@ -2,6 +2,7 @@
   display: flex;
   background-color: #000000;
   flex-direction: column;
+  margin-top: 100px;
 
   .content {
     align-items: center;
@@ -16,10 +17,20 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      max-width: 80vw;
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+        text-transform: uppercase;
+      }
     }
 
     .timelineGridCotainer {
-      max-width: 60vw;
+      max-width: 100vw;
+      background-color: #0d0107;
     }
     .link {
       color: #ff0072;

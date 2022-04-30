@@ -5,11 +5,11 @@ import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
 // import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
 // import { ObhizatrikLanding } from "../../assets";
+import Divider from '@mui/material/Divider';
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
-
 export default function VProjects() {
   return (
     <div className={styles.workContainer}>
@@ -37,6 +37,7 @@ export default function VProjects() {
             </h2>
           </Fade>
         </div>
+        <Divider />
         <Fade>
           <div className={styles.timelineGridCotainer}>
             <div className={styles.content}>
@@ -94,7 +95,7 @@ export default function VProjects() {
                 allowFullScreen={true}
               />
             </div>
-
+            <Divider light />
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
@@ -126,7 +127,7 @@ export default function VProjects() {
                 </Fade>
               </div>
             </div>
-
+            <Divider light />
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
@@ -158,6 +159,7 @@ export default function VProjects() {
                 </Fade>
               </div>
             </div>
+            <Divider light />
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
@@ -189,7 +191,7 @@ export default function VProjects() {
                 </Fade>
               </div>
             </div>
-
+            <Divider light />
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
