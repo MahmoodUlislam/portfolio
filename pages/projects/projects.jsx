@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Iframe from "react-iframe";
 // import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
@@ -55,7 +54,7 @@ export default function VProjects() {
                     )}
                   </h2>
                 </Fade>
-                <Link href="https://ozf-frontend.dev.quanticdynamics.cloud/">
+                <Link href="https://obhizatrik.org/">
                   <a
                     className={styles.link}
                     style={{
@@ -75,7 +74,7 @@ export default function VProjects() {
               <Image
                 onClick={() => {
                   window.open(
-                    "https://ozf-frontend.dev.quanticdynamics.cloud/",
+                    "https://obhizatrik.org/",
                     "_blank"
                   );
                 }}
@@ -91,7 +90,7 @@ export default function VProjects() {
                 className="myClassname"
                 display="initial"
                 position="relative"
-                width="100%"
+                width="850px"
                 allowFullScreen={true}
               />
             </div>
@@ -152,6 +151,37 @@ export default function VProjects() {
                   <h2>
                     {useTypedText(
                       "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization",
+                      30,
+                      350
+                    )}
+                  </h2>
+                </Fade>
+              </div>
+            </div>
+            <div className={styles.content}>
+              <div className={styles.summary}>
+                <h1 style={{ display: "flex", justifyContent: "center" }}>
+                  dev-meetup-nextjs
+                </h1>
+                <Link href="https://dev-meetup-nextjs.vercel.app/">
+                  <a
+                    className={styles.link}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      fontSize: "2rem",
+                      margin: "40px",
+                    }}
+                    target="_blank"
+                    rel="stylesheet"
+                  >
+                    web link of dev-meetup-nextjs, a meetup for developers
+                  </a>
+                </Link>
+                <Fade>
+                  <h2>
+                    {useTypedText(
+                      "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization",
                       30,
                       350
                     )}
