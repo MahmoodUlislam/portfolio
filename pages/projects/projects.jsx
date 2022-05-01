@@ -6,6 +6,7 @@ import Iframe from "react-iframe";
 // import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
 // import { ObhizatrikLanding } from "../../assets";
 import Divider from '@mui/material/Divider';
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";

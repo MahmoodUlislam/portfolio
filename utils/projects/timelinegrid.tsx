@@ -18,7 +18,7 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
               <Image
-                alt="University of Silesia logo."
+                alt="Quantic Dynamics logo"
                 src='/Quantic-Dynamics-Logo-Red-4.0-500px.png'
                 height={50}
                 width={150} />

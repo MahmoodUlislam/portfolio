@@ -18,6 +18,7 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
               <Image
+                unoptimized
                 alt="Crown systems logo"
                 src='/only-sign-logo-[Converted].png'
                 height={30}
@@ -68,6 +69,7 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
               <Image
+                unoptimized
                 alt="CPSD logo"
                 src='/cpsd-logo.png'
                 height={50}
@@ -116,6 +118,7 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo} >
               <Image
+                unoptimized
                 alt="Quantic Dynamics logo."
                 src='/Quantic-Dynamics-Logo-Red-4.0-500px.png'
                 height={50}
