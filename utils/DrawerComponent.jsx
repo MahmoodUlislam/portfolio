@@ -205,7 +205,7 @@ const DrawerComponent = () => {
                 href="tel:+8801717077230"
               >
                 {" "}
-                <i className="fal fa-phone" />{" "}
+
                 <PhoneInTalkIcon sx={{ width: "50px" }} />
                 +88-01717077230
               </a>

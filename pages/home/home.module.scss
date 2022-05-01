@@ -147,6 +147,7 @@
 
       &Button {
         border: 3px solid #ff0072;
+        border-radius: 20px;
         color: #ff0072;
         display: flex;
         font-size: 21px;
@@ -156,9 +157,10 @@
         text-decoration: none;
 
         &:hover {
-          animation: onHover 3s;
+          animation: onHover;
           background-color: #ff0072;
-          border: 3px solid #ff0072;
+
+          border-radius: 20px;
           color: #ffffff;
           cursor: pointer;
         }
@@ -166,15 +168,13 @@
         @keyframes onHover {
           0% {
             background-color: #000000;
-            border: 3px solid #ffffff;
+            border-radius: 20px;
             color: #ff0072;
           }
 
           100% {
             background-color: #ff0072;
-            border: 3px solid #ff0072;
-            color: #ff0072;
-            transform: rotate(360deg);
+            color: #fff;
           }
         }
       }

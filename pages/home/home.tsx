@@ -62,7 +62,7 @@ export default function VHome() {
           </div>
           <div className={styles.technologiesAndTools}>
             <Fade>
-              <h1>Technologies & Tools I work with</h1>
+              <h1>Technologies and Tools I work with</h1>
               <VToolsTech />
             </Fade>
           </div>

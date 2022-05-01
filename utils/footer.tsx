@@ -1,21 +1,28 @@
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import {
   gitHubLogo,
   gitHubLogoHover, gmailLogo,
   gmailLogoHover,
   linkedInLogo,
   linkedInLogoHover
-} from '../assets'
-import styles from './footer.module.scss'
-import { VIcon } from './icon'
+} from '../assets';
+import styles from './footer.module.scss';
+import { VIcon } from './icon';
 
 export function VFooter() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.goUpSquare}>
 
-      </div>
+      <a
+        className={styles.goUpSquare}
+        rel={"external"}
+        href="tel:+8801717077230"
+      >
+        <PhoneInTalkIcon sx={{ width: "50px" }} />
+      </a>
+
       <h4 className={styles.copyrights}>
-        ©2021
+        ©{new Date().getFullYear()}
         <br />
         Build with <span>Next.js/TypeScript</span>
       </h4>

@@ -22,7 +22,7 @@ export default function VProjects() {
         />
         <meta name="author" content="Mahmood ul Islam" />
         <meta name="keywords" content="Mahmood ul Islam, Portfolio, Frontend" />
-
+        <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon" />
       </Head>
       <Navbar activeTab="Projects" />
       <div className={styles.content}>
