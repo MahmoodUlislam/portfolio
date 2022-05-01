@@ -1,6 +1,6 @@
+import { uploadcareLoader } from '@uploadcare/nextjs-loader'
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
   VFooter
@@ -68,6 +68,7 @@ export default function VAbout() {
                 layout='responsive'
                 width='764px'
                 height='1080px'
+                loader={uploadcareLoader}
               />
             </div>
           </div>

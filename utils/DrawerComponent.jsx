@@ -103,10 +103,12 @@ const DrawerComponent = () => {
         <List>
           <ListItem>
             <Image
+              unoptimized
               src="/Mi-logoWhite.svg"
               alt="obizatrik"
               width="220px"
               height="200px"
+
             />
           </ListItem>
           <ListItem

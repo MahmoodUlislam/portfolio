@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { Fade } from "react-awesome-reveal"
 import {
   chevronDown
@@ -13,7 +12,6 @@ import {
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
 import styles from './home.module.scss'
-
 export default function VHome() {
   return (
     <>
@@ -38,7 +36,8 @@ export default function VHome() {
             </div>
             <div className={styles.swipeDownIcon}>
               <Image
-                alt="Chevron down icon."
+                alt="Chevron down icon"
+                unoptimized
                 src={chevronDown}
                 width="40px"
                 height="15px" />

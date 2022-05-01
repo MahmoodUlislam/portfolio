@@ -37,7 +37,7 @@ export default function VProjects() {
             </h2>
           </Fade>
         </div>
-        <Divider />
+        <Divider sx={{ color: '#fff' }} />
         <Fade>
           <div className={styles.timelineGridCotainer}>
             <div className={styles.content}>
@@ -83,6 +83,7 @@ export default function VProjects() {
                 alt="Picture of Obhizatrik Landing Page"
                 width="800px"
                 height="400px"
+                loader={uploadcareLoader}
               />
               <Iframe
                 url="http://www.youtube.com/embed/8riiLr668q4"

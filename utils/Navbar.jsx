@@ -10,7 +10,6 @@ import { useState } from "react";
 import BackTop from "./BackTop";
 import DrawerComponent from "./DrawerComponent";
 import styles from "./menubar.module.scss";
-
 const useStyles = makeStyles((theme) => ({
   navbar: {
     display: "flex",
@@ -61,6 +60,7 @@ export default function Navbar(props) {
             <DrawerComponent />
             <Image
               src="/Mi-logoWhite.svg"
+              unoptimized
               alt="myFace"
               width="100px"
               height="82px"
@@ -82,6 +82,7 @@ export default function Navbar(props) {
                   <a className={styles.title}>
                     <Image
                       src="/Mi-logoWhite.svg"
+                      unoptimized
                       alt="myFace"
                       width="178px"
                       height="146px"

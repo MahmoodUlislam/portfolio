@@ -1,7 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import BackTop from './BackTop'
-import styles from './menubar.module.scss'
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+import Image from 'next/image';
+import Link from 'next/link';
+import BackTop from './BackTop';
+import styles from './menubar.module.scss';
 
 type MenuBarProps = {
   activeTab: "Home" | "Work" | "Projects" | "About" | "Contacts"
@@ -12,7 +13,7 @@ export function VMenuBar(props: MenuBarProps) {
     <nav className={styles.menuBar}>
       <Link href={`/`}>
         <a className={styles.title}>
-          <Image src="/Mi-logoWhite.svg" alt="myFace" width="100px" height="100px" />
+          <Image loader={uploadcareLoader} src="/Mi-logoWhite.svg" alt="myFace" width="100px" height="100px" />
           <h3 className={styles.name}>
             Mahmood ul Islam
           </h3>
