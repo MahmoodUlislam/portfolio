@@ -6,7 +6,7 @@ import Iframe from "react-iframe";
 // import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
 // import { ObhizatrikLanding } from "../../assets";
 import Divider from '@mui/material/Divider';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+// import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
@@ -22,7 +22,7 @@ export default function VProjects() {
         />
         <meta name="author" content="Mahmood ul Islam" />
         <meta name="keywords" content="Mahmood ul Islam, Portfolio, Frontend" />
-        <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon" />
+
       </Head>
       <Navbar activeTab="Projects" />
       <div className={styles.content}>
@@ -81,12 +81,13 @@ export default function VProjects() {
                   );
                 }}
                 src="/obhizatrikLanding.png"
+                unoptimized
                 alt="Picture of Obhizatrik Landing Page"
                 width="800px"
                 height="400px"
-                loader={uploadcareLoader}
               />
               <Iframe
+                unoptimized
                 url="http://www.youtube.com/embed/8riiLr668q4"
                 height="450px"
                 id="myId"
