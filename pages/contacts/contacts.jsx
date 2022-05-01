@@ -69,7 +69,7 @@ export default function VContacts() {
           <Fade>
             <h2>
               {useTypedText(
-                `Mailing Address: House#37, Flat#B4, Sector#7, Road: (lake drive road), Uttara, Dhaka-1230, Bangladesh...`,
+                `Mailing Address: 463/1, South Kafrul, Dhaka, Bangladesh...`,
                 30,
                 350
               )}

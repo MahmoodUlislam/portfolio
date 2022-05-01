@@ -12,6 +12,7 @@ import {
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
 import styles from './home.module.scss'
+
 export default function VHome() {
   return (
     <>
