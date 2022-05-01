@@ -198,6 +198,38 @@ export default function VProjects() {
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
+                  mahmood-ul-islam-selise
+                </h1>
+                <Link href="https://mahmood-ul-islam-selise.vercel.app/">
+                  <a
+                    className={styles.link}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      fontSize: "2rem",
+                      margin: "40px",
+                    }}
+                    target="_blank"
+                    rel="stylesheet"
+                  >
+                    web link of mahmood-ul-islam-selise, an e-commerce website
+                  </a>
+                </Link>
+                <Fade>
+                  <h2>
+                    {useTypedText(
+                      "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization",
+                      30,
+                      350
+                    )}
+                  </h2>
+                </Fade>
+              </div>
+            </div>
+            <Divider light />
+            <div className={styles.content}>
+              <div className={styles.summary}>
+                <h1 style={{ display: "flex", justifyContent: "center" }}>
                   Akkhor
                 </h1>
                 <a
