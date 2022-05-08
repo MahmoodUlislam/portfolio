@@ -4,27 +4,31 @@
   flex-direction: column;
 
   .content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 80px 0;
-
+    margin-top: 100px;
     .summary {
       color: #0d0107;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       text-align: center;
-      max-width: 80vw;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
         line-height: 1.2;
-        margin: 0;
+        margin-top: 20px;
         text-transform: uppercase;
       }
+      h2 {
+        color: #7c234b;
+      }
+    }
+    .image {
+      border: 3px solid #ff0072;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 200px;
     }
 
     .timelineGridCotainer {
@@ -32,13 +36,13 @@
       background-color: #0d0107;
     }
     .link {
-      color: #ff0072;
-      text-decoration: none;
+      color: #7c234b;
+      font-size: 20px;
+      border: 3px dotted #0d0107;
 
       &:hover {
         animation: onHover 3s;
-        background-color: #ff0072;
-        border: 3px solid #ff0072;
+        border: 3px dotted #ff0072;
         color: #ffffff;
         cursor: pointer;
       }
