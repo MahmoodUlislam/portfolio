@@ -284,6 +284,57 @@ export default function VProjects() {
               <div className={styles.content}>
                 <div className={styles.summary}>
                   <h1 style={{ display: "flex", justifyContent: "center" }}>
+                    e-commerce app
+                  </h1>
+                  <div className={styles.image}>
+                    <Image
+                      onClick={() => {
+                        window.open(
+                          "https://commerce-iota-liart-21.vercel.app/",
+                          "_blank"
+                        );
+                      }}
+                      src="/commerceNextjsLanding.png"
+                      unoptimized
+                      alt="Picture of e-commerce Nextjs Landing Page"
+                      width="400px"
+                      height="200px"
+                    />
+                  </div>
+                  <Link href="https://commerce-iota-liart-21.vercel.app/">
+                    <a
+                      className={styles.link}
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      target="_blank"
+                      rel="stylesheet"
+                    >
+                      web link of e-commerce app by Next.js
+                    </a>
+                  </Link>
+
+                  <Fade>
+                    <h2>
+                      A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization.
+                    </h2>
+                  </Fade>
+                </div>
+              </div>
+
+
+
+            </Item>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <Item>
+
+
+              <div className={styles.content}>
+                <div className={styles.summary}>
+                  <h1 style={{ display: "flex", justifyContent: "center" }}>
                     mahmood-ul-islam-selise
                   </h1>
                   <div className={styles.image}>
