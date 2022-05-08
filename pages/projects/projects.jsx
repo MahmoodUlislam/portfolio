@@ -70,8 +70,14 @@ export default function VProjects() {
                     Obhizatrik Foundation
                   </h1>
                   <div className={styles.image}>
-
-                    <img
+                    <Image
+                      unoptimized
+                      src="/Mi-logoWhite.svg"
+                      alt="myFace"
+                      width="100px"
+                      height="82px"
+                    />
+                    {/* <Image
                       onClick={() => {
                         window.open(
                           "https://obhizatrik.org/",
@@ -79,10 +85,11 @@ export default function VProjects() {
                         );
                       }}
                       src="/obhizatrikLanding.png"
+                      unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
-                    />
+                    /> */}
                   </div>
                   <Link href="https://obhizatrik.org/">
                     <a
