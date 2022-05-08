@@ -4,9 +4,8 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 // import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
 // import { ObhizatrikLanding } from "../../assets";
-import Divider from '@mui/material/Divider';
-// import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
@@ -14,7 +13,6 @@ import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
-
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#0d0107',
@@ -62,8 +60,6 @@ export default function VProjects() {
         <Grid container spacing={4}>
           <Grid item xs={12} lg={6}>
             <Item>
-
-
               <div className={styles.content}>
                 <div className={styles.summary}>
                   <h1 style={{ display: "flex", justifyContent: "center" }}>
@@ -78,7 +74,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="../../public/obhizatrikLanding.png"
+                      src="/ObhizatrikLanding.jpg"
                       unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
@@ -142,7 +138,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/UserAnalyzerLanding.png"
+                      src="/UserAnalyzerLanding.jpg"
                       unoptimized
                       alt="Picture of UserAnalyzerFoodApp Landing Page"
                       width="400px"
@@ -191,7 +187,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/DevMeetupLanding.png"
+                      src="/DevMeetupLanding.jpg"
                       unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
@@ -242,7 +238,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/RentalAppLanding.png"
+                      src="/RentalAppLanding.jpg"
                       unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
@@ -294,7 +290,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/commerceNextjsLanding.png"
+                      src="/commerceNextjsLanding.jpg"
                       unoptimized
                       alt="Picture of e-commerce Nextjs Landing Page"
                       width="400px"
@@ -345,7 +341,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/SeliseProject.png"
+                      src="/SeliseProject.jpg"
                       unoptimized
                       alt="Picture of SeliseProject Landing Page"
                       width="400px"
@@ -395,7 +391,7 @@ export default function VProjects() {
                           "_blank"
                         );
                       }}
-                      src="/obhizatrikLanding.png"
+                      src="/obhizatrikLanding.jpg"
                       unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
