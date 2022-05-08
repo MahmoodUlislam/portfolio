@@ -10,11 +10,11 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#0d0107',
@@ -71,12 +71,11 @@ export default function VProjects() {
                   </h1>
                   <div className={styles.image}>
                     <Image
-                      alt="CV mahmood"
-                      src='/CV-mahmood-for-software-engineering.jpg'
-                      layout='responsive'
-                      width='764px'
-                      height='1080px'
-                      loader={uploadcareLoader}
+                      unoptimized
+                      src="/ObhizatrikLanding.PNG"
+                      alt="myFace"
+                      width="100px"
+                      height="82px"
                     />
                     {/* <Image
                       onClick={() => {
