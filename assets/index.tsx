@@ -41,7 +41,6 @@ export { default as vsLogo } from "./logos/vsLogo.svg";
 export { default as vsLogoHover } from "./logos/vsLogoHover.svg";
 export { default as yarnLogo } from "./logos/yarnLogo.svg";
 export { default as yarnLogoHover } from "./logos/yarnLogoHover.svg";
-export { default as obhizatrikLanding } from "./obhizatrikLanding.png";
 export { default as profilePicture } from "./pro-pic1.png";
 export { default as profilePicture1 } from "./pro-pic2.png";
 
