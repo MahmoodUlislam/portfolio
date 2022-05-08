@@ -70,26 +70,20 @@ export default function VProjects() {
                     Obhizatrik Foundation
                   </h1>
                   <div className={styles.image}>
+
                     <Image
-                      unoptimized
-                      src="/ObhizatrikLanding.PNG"
-                      alt="myFace"
-                      width="100px"
-                      height="82px"
-                    />
-                    {/* <Image
                       onClick={() => {
                         window.open(
                           "https://obhizatrik.org/",
                           "_blank"
                         );
                       }}
-                      src="/obhizatrikLanding.png"
+                      src="../../public/obhizatrikLanding.png"
                       unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
-                    /> */}
+                    />
                   </div>
                   <Link href="https://obhizatrik.org/">
                     <a
