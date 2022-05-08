@@ -71,7 +71,7 @@ export default function VProjects() {
                   </h1>
                   <div className={styles.image}>
 
-                    <image
+                    <img
                       onClick={() => {
                         window.open(
                           "https://obhizatrik.org/",
