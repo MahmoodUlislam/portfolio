@@ -71,7 +71,7 @@ export default function VProjects() {
                   </h1>
                   <div className={styles.image}>
 
-                    <Image
+                    <image
                       onClick={() => {
                         window.open(
                           "https://obhizatrik.org/",
@@ -79,7 +79,6 @@ export default function VProjects() {
                         );
                       }}
                       src="/obhizatrikLanding.png"
-                      unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
