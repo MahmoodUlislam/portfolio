@@ -77,7 +77,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/ObhizatrikLanding.jpg"
-                      loader={uploadcareLoader}
+                      unoptimized
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
