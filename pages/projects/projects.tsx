@@ -45,13 +45,13 @@ export default function VProjects() {
             <div className={styles.summary}>
               <h1>Projects</h1>
               <Fade>
-                <h2>
+                <h3>
                   {useTypedText(
                     "Please see bellow for some of my projects to find out my experience regarding to the web & mobile app development",
                     30,
                     350
                   )}
-                </h2>
+                </h3>
               </Fade>
             </div>
             <Divider sx={{ color: '#fff' }} />
