@@ -36,20 +36,20 @@
 
           @keyframes wipe-enter {
             0% {
-              background-image: url("../../public/pro-pic1.png");
+              background-image: url("../../public/pro-pic1.jpg");
               background-size: cover;
             }
 
             39% {
-              background-image: url("../../public/pro-pic1.png");
+              background-image: url("../../public/pro-pic1.jpg");
               background-size: cover;
             }
             40% {
-              background-image: url("../../public/pro-pic2.png");
+              background-image: url("../../public/pro-pic2.jpg");
               background-size: cover;
             }
             100% {
-              background-image: url("../../public/pro-pic2.png");
+              background-image: url("../../public/pro-pic2.jpg");
               background-size: cover;
             }
           }

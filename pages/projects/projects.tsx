@@ -1,18 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Fade } from "react-awesome-reveal";
-// import { obhizatrikLanding } from "../../public/obhizatrikLanding.png";
-// import { ObhizatrikLanding } from "../../assets";
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 import { VFooter } from "../../utils";
 import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#0d0107',
@@ -22,6 +22,8 @@ const Item = styled(Paper)(({ theme }) => ({
   justifyContent: 'center',
   textAlign: 'center',
 }));
+
+
 
 export default function VProjects() {
   return (
@@ -75,7 +77,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/ObhizatrikLanding.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
@@ -139,7 +141,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/UserAnalyzerLanding.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of UserAnalyzerFoodApp Landing Page"
                       width="400px"
                       height="200px"
@@ -188,7 +190,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/DevMeetupLanding.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
@@ -239,7 +241,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/RentalAppLanding.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of Obhizatrik Landing Page"
                       width="400px"
                       height="200px"
@@ -291,7 +293,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/commerceNextjsLanding.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of e-commerce Nextjs Landing Page"
                       width="400px"
                       height="200px"
@@ -331,7 +333,7 @@ export default function VProjects() {
               <div className={styles.content}>
                 <div className={styles.summary}>
                   <h1 style={{ display: "flex", justifyContent: "center" }}>
-                    mahmood-ul-islam-selise
+                    small e-commerce app
                   </h1>
                   <div className={styles.image}>
                     <Image
@@ -342,7 +344,7 @@ export default function VProjects() {
                         );
                       }}
                       src="/SeliseProject.jpg"
-                      unoptimized
+                      loader={uploadcareLoader}
                       alt="Picture of SeliseProject Landing Page"
                       width="400px"
                       height="200px"
@@ -359,7 +361,7 @@ export default function VProjects() {
                       target="_blank"
                       rel="stylesheet"
                     >
-                      web link of Rental app for electrical equipments
+                      web link of a small e-commerce app by Next.js
                     </a>
                   </Link>
 
@@ -387,14 +389,14 @@ export default function VProjects() {
                     <Image
                       onClick={() => {
                         window.open(
-                          "https://obhizatrik.org/",
+                          "https://github.com/MahmoodUlislam",
                           "_blank"
                         );
                       }}
-                      src="/obhizatrikLanding.jpg"
-                      unoptimized
-                      alt="Picture of Obhizatrik Landing Page"
-                      width="400px"
+                      src="/profilePicture.jpg"
+                      loader={uploadcareLoader}
+                      alt="Picture of Akkhor Landing Page"
+                      width="200px"
                       height="200px"
                     />
                   </div>
