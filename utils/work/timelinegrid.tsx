@@ -20,7 +20,7 @@ export function VTimelineGrid() {
               <Image
                 unoptimized
                 alt="Crown systems logo"
-                src='/only-sign-logo-[Converted].png'
+                src='/only-sign-logo-[Converted].jpg'
                 height={30}
                 width={50} />
             </div>
@@ -71,7 +71,7 @@ export function VTimelineGrid() {
               <Image
                 unoptimized
                 alt="CPSD logo"
-                src='/cpsd-logo.png'
+                src='/cpsd-logo.jpg'
                 height={50}
                 width={80} />
             </div>
@@ -120,7 +120,7 @@ export function VTimelineGrid() {
               <Image
                 unoptimized
                 alt="Quantic Dynamics logo."
-                src='/Quantic-Dynamics-Logo-Red-4.0-500px.png'
+                src='/Quantic-Dynamics-Logo-Red-4.0-500px.jpg'
                 height={50}
                 width={150} />
             </div>
