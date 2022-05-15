@@ -72,7 +72,7 @@ export default function VProjects() {
                     <Image
                       onClick={() => {
                         window.open(
-                          "https://obhizatrik.org/",
+                          "https://ozf1.vercel.app/",
                           "_blank"
                         );
                       }}
@@ -83,7 +83,7 @@ export default function VProjects() {
                       height="200px"
                     />
                   </div>
-                  <Link href="https://obhizatrik.org/">
+                  <Link href="https://ozf1.vercel.app/">
                     <a
                       className={styles.link}
                       style={{
