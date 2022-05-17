@@ -49,6 +49,12 @@
     "description": "A Svelte application for 2048 game."
   },
   {
+    "name": "Breakout",
+    "src": "/breakout.jpg",
+    "cloudLink": "https://breakout-jet.vercel.app/",
+    "description": "A Svelte application for breakout game."
+  },
+  {
     "name": "voice-cue",
     "src": "/media-card.jpg",
     "cloudLink": "https://voice-cue-amber.vercel.app/",
