@@ -13,6 +13,7 @@ import Navbar from "../../utils/Navbar";
 import { useTypedText } from "../../utils/typingtext";
 import styles from "./projects.module.scss";
 
+const projects = require("../../data/projects.json");
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#0d0107',
@@ -57,7 +58,76 @@ export default function VProjects() {
             <Divider sx={{ color: '#fff' }} />
           </div>
         </div>
-      </Fade>
+      </Fade><Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={4}>
+          {projects.map((project: String | URL) => (
+            <Grid item xs={12} lg={6}>
+              <Item>
+                <div className={styles.content}>
+                  <div className={styles.summary}>
+                    <h1 style={{ display: "flex", justifyContent: "center" }}>
+                      {project.name}
+                    </h1>
+                    <div className={styles.image}>
+
+                      <Image
+                        onClick={() => {
+                          window.open(
+                            { project.cloudLink },
+                            "_blank"
+                          );
+                        }}
+                        src={project.src}
+                        loader={uploadcareLoader}
+                        alt={`Picture of ${project.name} Landing Page`}
+                        width="400px"
+                        height="200px"
+                      />
+                    </div>
+                    <Link href={project.cloudLink}>
+                      <a
+                        className={styles.link}
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                        target="_blank"
+                        rel="stylesheet"
+                      >
+                        web link of {project.name}
+                      </a>
+                    </Link>
+                    {/* <Iframe
+                    unoptimized
+                    url="http://www.youtube.com/embed/8riiLr668q4"
+                    height="450px"
+                    id="myId"
+                    className="myClassname"
+                    display="initial"
+                    position="relative"
+                    width="850px"
+                    allowFullScreen={true}
+                  /> */}
+
+                    <Fade>
+                      <h2>
+
+                        {project.description}
+
+                      </h2>
+                    </Fade>
+                  </div>
+
+                </div>
+
+
+
+              </Item>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={4}>
           <Grid item xs={12} lg={6}>
