@@ -7,8 +7,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 23.870571178094686,
-  lng: 90.39377666786204,
+  lat: 23.7880276876479,
+  lng: 90.38388492689323,
 };
 
 function VGoogleMap() {
