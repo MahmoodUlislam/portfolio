@@ -60,7 +60,7 @@ export default function VProjects() {
         </div>
       </Fade><Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={4}>
-          {projects.map((project) => (
+          {projects.map((project: String | URL) => (
             <Grid item xs={12} lg={6} key={project.name}>
               <Item>
                 <div className={styles.content}>
