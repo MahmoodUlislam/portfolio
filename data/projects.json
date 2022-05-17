@@ -4,5 +4,41 @@
     "src": "/ObhizatrikLanding.jpg",
     "cloudLink": "https://ozf1.vercel.app/",
     "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
+  },
+  {
+    "name": "User Analyzer for food delivery app",
+    "src": "/UserAnalyzerLanding.jpg",
+    "cloudLink": "https://user-analyzer-of-food-delivery-app.vercel.app/",
+    "description": "A react.js application for user analysis of food delivery app ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+  },
+  {
+    "name": "dev-meetup-nextjs",
+    "src": "/DevMeetupLanding.jpg",
+    "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
+    "description": "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
+  },
+  {
+    "name": "Rental app",
+    "src": "/RentalAppLanding.jpg",
+    "cloudLink": "https://rental-app-beta.vercel.app/",
+    "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+  },
+  {
+    "name": "e-commerce app",
+    "src": "/commerceNextjsLanding.jpg",
+    "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
+    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+  },
+  {
+    "name": "small e-commerce app",
+    "src": "/SeliseProject.jpg",
+    "cloudLink": "https://mahmood-ul-islam-selise.vercel.app/",
+    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+  },
+  {
+    "name": "Akkhor",
+    "src": "/profilePicture.jpg",
+    "cloudLink": "https://github.com/MahmoodUlislam",
+    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   }
 ]
