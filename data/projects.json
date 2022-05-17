@@ -24,6 +24,31 @@
     "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
+    "name": "Weather app",
+    "src": "/weather-app.gif",
+    "cloudLink": "https://weather-app-dun-gamma.vercel.app/",
+    "description": "A next.js application for weather update. This project uses OPENWEATHER map API to check the current weather on any city on the planet. Switch between metric and imperial units."
+  },
+  {
+    "name": "audio-player",
+    "src": "/audio-player.gif",
+    "cloudLink": "https://cropper-khaki.vercel.app/",
+    "description": "React/NextJS audio player for your music, with custom controls, playlist, filters, and search functionality."
+  },
+  {
+    "name": "tic-tac-toe",
+    "src": "/tic-tac-toe.gif",
+    "cloudLink": "https://tic-tac-toe-seven-beige.vercel.app/",
+    "description": "A Svelte application for tick tac toe game."
+  },
+
+  {
+    "name": "2048",
+    "src": "/2048.gif",
+    "cloudLink": "https://2048-rose.vercel.app/",
+    "description": "A Svelte application for 2048 game."
+  },
+  {
     "name": "e-commerce app",
     "src": "/commerceNextjsLanding.jpg",
     "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
@@ -36,9 +61,16 @@
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
+    "name": "Cropper",
+    "src": "/profilePicture.jpg",
+    "cloudLink": "https://cropper-khaki.vercel.app/",
+    "description": "A next.js application for picture cropper. That is used for a set cropping size of different famous websites."
+  },
+
+  {
     "name": "Akkhor",
     "src": "/profilePicture.jpg",
-    "cloudLink": "https://github.com/MahmoodUlislam",
+    "cloudLink": "https://cropper-khaki.vercel.app/",
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   }
 ]
