@@ -1,25 +1,25 @@
 [
   {
     "name": "Obhizatrik Foundation",
-    "src": "/ObhizatrikLanding.jpg",
+    "src": "/ObhizatrikLanding.webp",
     "cloudLink": "https://ozf1.vercel.app/",
     "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
   },
   {
     "name": "User Analyzer for food delivery app",
-    "src": "/UserAnalyzerLanding.jpg",
+    "src": "/UserAnalyzerLanding.webp",
     "cloudLink": "https://user-analyzer-of-food-delivery-app.vercel.app/",
     "description": "A react.js application for user analysis of food delivery app ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "dev-meetup-nextjs",
-    "src": "/DevMeetupLanding.jpg",
+    "src": "/DevMeetupLanding.webp",
     "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
     "description": "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
   {
     "name": "Rental app",
-    "src": "/RentalAppLanding.jpg",
+    "src": "/RentalAppLanding.webp",
     "cloudLink": "https://rental-app-beta.vercel.app/",
     "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
@@ -50,38 +50,38 @@
   },
   {
     "name": "Breakout",
-    "src": "/breakout.jpg",
+    "src": "/breakout.webp",
     "cloudLink": "https://breakout-jet.vercel.app/",
     "description": "A Svelte application for breakout game."
   },
   {
     "name": "voice-cue",
-    "src": "/media-card.jpg",
+    "src": "/media-card.webp",
     "cloudLink": "https://voice-cue-amber.vercel.app/",
     "description": "React/NextJS voice recognition app. The app workflow is as simple as uploading your voice recording, selecting which type of analysis to perform and clicking on the generated cues in the list to instantly navigate to its exact position in the voice recording."
   },
   {
     "name": "e-commerce app",
-    "src": "/commerceNextjsLanding.jpg",
+    "src": "/commerceNextjsLanding.webp",
     "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "small e-commerce app",
-    "src": "/SeliseProject.jpg",
+    "src": "/SeliseProject.webp",
     "cloudLink": "https://mahmood-ul-islam-selise.vercel.app/",
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "Cropper",
-    "src": "/profilePicture.jpg",
+    "src": "/profilePicture.webp",
     "cloudLink": "https://cropper-khaki.vercel.app/",
     "description": "A next.js application for picture cropper. That is used for a set cropping size of different famous websites. CropScore is an online image cropper for content creators, that calculates the score of how well the real-time crop will fit for the target use. The user is in full control of the upper and lower bounds of the resolutions and the correct aspect ratios are automatically set. All you have to do is drag and see the magic."
   },
 
   {
     "name": "Akkhor",
-    "src": "/profilePicture.jpg",
+    "src": "/profilePicture.webp",
     "cloudLink": "https://cropper-khaki.vercel.app/",
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   }
