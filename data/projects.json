@@ -1,7 +1,7 @@
 [
   {
     "name": "Obhizatrik Foundation",
-    "src": "/ObhizatrikLanding.webp",
+    "src": "/ozf1.gif",
     "cloudLink": "https://ozf1.vercel.app/",
     "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
   },

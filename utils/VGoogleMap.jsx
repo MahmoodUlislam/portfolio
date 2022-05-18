@@ -41,8 +41,13 @@ function VGoogleMap() {
     >
       <Marker
         key={1}
+        animation={window.google.maps.Animation.BOUNCE}
         position={center}
-        onRightClick={() => props.onMarkerRightClick(marker)}
+        onClick={
+          function callback() {
+            alert("You clicked me! if you want to find me, please contact me at: mahmood.islam@gmail.com");
+          }
+        }
       />
     </GoogleMap>
   ) : (
