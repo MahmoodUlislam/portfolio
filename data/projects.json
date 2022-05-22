@@ -6,10 +6,10 @@
     "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
   },
   {
-    "name": "User Analyzer for food delivery app",
-    "src": "/UserAnalyzerLanding.webp",
-    "cloudLink": "https://user-analyzer-of-food-delivery-app.vercel.app/",
-    "description": "A react.js application for user analysis of food delivery app ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+    "name": "Rental app",
+    "src": "/RentalAppLanding.webp",
+    "cloudLink": "https://rental-app-beta.vercel.app/",
+    "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "dev-meetup-nextjs",
@@ -18,16 +18,29 @@
     "description": "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
   {
-    "name": "Rental app",
-    "src": "/RentalAppLanding.webp",
-    "cloudLink": "https://rental-app-beta.vercel.app/",
-    "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+    "name": "User Analyzer for food delivery app",
+    "src": "/UserAnalyzerLanding.gif",
+    "cloudLink": "https://user-analyzer-of-food-delivery-app.vercel.app/",
+    "description": "A react.js application for user analysis of food delivery app ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
+
   {
     "name": "Weather app",
     "src": "/weather-app.gif",
     "cloudLink": "https://weather-app-dun-gamma.vercel.app/",
     "description": "A next.js application for weather update. This project uses OPENWEATHER map API to check the current weather on any city on the planet. Switch between metric and imperial units."
+  },
+  {
+    "name": "e-commerce app",
+    "src": "/commerceNextjsLanding.webp",
+    "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
+    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+  },
+  {
+    "name": "small e-commerce app",
+    "src": "/SeliseProject.webp",
+    "cloudLink": "https://mahmood-ul-islam-selise.vercel.app/",
+    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "audio-player",
@@ -41,7 +54,6 @@
     "cloudLink": "https://tic-tac-toe-seven-beige.vercel.app/",
     "description": "A Svelte application for tick tac toe game."
   },
-
   {
     "name": "2048",
     "src": "/2048.gif",
@@ -59,18 +71,6 @@
     "src": "/media-card.webp",
     "cloudLink": "https://voice-cue-amber.vercel.app/",
     "description": "React/NextJS voice recognition app. The app workflow is as simple as uploading your voice recording, selecting which type of analysis to perform and clicking on the generated cues in the list to instantly navigate to its exact position in the voice recording."
-  },
-  {
-    "name": "e-commerce app",
-    "src": "/commerceNextjsLanding.webp",
-    "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
-    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
-  },
-  {
-    "name": "small e-commerce app",
-    "src": "/SeliseProject.webp",
-    "cloudLink": "https://mahmood-ul-islam-selise.vercel.app/",
-    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
     "name": "Cropper",
