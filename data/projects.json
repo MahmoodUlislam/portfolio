@@ -1,13 +1,13 @@
 [
   {
     "name": "Obhizatrik Foundation",
-    "src": "/ozf1.gif",
+    "src": "/obhizatrikLanding.gif",
     "cloudLink": "https://ozf1.vercel.app/",
     "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
   },
   {
     "name": "Rental app",
-    "src": "/RentalAppLanding.webp",
+    "src": "/RentalAppLanding.gif",
     "cloudLink": "https://rental-app-beta.vercel.app/",
     "description": "A next.js application for Rental app for electrical equipments ##Opinions regarding the task: # I have used Material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
