@@ -13,7 +13,7 @@
   },
   {
     "name": "dev-meetup-nextjs",
-    "src": "/DevMeetupLanding.webp",
+    "src": "/devMeetupLanding.gif",
     "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
     "description": "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
