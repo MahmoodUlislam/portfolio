@@ -49,7 +49,7 @@ export default function VHome() {
               <Fade>
                 <div >
                   <h1 className={styles.linkBoxTitle}>Work<br />History</h1>
-                  <h2 className={styles.linkBoxTextContent}>Here you can find out more about the companies I've collaborated with, and the experiences I've gained while working there...</h2>
+                  <h2 className={styles.linkBoxTextContent}>Here you can find out more about the companies I have collaborated with, and the experiences I have gained while working there...</h2>
                   <Link href={`/work/work`}>
                     <a className={styles.linkBoxButton}>
                       Check out my work history
@@ -87,7 +87,7 @@ export default function VHome() {
                 <div >
 
                   <h1 className={styles.linkBoxTitle}>My<br />Projects</h1>
-                  <h2 className={styles.linkBoxTextContent}>Here you can find out more about the projects I've been part of, and experiences I've achieved while working with those projects...</h2>
+                  <h2 className={styles.linkBoxTextContent}>Here you can find out more about the projects I have been part of, and experiences I have achieved while working with those projects...</h2>
                   <Link href={`/projects/projects`}>
                     <a className={styles.linkBoxButton}>
                       Check out some of my projects

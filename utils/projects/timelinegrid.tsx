@@ -31,8 +31,8 @@ export function VTimelineGrid() {
           </div>
           <p className={styles.cardContentDescription}>
             Building on my own a responsive web application,
-            which had a catalogue of all company's servers, displayed in the
-            tree structure. Server's data was taken and parsed from XML file to JSON.
+            which had a catalogue of all company servers, displayed in the
+            tree structure. Server data was taken and parsed from XML file to JSON.
             Anyone logged could browse through lists of servers.
             Search and sort by name function were applied.
             App had system of accounts as well. Admins, technical and user ones.
@@ -58,7 +58,7 @@ export function VTimelineGrid() {
       <div className={styles.timelineGridItem} />
       <div className={styles.timelineGridItemWide}>
         <h1>03.2019 - 03.2020</h1>
-        <h2>Working & learning Web Development in Dhaka</h2>
+        <h2>Working and learning Web Development in Dhaka</h2>
       </div>
       <div className={styles.timelineGridItemAdjoiningCard} />
       <div className={styles.timelineGridItem} />
@@ -77,8 +77,8 @@ export function VTimelineGrid() {
           </div>
           <p className={styles.cardContentDescription}>
             Building on my own a responsive web application,
-            which had a catalogue of all company's servers, displayed in the
-            tree structure. Server's data was taken and parsed from XML file to JSON.
+            which had a catalogue of all company servers, displayed in the
+            tree structure. Server data was taken and parsed from XML file to JSON.
             Anyone logged could browse through lists of servers.
             Search and sort by name function were applied.
             App had system of accounts as well. Admins, technical and user ones.
@@ -132,7 +132,7 @@ export function VTimelineGrid() {
             -writing efficient unit tests.<br />
             <br />
             Achievements I am most proud of:<br />
-            -building a 'light' version of main application that could be inserted into an iframe and creating an API via those two elements could communicate,<br />
+            -building a light version of main application that could be inserted into an iframe and creating an API via those two elements could communicate,<br />
             -helping my peer with fixing up commit history on main branch in out project, after his mistaken merging,<br />
             -creating documentation with code standards of codebase of our project,<br />
             -implementing CSS modules into our main project, which improved team workflow noticeably,<br />

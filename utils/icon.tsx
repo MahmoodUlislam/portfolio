@@ -15,7 +15,7 @@ type IconProps = {
 export function VIcon(props: IconProps) {
 
   return (
-    <a data-tip={props.tooltipID ? true : false} data-for={props.tooltipID} href={props.href} target="_blank" className={styles.iconContainer} style={{ height: props.height, width: props.width }}>
+    <a data-tip={props.tooltipID ? true : false} data-for={props.tooltipID} href={props.href} target="_blank" className={styles.iconContainer} style={{ height: props.height, width: props.width }} rel="noreferrer">
       <div className={styles.iconActive}>
         <Image
           unoptimized
@@ -35,7 +35,6 @@ export function VIcon(props: IconProps) {
         <Image
           unoptimized
           alt={`Default ${props.name} icon.`}
-
           src={props.defaulIcon}
           width={props.width}
           height={props.height} />

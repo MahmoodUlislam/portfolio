@@ -34,8 +34,7 @@ export default function VContacts() {
               <h2>
                 {useTypedText(
                   `Email: mahmood.islam@gmail.com, Phone# +8801717077230                  
-        Please use the form below to send us an email. We will get back to you as soon as possible...
-        `,
+                   Please use the form below to send us an email. We will get back to you as soon as possible...`,
                   30,
                   350
                 )}
