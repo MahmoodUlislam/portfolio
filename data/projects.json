@@ -42,6 +42,12 @@
     "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
+    "name": "egg-villa-ecommerce",
+    "src": "/egg-villa-ecommerce.gif",
+    "cloudLink": "https://egg-villa-ecommerce.vercel.app/",
+    "description": "An E-commerce app using based on Firebase using Stripe."
+  },
+  {
     "name": "audio-player",
     "src": "/audio-player.gif",
     "cloudLink": "https://cropper-khaki.vercel.app/",
