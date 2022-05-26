@@ -48,6 +48,18 @@
     "description": "React/NextJS audio player for your music, with custom controls, playlist, filters, and search functionality."
   },
   {
+    "name": "calculator",
+    "src": "/calculator.gif",
+    "cloudLink": "https://calculator-xi-six.vercel.app/",
+    "description": "A calculator project built with React. ## Features: 1. Add, subtract, multiply, divide, 2. Support decimal values, 3. Calculate percentages, 4. Invert the values, 5. Reset functionality, 6. Format larger numbers, 7. Output resize based on length"
+  },
+  {
+    "name": "memory-game",
+    "src": "/memory-cards.gif",
+    "cloudLink": "https://memory-game-one-puce.vercel.app/",
+    "description": "A Svelte application for memory game. A memory game, where users have to remember the positions of the cards and open two exact images sequentially to score points. Once all the cards are opened user is victorious. I used Unsplash API to fetch images from their site."
+  },
+  {
     "name": "tic-tac-toe",
     "src": "/tic-tac-toe.gif",
     "cloudLink": "https://tic-tac-toe-seven-beige.vercel.app/",
