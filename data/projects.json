@@ -68,7 +68,7 @@
   },
   {
     "name": "voice-cue",
-    "src": "/media-card.webp",
+    "src": "/voice-cue.gif",
     "cloudLink": "https://voice-cue-amber.vercel.app/",
     "description": "React/NextJS voice recognition app. The app workflow is as simple as uploading your voice recording, selecting which type of analysis to perform and clicking on the generated cues in the list to instantly navigate to its exact position in the voice recording."
   },
