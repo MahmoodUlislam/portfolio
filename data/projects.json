@@ -62,7 +62,7 @@
   },
   {
     "name": "Breakout",
-    "src": "/breakout.webp",
+    "src": "/breakout-jet.gif",
     "cloudLink": "https://breakout-jet.vercel.app/",
     "description": "A Svelte application for breakout game."
   },
