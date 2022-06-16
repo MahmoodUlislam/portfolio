@@ -1,4 +1,4 @@
-import { uploadcareLoader } from '@uploadcare/nextjs-loader'
+// import { uploadcareLoader } from '@uploadcare/nextjs-loader'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
@@ -65,10 +65,11 @@ export default function VAbout() {
               <Image
                 alt="CV mahmood"
                 src='/CV-mahmood-for-software-engineering.jpg'
-                layout='responsive'
+                // layout='responsive'
                 width='764px'
                 height='1080px'
-                loader={uploadcareLoader}
+                unoptimized
+              // loader={uploadcareLoader}
               />
             </div>
           </div>
