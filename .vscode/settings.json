@@ -27,7 +27,7 @@
     "javascript": "javascriptreact"
   },
   // config related to code formatting
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -72,7 +72,7 @@
   "gitlens.advanced.messages": {
     "suppressImproperWorkspaceCasingWarning": true
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "material-icon-theme.activeIconPack": "react",
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
