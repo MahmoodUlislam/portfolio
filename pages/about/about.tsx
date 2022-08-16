@@ -11,7 +11,7 @@ import styles from './about.module.scss'
 
 let width = 0;
 const myLoader = () => {
-  return `/CV-mahmood-for-software-engineering.jpg?w=${width}`
+  return `/CV-mahmood.jpg?w=${width}`
 }
 
 
@@ -32,17 +32,19 @@ export default function VAbout() {
             About me
           </h1>
           <p style={{ color: 'white', fontSize: '40px' }}>Long story short</p>
+
           <Fade>
             <h2>
               {useTypedText(`An energetic and imaginative Full-stack developer along with the ability to create web & mobile applications of all standards. High awareness of industry issues and trends; particularly regarding accessibility, usability, emerging technologies, and open-source CMS.
                               	Full-stack web development:
-                              •	UI and UX design
+                              •UI and UX design
                               •Responsive design skills
                               •Project management, Team management
                               •Troubleshooting, Identifying technical solutions
                               •Client facing skills
                               •Excellent problem-solving skills
                               •Analytical skills
+                              •Build process, Deployment, Logger implementation
                               •Testing and debugging, Bug fixing
                               •Web application development
                               
@@ -59,12 +61,11 @@ export default function VAbout() {
                               •Wordpress, Storyblok
                               •Git, GitHub, GitLab
                               •Docker
-                              •Search Engine optimization, Adobe Analytics
+                              •Search Engine Optimization, Adobe Analytics
 
                               Responsible for all the works that belong to the web development from start to finish.
                               `, 30, 350)}
             </h2>
-
           </Fade>
 
           <div className={styles.timelineGridItemCard}>
@@ -76,7 +77,7 @@ export default function VAbout() {
               <Image
                 loader={myLoader}
                 alt="CV mahmood"
-                src='/CV-mahmood-for-software-engineering.jpg'
+                src='/CV-mahmood.jpg'
                 width={764}
                 height={1080}
               // loader={uploadcareLoader}

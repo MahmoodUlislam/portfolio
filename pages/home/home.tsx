@@ -21,7 +21,7 @@ export default function VHome() {
           <title>Mahmood ul Islam</title>
           <meta name="description" content="This is my portfolio page. The purpose of this page is to introduce my person, my coding style, and show off a little bit of my web development skills." />
           <meta name="author" content="Mahmood ul Islam" />
-          <meta name="keywords" content="Mahmood ul Islam, Portfolio, Frontend" />
+          <meta name="keywords" content="Mahmood ul Islam, Portfolio, homepage, landing" />
           <meta property="og:image" content="https://portfolio-mahmoodulislam.vercel.app/" key="ogimage" />
           <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon" />
         </Head>

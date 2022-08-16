@@ -72,7 +72,7 @@ export function VTimelineGrid() {
       <div className={styles.timelineGridItem} />
 
       <div className={styles.timelineGridItemWide}>
-        <h1>2020</h1>
+        <h1>2022</h1>
 
       </div>
       <div className={styles.timelineGridItemCard}>
@@ -93,38 +93,35 @@ export function VTimelineGrid() {
             </div>
           </div>
           <p className={styles.cardContentDescription}>
-            Mainly focused on Next.js projects.
-            Building from scratch a complete WebRTC Phone web application, based on SIP.js library. Major functionalities:<br />
-            - making new, answering, and holding calls (conferences as well),<br />
-            - contacts list with functionality of adding, deleting, and editing contacts. Search and sort options applied as well,<br />
-            - account and phone input/output audio settings.<br />
+            SELISE Digital Platforms - Dhaka<br />
+            1.6.2022 to {getDate()}<br /><br />
+            Project: Sunrise-club (https://www.sunrise.ch/en/moments), an Event booking site for the Telco (Sunrise) user of Switzerland
             <br />
-            My main responsibilities of the project:<br />
-            -working collaboratively in team environment, resolving conflicts,<br />
-            -writing a clean and high-quality codebase,<br />
-            -refactoring of codebase,<br />
-            -writing the documentation,<br />
-            -implementation of the functionalities from the documentation, given previously by PM,<br />
-            -creating responsive, accessible and efficient web views, based on previously given mockups,<br />
-            -reviewing pull requests of my less experienced peers, and helping them with styling/creating components,<br />
-            -writing efficient unit tests.<br />
             <br />
-            Achievements I am most proud of:<br />
-            -building a light version of main application that could be inserted into an iframe and creating an API via those two elements could communicate,<br />
-            -helping my peer with fixing up commit history on main branch in out project, after his mistaken merging,<br />
-            -creating documentation with code standards of codebase of our project,<br />
-            -implementing CSS modules into our main project, which improved team workflow noticeably,<br />
-            -constructing complete translation system which let the user to change language of application
-            (if not chosen, language was detected automatically).
-            <br />
+            My main responsibilities for the project:<br />
+            # Working collaboratively in the team environment, resolving conflicts,<br />
+            # Writing a clean and high-quality codebase,<br />
+            # Refactoring of the codebase,<br />
+            # Writing the documentation,<br />
+            # Implementation of the functionalities from the documentation, given previously by the Project Manager,<br />
+            # Creating responsive, accessible, and efficient web views, based on previously given mockups,<br />
+            # Reviewing pull requests of my less experienced peers, and helping them with styling/creating components,<br />
+            # Writing efficient unit tests.<br /><br />
+
+
+            Achievements I am most proud of:
+            # Maintaining URL redirect with WAF in production site, along with URL prefix in request. Creating an API & middleware through Next.js,<br />
+            # Maintaining 3 test environments and helping my peer with fixing up commit history on the main branch in our project, after his mistaken merging,<br />
+            # Creating documentation with code standards of the codebase of our project,<br />
+            # Implementing CSS modules into our main project, which improved team workflow noticeably,<br />
+            # Constructing a complete translation system that let the user change the language of the application (if not chosen, language was detected automatically).<br /><br />
+
             Languages: <b>JavaScript</b>, <b>TypeScript</b>, <b>React.js</b>, <b>Next.js</b>.<br />
-            Database: <b>MongoDB</b>,<b>Firebase</b>.<br />
+            Database: <b>MongoDB</b>, <b>Firebase</b>.<br />
             Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br />
-            Version Control System: <b>GitHub</b>,<b>GitLab</b><br />
-            Issue trancing: <b>Trello</b>.
-            Version control system: <b>Git</b>, <b>GitHub</b>, <b>GitLab</b>.<br />
-            Testing: <b>React Testing Library, JEST</b>, <b>Puppeteer</b><br />
-            Communication tool: <b>Microsoft Teams</b>, <b>Google meets</b>, <b>Zoom</b>.
+            Version Control System: <b>Git</b>, <b>GitHub</b>, <b>GitLab</b><br />
+            Issue trancing: <b>Trello</b><br />
+            Communication tools:<b>Microsoft Teams</b>, <b>Google meets</b>, <b>Zoom</b>.<br />
           </p>
         </div>
       </div>
