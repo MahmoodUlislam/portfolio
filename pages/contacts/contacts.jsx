@@ -68,7 +68,7 @@ export default function VContacts() {
           <Fade>
             <h2>
               {useTypedText(
-                `Address: Address:  Saskatoon, Saskatchewan, Canada....`,
+                `Address: Saskatoon, Saskatchewan, Canada....`,
                 30,
                 350
               )}
