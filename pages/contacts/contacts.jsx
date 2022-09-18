@@ -33,7 +33,7 @@ export default function VContacts() {
             <Fade>
               <h2>
                 {useTypedText(
-                  `Email: mahmood.islam@gmail.com, Phone# +8801717077230                  
+                  `Email: mahmood.islam@gmail.com, Phone# +13062618482
                    Please use the form below to send us an email. We will get back to you as soon as possible...`,
                   30,
                   350
@@ -58,10 +58,10 @@ export default function VContacts() {
               <a
                 style={{ textDecoration: "none", color: "white" }}
                 rel={"external"}
-                href="tel:+8801717077230"
+                href="tel:+13062618482"
               >
                 {" "}
-                <i className="fal fa-phone" /> Contact# +8801717077230
+                <i className="fal fa-phone" /> Contact# +13062618482
               </a>
             </h2>
           </div>

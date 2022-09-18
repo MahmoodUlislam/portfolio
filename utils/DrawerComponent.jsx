@@ -202,7 +202,7 @@ const DrawerComponent = () => {
                 className={styles.link}
                 style={{ fontSize: "20px" }}
                 rel={"external"}
-                href="tel:+8801717077230"
+                href="tel:+13062618482"
               >
                 {" "}
 

@@ -16,7 +16,7 @@ export function VFooter() {
       <a
         className={styles.goUpSquare}
         rel={"external"}
-        href="tel:+8801717077230"
+        href="tel:+13062618482"
       >
         <PhoneInTalkIcon sx={{ width: "50px" }} />
       </a>
