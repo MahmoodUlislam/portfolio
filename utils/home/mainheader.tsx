@@ -1,4 +1,3 @@
-import React from 'react'
 import { useTypedText } from '../typingtext'
 import styles from './mainheader.module.scss'
 
@@ -12,7 +11,7 @@ export function VMainHeader() {
         {useTypedText("I'm Mahmood.", 50, 200)}
       </h1>
       <h2>
-        {useTypedText("Welcome on my portfolio page! I'm a Software Developer & Designer, currently working as Full-stack Web Developer. Living in Dhaka, Bangladesh.", 30, 350)}
+        {useTypedText("Welcome on my portfolio page! I'm a Software Developer & Designer, currently working as Full-stack Web Developer. Living in Saskatoon, Saskatchewan, Canada.", 30, 350)}
       </h2>
 
     </div>
