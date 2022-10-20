@@ -11,7 +11,7 @@ import styles from './about.module.scss'
 
 let width = 0;
 const myLoader = () => {
-  return `/CV-mahmood.jpg?w=${width}`
+  return `/CVmahmood.jpg?w=${width}`
 }
 
 
@@ -77,7 +77,7 @@ export default function VAbout() {
               <Image
                 loader={myLoader}
                 alt="CV mahmood"
-                src='/CV-mahmood.jpg'
+                src='/CVmahmood.jpg'
                 width={764}
                 height={1080}
               // loader={uploadcareLoader}

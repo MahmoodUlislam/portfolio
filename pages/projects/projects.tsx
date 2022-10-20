@@ -71,12 +71,7 @@ export default function VProjects() {
                     <div className={styles.image}>
 
                       <Image
-                        onClick={() => {
-                          window.open(
-                            "",
-                            "_blank"
-                          );
-                        }}
+
                         src={project.src}
                         loader={uploadcareLoader}
                         alt={`Picture of ${project.name} Landing Page`}
