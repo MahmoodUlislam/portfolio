@@ -15,7 +15,7 @@
     "name": "dev-meetup-nextjs",
     "src": "/devMeetupLanding.gif",
     "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
-    "description": "A next.js application for Rental app for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
+    "description": "A next.js application for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
   {
     "name": "User Analyzer for food delivery app",
@@ -48,63 +48,9 @@
     "description": "An E-commerce app using based on Firebase using Stripe."
   },
   {
-    "name": "audio-player",
-    "src": "/audio-player.gif",
-    "cloudLink": "https://cropper-khaki.vercel.app/",
-    "description": "React/NextJS audio player for your music, with custom controls, playlist, filters, and search functionality."
-  },
-  {
-    "name": "calculator",
-    "src": "/calculator.gif",
-    "cloudLink": "https://calculator-xi-six.vercel.app/",
-    "description": "A calculator project built with React. ## Features: 1. Add, subtract, multiply, divide, 2. Support decimal values, 3. Calculate percentages, 4. Invert the values, 5. Reset functionality, 6. Format larger numbers, 7. Output resize based on length"
-  },
-  {
-    "name": "memory-game",
-    "src": "/memory-cards.gif",
-    "cloudLink": "https://memory-game-one-puce.vercel.app/",
-    "description": "A Svelte application for memory game. A memory game, where users have to remember the positions of the cards and open two exact images sequentially to score points. Once all the cards are opened user is victorious. I used Unsplash API to fetch images from their site."
-  },
-  {
-    "name": "tic-tac-toe",
-    "src": "/tic-tac-toe.gif",
-    "cloudLink": "https://tic-tac-toe-seven-beige.vercel.app/",
-    "description": "A Svelte application for tick tac toe game."
-  },
-  {
-    "name": "2048",
-    "src": "/2048.gif",
-    "cloudLink": "https://2048-rose.vercel.app/",
-    "description": "A Svelte application for 2048 game."
-  },
-  {
-    "name": "Breakout",
-    "src": "/breakout-jet.gif",
-    "cloudLink": "https://breakout-jet.vercel.app/",
-    "description": "A Svelte application for breakout game."
-  },
-  {
-    "name": "voice-cue",
-    "src": "/voice-cue.gif",
-    "cloudLink": "https://voice-cue-amber.vercel.app/",
-    "description": "React/NextJS voice recognition app. The app workflow is as simple as uploading your voice recording, selecting which type of analysis to perform and clicking on the generated cues in the list to instantly navigate to its exact position in the voice recording."
-  },
-  {
-    "name": "rock-paper-scissors",
-    "src": "/rock-paper-scissors.gif",
-    "cloudLink": "https://cropper-khaki.vercel.app/",
-    "description": "A Svelte application for rock paper scissors game."
-  },
-  {
-    "name": "CropScore",
-    "src": "/CropScore.gif",
-    "cloudLink": "https://cropper-khaki.vercel.app/",
-    "description": "A next.js application for picture cropper. That is used for a set cropping size of different famous websites. CropScore is an online image cropper for content creators, that calculates the score of how well the real-time crop will fit for the target use. The user is in full control of the upper and lower bounds of the resolutions and the correct aspect ratios are automatically set. All you have to do is drag and see the magic."
-  },
-  {
     "name": "Akkhor",
-    "src": "/profilePicture.webp",
-    "cloudLink": "https://cropper-khaki.vercel.app/",
-    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
+    "src": "/Akkhor-Logo-recolored.png",
+    "cloudLink": "https://github.com/Crown-Systems/akkhor",
+    "description": "A React Native app for Akkhor. Akkhor is a social media app for the Bangladeshi community. It is a platform for the Bangladeshi SSC & HSC student to take mock quiz exam and get their result. It is also a platform for the Bangladeshi community to share their thoughts, ideas, and knowledge."
   }
 ]
