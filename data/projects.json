@@ -1,5 +1,11 @@
 [
   {
+    "name": "Sunrise-club",
+    "src": "/SunriseLogo.svg",
+    "cloudLink": "https://www.sunrise.ch/en/moments",
+    "description": "An Event booking site for the Telco (Sunrise) users of Switzerland"
+  },
+  {
     "name": "Obhizatrik Foundation",
     "src": "/obhizatrikLanding.gif",
     "cloudLink": "https://ozf1.vercel.app/",
