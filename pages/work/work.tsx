@@ -5,7 +5,6 @@ import {
   VTimelineGrid
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
-import { useTypedText } from '../../utils/typingtext'
 import styles from './work.module.scss'
 
 export default function VWork() {
@@ -27,21 +26,20 @@ export default function VWork() {
 
           <Fade>
             <h2>
-              {useTypedText(`Experienced in •HTML, CSS, JavaScript & TypeScript
-                              •React.js, Next.js, Redux, Node.js, Express.js, Mongoose
-                              •Mongo-DB & Firebase
-                              •React-Native(Expo CLI)
-                              •Python
-                              •REST API, GraphQL, Apollo-GraphQL
-                              •Sass, Bootstrap, Tailwind CSS,
-                              •React-bootstrap, Material-UI, Ant-Design, NextUI
-                              •OAuth 2 + OIDC, Auth0
-                              •Wordpress, Storyblok
-                              •Git, GitHub, GitLab
-                              •Docker
-                              •Search Engine Optimization, Adobe Analytics
-                              `, 30, 350)
-              }
+              Experienced in
+              •HTML, CSS, JavaScript & TypeScript
+              •React.js, Next.js, Redux, Node.js, Express.js, Mongoose
+              •Mongo-DB & Firebase
+              •React-Native(Expo CLI)
+              •Python
+              •REST API, GraphQL, Apollo-GraphQL
+              •Sass, Bootstrap, Tailwind CSS,
+              •React-bootstrap, Material-UI, Ant-Design, NextUI
+              •OAuth 2 + OIDC, Auth0
+              •Wordpress, Storyblok
+              •Git, GitHub, GitLab
+              •Docker
+              •Search Engine Optimization, Adobe Analytics
             </h2>
 
           </Fade>

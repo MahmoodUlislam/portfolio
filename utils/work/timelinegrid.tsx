@@ -54,6 +54,8 @@ export function VTimelineGrid() {
             (every new user had to be authorized by admin). Admins could also
             see what user is logged at the moment.<br />
             <br />
+            job location: Dhaka, Bangladesh.
+            <br />
             Main responsibilities:<br />
             - designing both frontend and backend side of the app,<br />
             - creating an asynchronous communication between client and server via <b>REST API</b>,<br />
@@ -93,10 +95,12 @@ export function VTimelineGrid() {
             </div>
           </div>
           <p className={styles.cardContentDescription}>
-            SELISE Digital Platforms - Dhaka<br />
+            SELISE Digital Platforms<br />
             1.6.2022 to {getDate()}<br /><br />
             Project: Sunrise-club (https://www.sunrise.ch/en/moments), an Event booking site for the Telco (Sunrise) user of Switzerland
             <br />
+            job location: Dhaka, Bangladesh.
+
             <br />
             My main responsibilities for the project:<br />
             # Working collaboratively in the team environment, resolving conflicts,<br />

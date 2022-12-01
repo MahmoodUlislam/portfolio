@@ -3,7 +3,7 @@
     "name": "Sunrise-club",
     "src": "/SunriseLogo.svg",
     "cloudLink": "https://www.sunrise.ch/en/moments",
-    "description": "An Event booking site for the Telco (Sunrise) users of Switzerland"
+    "description": "An Event booking site for the Telco (Sunrise) users of Switzerland. Project’s usage: JavaScript, TypeScript, React.js, Next.js, MongoDB, REST APIs, Storyblok CMS, Material UI, Ant Design UI, React-bootstrap, SASS, bootstrap, CSS"
   },
   {
     "name": "Obhizatrik Foundation",

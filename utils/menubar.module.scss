@@ -47,21 +47,7 @@
     margin-right: 2vw;
 
     &:hover {
-      animation: onHover 2s;
-      background-color: "transparent";
-
-      cursor: pointer;
-    }
-    @keyframes onHover {
-      0% {
-        background-color: "transparent";
-      }
-
-      100% {
-        background-color: "transparent";
-
-        transform: rotate(360deg);
-      }
+      transform: scale(1.2);
     }
   }
 
