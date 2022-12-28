@@ -14,6 +14,7 @@ import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
 import { alpha, styled } from "@mui/material/styles";
 import { makeStyles } from "@mui/styles";
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -27,7 +28,6 @@ import {
 } from "../assets";
 import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -103,11 +103,11 @@ const DrawerComponent = () => {
       <List>
         <ListItem>
           <Image
-             loader={uploadcareLoader} 
+            loader={uploadcareLoader}
             src="/Mi-logoWhite.svg"
             alt="obizatrik"
-            width="220px"
-            height="200px"
+            width={220}
+            height={200}
 
           />
         </ListItem>
