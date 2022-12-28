@@ -4,13 +4,13 @@ import ReactTooltip from 'react-tooltip'
 import styles from './icon.module.scss'
 
 type IconProps = {
-  defaulIcon: StaticImageData
-  onHoverIcon: StaticImageData
+  defaulIcon: any
+  onHoverIcon: any
   href?: string
-  height: string
+  height: any | undefined
   name: string
   tooltipID?: string
-  width: string
+  width: any | undefined
 }
 
 export function VIcon(props: IconProps) {
