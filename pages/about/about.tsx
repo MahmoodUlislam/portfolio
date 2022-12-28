@@ -1,4 +1,3 @@
-// import { uploadcareLoader } from '@uploadcare/nextjs-loader'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
@@ -10,8 +9,9 @@ import { useTypedText } from '../../utils/typingtext'
 import styles from './about.module.scss'
 
 let width = 0;
+let height = 0;
 const myLoader = () => {
-  return `/CVmahmood.png?w=${width}`
+  return `/CVmahmood.png?w=${width}h=${height}`
 }
 
 
@@ -78,9 +78,8 @@ export default function VAbout() {
                 loader={myLoader}
                 alt="CV mahmood"
                 src='/CVmahmood.png'
-                width={834.5}
-                height={1080}
-              // loader={uploadcareLoader}
+                width={430}
+                height={556.47}
               />
             </div>
           </div>

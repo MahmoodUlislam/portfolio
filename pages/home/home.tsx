@@ -12,7 +12,7 @@ import {
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
 import styles from './home.module.scss'
-
+import {uploadcareLoader} from '@uploadcare/nextjs-loader';
 export default function VHome() {
   return (
     <>
@@ -38,10 +38,10 @@ export default function VHome() {
             <div className={styles.swipeDownIcon}>
               <Image
                 alt="Chevron down icon"
-                unoptimized
+                loader={uploadcareLoader}
                 src={chevronDown}
-                width="40px"
-                height="15px" />
+                width={40}
+                height={15} />
             </div>
           </div>
           <div className={styles.workHistory}>
@@ -50,10 +50,9 @@ export default function VHome() {
                 <div >
                   <h1 className={styles.linkBoxTitle}>Work<br />History</h1>
                   <h2 className={styles.linkBoxTextContent}>Here you can find out more about the companies I have collaborated with, and the experiences I have gained while working there...</h2>
-                  <Link href={`/work/work`}>
-                    <a className={styles.linkBoxButton}>
+                  <Link href={`/work/work`} className={styles.linkBoxButton} >
                       Check out my work history
-                    </a>
+          
                   </Link>
                 </div >
               </Fade>
@@ -71,10 +70,8 @@ export default function VHome() {
               <Fade>
                 <h1 className={styles.linkBoxTitle}>About me</h1>
                 <h2 className={styles.linkBoxTextContent}>Here you can find out more about my professional life and career...</h2>
-                <Link href={`/about/about`}>
-                  <a className={styles.linkBoxButton}>
+                <Link href={`/about/about`} className={styles.linkBoxButton} >
                     Get to know more about me
-                  </a>
                 </Link>
               </Fade>
             </div>
@@ -88,10 +85,8 @@ export default function VHome() {
 
                   <h1 className={styles.linkBoxTitle}>My<br />Projects</h1>
                   <h2 className={styles.linkBoxTextContent}>Here you can find out more about the projects I have been part of, and experiences I have achieved while working with those projects...</h2>
-                  <Link href={`/projects/projects`}>
-                    <a className={styles.linkBoxButton}>
+                  <Link href={`/projects/projects`} className={styles.linkBoxButton} >
                       Check out some of my projects
-                    </a>
                   </Link>
 
                 </div >

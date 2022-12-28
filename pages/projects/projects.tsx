@@ -75,23 +75,23 @@ export default function VProjects() {
                         src={project.src}
                         loader={uploadcareLoader}
                         alt={`Picture of ${project.name} Landing Page`}
-                        width="400px"
-                        height="200px"
+                        width={400}
+                        height={200}
                       />
                     </div>
-                    <Link href={project.cloudLink}>
-                      <a
-                        className={styles.link}
-                        style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                        target="_blank"
-                        rel="stylesheet"
+                    <Link
+                      className={styles.link}
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      target="_blank"
+                      rel="stylesheet"
+                      href={project.cloudLink}
                       >
+                        
                         web link of {project.name}
-                      </a>
                     </Link>
                     {/* <Iframe
                     unoptimized

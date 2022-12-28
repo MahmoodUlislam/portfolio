@@ -34,29 +34,5 @@
     "src": "/weather-app.gif",
     "cloudLink": "https://weather-app-dun-gamma.vercel.app/",
     "description": "A next.js application for weather update. This project uses OPENWEATHER map API to check the current weather on any city on the planet. Switch between metric and imperial units."
-  },
-  {
-    "name": "e-commerce app",
-    "src": "/commerce.gif",
-    "cloudLink": "https://commerce-iota-liart-21.vercel.app/",
-    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have followed Vercel's Big-commerce app for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
-  },
-  {
-    "name": "small e-commerce app",
-    "src": "/SeliseProject.webp",
-    "cloudLink": "https://mahmood-ul-islam-selise.vercel.app/",
-    "description": "A next.js application for e-commerce website. ##Opinions regarding the task: # I have used material UI for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization."
-  },
-  {
-    "name": "egg-villa-ecommerce",
-    "src": "/egg-villa-ecommerce.gif",
-    "cloudLink": "https://egg-villa-ecommerce.vercel.app/",
-    "description": "An E-commerce app using based on Firebase using Stripe."
-  },
-  {
-    "name": "Akkhor",
-    "src": "/Akkhor-Logo-recolored.png",
-    "cloudLink": "https://github.com/Crown-Systems/akkhor",
-    "description": "A React Native app for Akkhor. Akkhor is a social media app for the Bangladeshi community. It is a platform for the Bangladeshi SSC & HSC student to take mock quiz exam and get their result. It is also a platform for the Bangladeshi community to share their thoughts, ideas, and knowledge."
   }
 ]

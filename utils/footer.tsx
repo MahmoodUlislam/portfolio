@@ -31,22 +31,22 @@ export function VFooter() {
           defaulIcon={linkedInLogo}
           onHoverIcon={linkedInLogoHover}
           href="https://www.linkedin.com/in/mahmoodislam/"
-          height="30px"
-          width="30px"
+          height={30}
+          width={30}
           name="LinkedIn" />
         <VIcon
           defaulIcon={gmailLogo}
           onHoverIcon={gmailLogoHover}
           href="mailto:mahmood.islam@gmail.com"
-          height="30px"
-          width="30px"
+          height={30}
+          width={30}
           name="Gmail" />
         <VIcon
           defaulIcon={gitHubLogo}
           onHoverIcon={gitHubLogoHover}
           href="https://github.com/MahmoodUlislam"
-          height="30px"
-          width="30px"
+          height={30}
+          width={30}
           name="GitHub" />
       </div>
     </footer>

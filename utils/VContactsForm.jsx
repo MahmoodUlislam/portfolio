@@ -2,28 +2,23 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import emailjs from "emailjs-com";
 
+
 export default function VContactsForm(...pageProps) {
+
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.GMAIL_SERVICE,
-        process.env.EMAIL_TEMPLATE,
-        e.target,
-        process.env.EMAILJS_USERID
-      )
-
-      .then(
-        (result) => {
-          console.log(process.env.GMAIL_SERVICE);
-          alert(result.text);
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
+    emailjs.sendForm(process.env.GMAIL_SERVICE, process.env.EMAIL_TEMPLATE, e.target, "sOMVkqwdTURyN9zIE").then(
+      (result) => {
+        console.log(process.env.GMAIL_SERVICE);
+        alert(result.text);
+      },
+      (error) => {
+        alert(error.text);
+      }
+    );
     e.target.reset();
+
   }
 
   return (

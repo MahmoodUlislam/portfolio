@@ -27,6 +27,7 @@ import {
 } from "../assets";
 import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -91,177 +92,175 @@ const DrawerComponent = () => {
 
   //Css
   const classes = useStyles();
-  return (
-    <>
-      <Drawer
-        anchor="left"
-        classes={{ paper: classes.drawerContainer }}
-        onClose={() => setOpenDrawer(false)}
-        open={openDrawer}
-        onOpen={() => setOpenDrawer(true)}
-      >
-        <List>
-          <ListItem>
-            <Image
-              unoptimized
-              src="/Mi-logoWhite.svg"
-              alt="obizatrik"
-              width="220px"
-              height="200px"
+  return <>
+    <Drawer
+      anchor="left"
+      classes={{ paper: classes.drawerContainer }}
+      onClose={() => setOpenDrawer(false)}
+      open={openDrawer}
+      onOpen={() => setOpenDrawer(true)}
+    >
+      <List>
+        <ListItem>
+          <Image
+             loader={uploadcareLoader} 
+            src="/Mi-logoWhite.svg"
+            alt="obizatrik"
+            width="220px"
+            height="200px"
 
-            />
-          </ListItem>
-          <ListItem
-            style={{ textAlign: "center" }}
-            button
-            onClick={() => setOpenDrawer(false)}
-          >
-            <ListItemText>
-              <Link href={`/`}>
-                <a className={styles.link}>HOME</a>
-              </Link>
-            </ListItemText>
-          </ListItem>
-
-          <ListItem
-            style={{ textAlign: "center" }}
-            button
-            onClick={() => setOpenDrawer(false)}
-          >
-            <ListItemText>
-              <Link href={`/work`}>
-                <a className={styles.link}>WORK</a>
-              </Link>{" "}
-            </ListItemText>
-          </ListItem>
-
-          <ListItem
-            style={{ textAlign: "center" }}
-            button
-            onClick={() => setOpenDrawer(false)}
-          >
-            <ListItemText>
-              <Link href={`/projects`}>
-                <a className={styles.link}>PROJECTS</a>
-              </Link>{" "}
-            </ListItemText>
-          </ListItem>
-
-          <ListItem
-            style={{ textAlign: "center" }}
-            button
-            onClick={() => setOpenDrawer(false)}
-          >
-            <ListItemText>
-              {" "}
-              <Link href={`/about`}>
-                <a className={styles.link}>ABOUT</a>
-              </Link>
-            </ListItemText>
-          </ListItem>
-
-          <ListItem
-            style={{ textAlign: "center" }}
-            button
-            onClick={() => setOpenDrawer(false)}
-          >
-            <ListItemText>
-              <Link href={`/contacts`}>
-                <a className={styles.link}>CONTACTS</a>
-              </Link>{" "}
-            </ListItemText>
-          </ListItem>
-        </List>
-        <Divider style={{ width: "230", color: "#ffffff" }} variant="middle" />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center ",
-          }}
+          />
+        </ListItem>
+        <ListItem
+          style={{ textAlign: "center" }}
+          button
+          onClick={() => setOpenDrawer(false)}
         >
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-
-          <Button>
-            <Link href="/contacts">
-              <a className={styles.button}>send E-mail</a>
+          <ListItemText>
+            <Link href={`/`} className={styles.link}>
+              HOME
             </Link>
-          </Button>
+          </ListItemText>
+        </ListItem>
 
-          <div style={{ marginTop: "3vh" }}>
-            <div style={{ display: "flex" }}>
-              <a
-                className={styles.link}
-                style={{ fontSize: "20px" }}
-                rel={"external"}
-                href="tel:+13062618482"
-              >
-                {" "}
+        <ListItem
+          style={{ textAlign: "center" }}
+          button
+          onClick={() => setOpenDrawer(false)}
+        >
+          <ListItemText>
+            <Link href={`/work`} className={styles.link}>
+              WORK
+            </Link>{" "}
+          </ListItemText>
+        </ListItem>
 
-                <PhoneInTalkIcon sx={{ width: "50px" }} />
-                +13062618482
-              </a>
-            </div>
-            <div style={{ display: "flex" }}>
-              <a
-                className={styles.link}
-                style={{ fontSize: "16px" }}
-                rel={"external"}
-                href="mailto:mahmood.islam@gmail.com"
-              >
-                {" "}
-                <i className="fal fa-phone" />{" "}
-                <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
-                mahmood.islam@gmail.com
-              </a>
-            </div>
+        <ListItem
+          style={{ textAlign: "center" }}
+          button
+          onClick={() => setOpenDrawer(false)}
+        >
+          <ListItemText>
+            <Link href={`/projects`} className={styles.link}>
+              PROJECTS
+            </Link>{" "}
+          </ListItemText>
+        </ListItem>
+
+        <ListItem
+          style={{ textAlign: "center" }}
+          button
+          onClick={() => setOpenDrawer(false)}
+        >
+          <ListItemText>
+            {" "}
+            <Link href={`/about`} className={styles.link}>
+              ABOUT
+            </Link>
+          </ListItemText>
+        </ListItem>
+
+        <ListItem
+          style={{ textAlign: "center" }}
+          button
+          onClick={() => setOpenDrawer(false)}
+        >
+          <ListItemText>
+            <Link href={`/contacts`} className={styles.link}>
+              CONTACTS
+            </Link>{" "}
+          </ListItemText>
+        </ListItem>
+      </List>
+      <Divider style={{ width: "230", color: "#ffffff" }} variant="middle" />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center ",
+        }}
+      >
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+
+        <Button>
+          <Link href="/contacts" className={styles.button}>
+            send E-mail
+          </Link>
+        </Button>
+
+        <div style={{ marginTop: "3vh" }}>
+          <div style={{ display: "flex" }}>
+            <a
+              className={styles.link}
+              style={{ fontSize: "20px" }}
+              rel={"external"}
+              href="tel:+13062618482"
+            >
+              {" "}
+
+              <PhoneInTalkIcon sx={{ width: "50px" }} />
+              +13062618482
+            </a>
           </div>
-          <div style={{ display: "flex", marginTop: "2vh" }}>
-            <VIcon
-              defaulIcon={linkedInLogo}
-              onHoverIcon={linkedInLogoHover}
-              href="https://www.linkedin.com/in/mahmoodislam/"
-              height="30px"
-              width="30px"
-              name="LinkedIn"
-            />
-            <VIcon
-              defaulIcon={gmailLogo}
-              onHoverIcon={gmailLogoHover}
+          <div style={{ display: "flex" }}>
+            <a
+              className={styles.link}
+              style={{ fontSize: "16px" }}
+              rel={"external"}
               href="mailto:mahmood.islam@gmail.com"
-              height="30px"
-              width="30px"
-              name="Gmail"
-            />
-            <VIcon
-              defaulIcon={gitHubLogo}
-              onHoverIcon={gitHubLogoHover}
-              href="https://github.com/MahmoodUlislam"
-              height="30px"
-              width="30px"
-              name="GitHub"
-            />
+            >
+              {" "}
+              <i className="fal fa-phone" />{" "}
+              <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
+              mahmood.islam@gmail.com
+            </a>
           </div>
         </div>
-      </Drawer>
+        <div style={{ display: "flex", marginTop: "2vh" }}>
+          <VIcon
+            defaulIcon={linkedInLogo}
+            onHoverIcon={linkedInLogoHover}
+            href="https://www.linkedin.com/in/mahmoodislam/"
+            height="30px"
+            width="30px"
+            name="LinkedIn"
+          />
+          <VIcon
+            defaulIcon={gmailLogo}
+            onHoverIcon={gmailLogoHover}
+            href="mailto:mahmood.islam@gmail.com"
+            height="30px"
+            width="30px"
+            name="Gmail"
+          />
+          <VIcon
+            defaulIcon={gitHubLogo}
+            onHoverIcon={gitHubLogoHover}
+            href="https://github.com/MahmoodUlislam"
+            height="30px"
+            width="30px"
+            name="GitHub"
+          />
+        </div>
+      </div>
+    </Drawer>
 
-      <IconButton
-        className={classes.iconButtonContainer}
-        onClick={() => setOpenDrawer(!openDrawer)}
-        disableRipple
-      >
-        <MenuIcon className={classes.menuIconToggle} />
-      </IconButton>
-    </>
-  );
+    <IconButton
+      className={classes.iconButtonContainer}
+      onClick={() => setOpenDrawer(!openDrawer)}
+      disableRipple
+    >
+      <MenuIcon className={classes.menuIconToggle} />
+    </IconButton>
+  </>;
 };
 
 export default DrawerComponent;

@@ -10,7 +10,7 @@ import { useState } from "react";
 import BackTop from "./BackTop";
 import DrawerComponent from "./DrawerComponent";
 import styles from "./menubar.module.scss";
-
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 const useStyles = makeStyles((theme) => ({
   navbar: {
     display: "flex",
@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
 // type MenuBarProps = {
 //   activeTab: "Home" | "Work"| "Projects" | "About" | "Contacts"
 // }
+const myLoader = () => {
+  return `/Mi-logoWhite.svg?w=${width}`
+}
 export default function Navbar(props) {
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -60,11 +63,11 @@ export default function Navbar(props) {
           >
             <DrawerComponent />
             <Image
-              unoptimized
+         loader={uploadcareLoader} 
               src="/Mi-logoWhite.svg"
               alt="myFace"
-              width="100px"
-              height="82px"
+              width={100}
+              height={82}
             />
           </div>
         </>
@@ -80,20 +83,20 @@ export default function Navbar(props) {
           >
             <AppBar className={classes.appBar}>
               <nav className={styles.menuBar}>
-                <Link href={`/`}>
-                  <a className={styles.title}>
+                <Link className={styles.title} href={`/`} >
+                  
                     <Image
-                      unoptimized
+             loader={uploadcareLoader} 
                       src="/Mi-logoWhite.svg"
                       alt="myFace"
-                      width="178px"
-                      height="146px"
+                      width={178}
+                      height={146}
                     />
                     <h3 className={styles.name}>Mahmood ul Islam</h3>
-                  </a>
+                  
                 </Link>
-                <Link href={`/`}>
-                  <a className={styles.tab}>
+                <Link className={styles.tab} href={`/`} >
+                  
                     <h3
                       style={
                         props.activeTab === "Home"
@@ -103,10 +106,10 @@ export default function Navbar(props) {
                     >
                       Home
                     </h3>
-                  </a>
+                  
                 </Link>
-                <Link href={`/work`}>
-                  <a className={styles.tab}>
+                <Link className={styles.tab} href={`/work`} >
+                  
                     <h3
                       style={
                         props.activeTab === "Work"
@@ -116,10 +119,10 @@ export default function Navbar(props) {
                     >
                       Work
                     </h3>
-                  </a>
+                  
                 </Link>
-                <Link href={`/projects`}>
-                  <a className={styles.tab}>
+                <Link className={styles.tab} href={`/projects`} >
+                  
                     <h3
                       style={
                         props.activeTab === "Projects"
@@ -129,10 +132,10 @@ export default function Navbar(props) {
                     >
                       Projects
                     </h3>
-                  </a>
+                  
                 </Link>
-                <Link href={`/about`}>
-                  <a className={styles.tab}>
+                <Link className={styles.tab} href={`/about`} >
+                  
                     <h3
                       style={
                         props.activeTab === "About"
@@ -142,10 +145,10 @@ export default function Navbar(props) {
                     >
                       About
                     </h3>
-                  </a>
+                  
                 </Link>
-                <Link href={`/contacts`}>
-                  <a className={styles.tab}>
+                <Link className={styles.tab} href={`/contacts`} >
+                  
                     <h3
                       style={
                         props.activeTab === "Contacts"
@@ -155,7 +158,7 @@ export default function Navbar(props) {
                     >
                       Contacts
                     </h3>
-                  </a>
+                  
                 </Link>
                 <BackTop />
               </nav>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { getDate } from '../date'
 import styles from './timelinegrid.module.scss'
-
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 
 export function VTimelineGrid() {
   return (
@@ -31,11 +31,11 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo} >
               <Image
-                unoptimized
+                loader={uploadcareLoader}
                 alt="Quantic Dynamics logo."
                 src='/quanticDynamicsLogo.png'
-                height={50}
-                width={150} />
+                height={25}
+                width={73.7} />
             </div>
             <div className={styles.companyInfo}>
               <h1 className={styles.companyTitle}>Quantic Dynamics ltd.</h1>
@@ -82,11 +82,11 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo} >
               <Image
-                unoptimized
+                loader={uploadcareLoader}
                 alt="Selise Digital Platform logo."
                 src='/seliseLogo.png'
-                height={50}
-                width={150} />
+                height={25}
+                width={52} />
             </div>
             <div className={styles.companyInfo}>
               <h1 className={styles.companyTitle}>Selise Digital Platform</h1>

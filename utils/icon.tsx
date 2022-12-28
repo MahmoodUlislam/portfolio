@@ -1,3 +1,4 @@
+import { uploadcareLoader } from '@uploadcare/nextjs-loader'
 import Image from 'next/image'
 import ReactTooltip from 'react-tooltip'
 import styles from './icon.module.scss'
@@ -18,9 +19,8 @@ export function VIcon(props: IconProps) {
     <a data-tip={props.tooltipID ? true : false} data-for={props.tooltipID} href={props.href} target="_blank" className={styles.iconContainer} style={{ height: props.height, width: props.width }} rel="noreferrer">
       <div className={styles.iconActive}>
         <Image
-          unoptimized
+          loader={uploadcareLoader}
           alt={`On hover ${props.name} icon.`}
-
           src={props.onHoverIcon}
           width={props.width}
           height={props.height} />
@@ -33,7 +33,7 @@ export function VIcon(props: IconProps) {
       }
       <div className={styles.icon}>
         <Image
-          unoptimized
+          loader={uploadcareLoader}
           alt={`Default ${props.name} icon.`}
           src={props.defaulIcon}
           width={props.width}

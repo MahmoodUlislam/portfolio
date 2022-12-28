@@ -17,8 +17,15 @@
       {
         "name": "typescript-plugin-css-modules"
       }
-    ]
+    ],
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/quill1.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "utils/quill1.tsx",
+    "utils/home/toolstech.jsx"
+  ],
   "exclude": ["node_modules"]
 }
