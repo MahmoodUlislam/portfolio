@@ -16,13 +16,13 @@ export function VMainHeader() {
       </h2>
       <div className={styles.footer}>
         <div className={styles.icons}>
-          <VIcon
-            defaulIcon={linkedInLogo}
-            onHoverIcon={linkedInLogoHover}
-            href="https://www.linkedin.com/in/mahmoodislam/"
-            height={30}
-            width={30}
-            name="LinkedIn" />
+        <VIcon
+          defaulIcon={linkedInLogo}
+          onHoverIcon={linkedInLogoHover}
+          href="https://www.linkedin.com/in/mahmoodislam/"
+          height={30}
+          width={30}
+          name="LinkedIn" />
           <VIcon
             defaulIcon={gmailLogo}
             onHoverIcon={gmailLogoHover}
