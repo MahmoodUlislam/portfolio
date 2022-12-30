@@ -58,10 +58,10 @@ export default function VContacts() {
               </h2>
 
 
-              <h2>
-                Please use the form below to send us an email. I will get back to you as soon as possible...
-              </h2>
             </Fade>
+            <h2>
+              For any inquiries, the below form can be used...
+            </h2>
             <Fade>
               <VContactsForm />
             </Fade>
