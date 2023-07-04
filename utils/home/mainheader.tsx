@@ -11,18 +11,18 @@ export function VMainHeader() {
         <br />
         {useTypedText("I'm Mahmood.", 50, 200)}
       </h1>
-      <h2>
+      <h2 className={styles.header}>
         {useTypedText("Welcome on my portfolio page! I'm a Software Developer & Designer, currently working as Full-stack Web Developer. Living in Saskatoon, Saskatchewan, Canada.", 30, 350)}
       </h2>
       <div className={styles.footer}>
         <div className={styles.icons}>
-        <VIcon
-          defaulIcon={linkedInLogo}
-          onHoverIcon={linkedInLogoHover}
-          href="https://www.linkedin.com/in/mahmoodislam/"
-          height={30}
-          width={30}
-          name="LinkedIn" />
+          <VIcon
+            defaulIcon={linkedInLogo}
+            onHoverIcon={linkedInLogoHover}
+            href="https://www.linkedin.com/in/mahmoodislam/"
+            height={30}
+            width={30}
+            name="LinkedIn" />
           <VIcon
             defaulIcon={gmailLogo}
             onHoverIcon={gmailLogoHover}

@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: #0d0107;
+  background-color: #1c1c1c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,8 +10,8 @@
 
   .goUpSquare {
     align-items: center;
-    border: 3px solid #ff0072;
-    color: #ff0072;
+    border: 3px solid #82b7dc;
+    color: #82b7dc;
     display: flex;
     height: 40px;
     justify-content: center;
@@ -22,7 +22,7 @@
 
     &:hover {
       animation: onHover;
-      background-color: #ff0072;
+      background-color: #82b7dc;
       border-radius: 20px;
       color: #ffffff;
       cursor: pointer;
@@ -30,8 +30,8 @@
   }
 
   .copyrights {
-    border-bottom: 3px solid #ff0072;
-    color: #260316;
+    border-bottom: 3px solid #82b7dc;
+    color: #1c1c1c;
     padding: 20px;
     text-align: center;
     width: 200px;

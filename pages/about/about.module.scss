@@ -1,5 +1,5 @@
 .timelineGrid {
-  background-color: #ff0072;
+  background-color: #82b7dc;
   display: grid;
   column-gap: 7px;
   grid-template-columns: auto auto;
@@ -7,7 +7,7 @@
 
   &Item {
     align-items: center;
-    background-color: #0d0107;
+    background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
 
     .hoverTip {
       animation: pulse linear 3s infinite;
-      color: #ff0072;
+      color: #82b7dc;
     }
 
     @keyframes pulse {
@@ -56,7 +56,7 @@
     }
 
     .cardContent {
-      background-color: #33041c;
+      background-color: #1c1c1c;
       border-radius: 30px;
       border: 5px solid #ffffff;
       min-height: 250px;
@@ -85,7 +85,7 @@
         &Title {
           font-size: 20px;
           margin: 0;
-          color: #ff0072;
+          color: #82b7dc;
         }
 
         &Logo {
@@ -152,7 +152,7 @@
     padding: 80px 0;
 
     .summary {
-      color: #0d0107;
+      color: #82b7dc;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -172,7 +172,7 @@
 
       .newsletters {
         align-items: center;
-        background-color: #0d0107;
+        background-color: #1c1c1c;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -199,7 +199,7 @@
 
           .hint {
             animation: pulse linear 3s infinite;
-            color: #0d0107;
+            color: #1c1c1c;
             bottom: auto;
             left: auto;
             padding: 10px;

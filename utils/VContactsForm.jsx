@@ -37,7 +37,7 @@ export default function VContactsForm(...pageProps) {
             sx={{
               borderRadius: "5px",
               width: "60%",
-              backgroundColor: "#ff0072",
+              backgroundColor: "#82b7dc",
             }}
             id="outlined-basic"
             label="Enter your Name"
@@ -51,7 +51,7 @@ export default function VContactsForm(...pageProps) {
               borderRadius: "5px",
               width: "60%",
               marginTop: "2vh",
-              backgroundColor: "#ff0072",
+              backgroundColor: "#82b7dc",
               color: "#ffffff",
             }}
             id="outlined-basic"
@@ -66,7 +66,7 @@ export default function VContactsForm(...pageProps) {
               borderRadius: "5px",
               width: "60%",
               marginTop: "2vh",
-              backgroundColor: "#ff0072",
+              backgroundColor: "#82b7dc",
               color: "#ffffff",
             }}
             id="outlined-basic"
@@ -81,7 +81,7 @@ export default function VContactsForm(...pageProps) {
               borderRadius: "5px",
               width: "60%",
               marginTop: "2vh",
-              backgroundColor: "#ff0072",
+              backgroundColor: "#82b7dc",
               color: "#ffffff",
             }}
             id="outlined-multiline-static"
@@ -98,9 +98,9 @@ export default function VContactsForm(...pageProps) {
               width: "30%",
               height: "7vh",
               marginTop: "4vh",
-              backgroundColor: "#260316",
-              color: "#ff0072",
-              border: "3px solid #ff0072",
+              backgroundColor: "#1c1c1c",
+              color: "#82b7dc",
+              border: "3px solid #82b7dc",
             }}
             variant="contained"
             type="submit"

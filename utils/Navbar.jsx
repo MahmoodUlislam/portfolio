@@ -3,20 +3,21 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { makeStyles } from "@mui/styles";
+import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { makeStyles } from 'tss-react/mui';
 import BackTop from "./BackTop";
 import DrawerComponent from "./DrawerComponent";
 import styles from "./menubar.module.scss";
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles()((theme) => ({
   navbar: {
     display: "flex",
     justifyContent: "flex-start",
     height: "20vh",
-    backgroundColor: "#0d0107",
+    backgroundColor: "#3466aa",
     alignItems: "center",
   },
   appBar: {
@@ -36,17 +37,17 @@ const myLoader = () => {
   return `/Mi-logoWhite.svg?w=${width}`
 }
 export default function Navbar(props) {
-  const [value, setValue] = useState(0);
+  // const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
-  const classes = useStyles();
+  const { classes } = useStyles();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-  const handleClickTab = (e, newValue) => {
-    setValue(newValue);
-  };
-  const handleOpenMenu = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
+  // const handleClickTab = (e, newValue) => {
+  //   setValue(newValue);
+  // };
+  // const handleOpenMenu = (e) => {
+  //   setAnchorEl(e.currentTarget);
+  // };
   const handleCloseMenu = () => {
     setAnchorEl(null);
   };
@@ -63,7 +64,7 @@ export default function Navbar(props) {
           >
             <DrawerComponent />
             <Image
-         loader={uploadcareLoader} 
+              loader={uploadcareLoader}
               src="/Mi-logoWhite.svg"
               alt="myFace"
               width={100}
@@ -84,81 +85,81 @@ export default function Navbar(props) {
             <AppBar className={classes.appBar}>
               <nav className={styles.menuBar}>
                 <Link className={styles.title} href={`/`} >
-                  
-                    <Image
-             loader={uploadcareLoader} 
-                      src="/Mi-logoWhite.svg"
-                      alt="myFace"
-                      width={178}
-                      height={146}
-                    />
-                    <h3 className={styles.name}>Mahmood ul Islam</h3>
-                  
+
+                  <Image
+                    loader={uploadcareLoader}
+                    src="/Mi-logoWhite.svg"
+                    alt="myFace"
+                    width={178}
+                    height={146}
+                  />
+                  <h3 className={styles.name}>Mahmood ul Islam</h3>
+
                 </Link>
                 <Link className={styles.tab} href={`/`} >
-                  
-                    <h3
-                      style={
-                        props.activeTab === "Home"
-                          ? { color: "#260316" }
-                          : { color: " #ffffff" }
-                      }
-                    >
-                      Home
-                    </h3>
-                  
+
+                  <h3
+                    style={
+                      props.activeTab === "Home"
+                        ? { color: "#82b7dc" }
+                        : { color: " #ffffff" }
+                    }
+                  >
+                    Home
+                  </h3>
+
                 </Link>
                 <Link className={styles.tab} href={`/work`} >
-                  
-                    <h3
-                      style={
-                        props.activeTab === "Work"
-                          ? { color: "#260316" }
-                          : { color: "#ffffff" }
-                      }
-                    >
-                      Work
-                    </h3>
-                  
+
+                  <h3
+                    style={
+                      props.activeTab === "Work"
+                        ? { color: "#82b7dc" }
+                        : { color: "#ffffff" }
+                    }
+                  >
+                    Work
+                  </h3>
+
                 </Link>
                 <Link className={styles.tab} href={`/projects`} >
-                  
-                    <h3
-                      style={
-                        props.activeTab === "Projects"
-                          ? { color: "#260316" }
-                          : { color: "#ffffff" }
-                      }
-                    >
-                      Projects
-                    </h3>
-                  
+
+                  <h3
+                    style={
+                      props.activeTab === "Projects"
+                        ? { color: "#82b7dc" }
+                        : { color: "#ffffff" }
+                    }
+                  >
+                    Projects
+                  </h3>
+
                 </Link>
                 <Link className={styles.tab} href={`/about`} >
-                  
-                    <h3
-                      style={
-                        props.activeTab === "About"
-                          ? { color: "#260316" }
-                          : { color: "#ffffff" }
-                      }
-                    >
-                      About
-                    </h3>
-                  
+
+                  <h3
+                    style={
+                      props.activeTab === "About"
+                        ? { color: "#82b7dc" }
+                        : { color: "#ffffff" }
+                    }
+                  >
+                    About
+                  </h3>
+
                 </Link>
                 <Link className={styles.tab} href={`/contacts`} >
-                  
-                    <h3
-                      style={
-                        props.activeTab === "Contacts"
-                          ? { color: "#260316" }
-                          : { color: "#ffffff" }
-                      }
-                    >
-                      Contacts
-                    </h3>
-                  
+
+                  <h3
+                    style={
+                      props.activeTab === "Contacts"
+                        ? { color: "#82b7dc" }
+                        : { color: "#ffffff" }
+                    }
+                  >
+                    Contacts
+                  </h3>
+
                 </Link>
                 <BackTop />
               </nav>

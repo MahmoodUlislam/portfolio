@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import MenuIcon from "@mui/icons-material/Menu";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
@@ -6,7 +7,7 @@ import {
   Drawer,
   IconButton,
   List,
-  ListItem,
+  ListItemButton,
   ListItemText
 } from "@mui/material";
 import Button from "@mui/material/Button";
@@ -28,6 +29,7 @@ import {
 } from "../assets";
 import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -73,7 +75,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 const DrawerComponent = () => {
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles(() => ({
     drawerContainer: { backgroundColor: "#0d0107", width: "280px" },
     iconButtonContainer: {
       position: "fixed",
@@ -91,7 +93,9 @@ const DrawerComponent = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   //Css
-  const classes = useStyles();
+  const { classes } = useStyles({
+    useStyles: css
+  });
   return <>
     <Drawer
       anchor="left"
@@ -101,7 +105,7 @@ const DrawerComponent = () => {
       onOpen={() => setOpenDrawer(true)}
     >
       <List>
-        <ListItem>
+        <ListItemButton >
           <Image
             loader={uploadcareLoader}
             src="/Mi-logoWhite.svg"
@@ -110,10 +114,10 @@ const DrawerComponent = () => {
             height={200}
 
           />
-        </ListItem>
-        <ListItem
+        </ListItemButton>
+        <ListItemButton
           style={{ textAlign: "center" }}
-          button
+
           onClick={() => setOpenDrawer(false)}
         >
           <ListItemText>
@@ -121,11 +125,10 @@ const DrawerComponent = () => {
               HOME
             </Link>
           </ListItemText>
-        </ListItem>
+        </ListItemButton>
 
-        <ListItem
+        <ListItemButton
           style={{ textAlign: "center" }}
-          button
           onClick={() => setOpenDrawer(false)}
         >
           <ListItemText>
@@ -133,11 +136,10 @@ const DrawerComponent = () => {
               WORK
             </Link>{" "}
           </ListItemText>
-        </ListItem>
+        </ListItemButton>
 
-        <ListItem
+        <ListItemButton
           style={{ textAlign: "center" }}
-          button
           onClick={() => setOpenDrawer(false)}
         >
           <ListItemText>
@@ -145,11 +147,10 @@ const DrawerComponent = () => {
               PROJECTS
             </Link>{" "}
           </ListItemText>
-        </ListItem>
+        </ListItemButton>
 
-        <ListItem
+        <ListItemButton
           style={{ textAlign: "center" }}
-          button
           onClick={() => setOpenDrawer(false)}
         >
           <ListItemText>
@@ -158,11 +159,10 @@ const DrawerComponent = () => {
               ABOUT
             </Link>
           </ListItemText>
-        </ListItem>
+        </ListItemButton>
 
-        <ListItem
+        <ListItemButton
           style={{ textAlign: "center" }}
-          button
           onClick={() => setOpenDrawer(false)}
         >
           <ListItemText>
@@ -170,7 +170,7 @@ const DrawerComponent = () => {
               CONTACTS
             </Link>{" "}
           </ListItemText>
-        </ListItem>
+        </ListItemButton>
       </List>
       <Divider style={{ width: "230", color: "#ffffff" }} variant="middle" />
       <div

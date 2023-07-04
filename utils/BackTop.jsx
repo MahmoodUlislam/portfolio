@@ -63,7 +63,7 @@ export default function BackTop(props) {
       <ScrollTop {...props}>
         <Fab
           sx={{
-            color: "#ff0072 !important",
+            color: "#82b7dc !important",
             fontSize: "50px",
             paddingTop: "15px",
           }}
