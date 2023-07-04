@@ -40,7 +40,7 @@
     "react-scroll-parallax": "^2.4.0",
     "react-tooltip": "^4.2.21",
     "sass": "^1.37.5",
-    "tss-react": "^4.8.2",
+    "tss-react": "^4.8.6",
     "vercel": "^28.11.0"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "@vercel/node": "^1.12.1",
     "eslint-config-next": "^13.4.7",
     "next-router-mock": "^0.6.3",
-    "typescript": "^4.5.4",
+    "typescript": "^5.1.6",
     "typescript-plugin-css-modules": "^1.3.1"
   }
 }

@@ -1,5 +1,6 @@
 .homeContainer {
   display: flex;
+  color: #fff;
   background-color: #1c1c1c;
   flex-direction: column;
   max-width: 100vw;
@@ -135,8 +136,13 @@
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
-
-      &Title {
+      .linkBoxTitle {
+        color: #fff;
+      }
+      .linkBoxTextContent {
+        color: #fff;
+      }
+      Title {
         font-size: 60px;
       }
 
