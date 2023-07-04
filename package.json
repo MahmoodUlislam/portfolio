@@ -41,7 +41,7 @@
     "react-tooltip": "^4.2.21",
     "sass": "^1.37.5",
     "tss-react": "^4.8.6",
-    "vercel": "^28.11.0"
+    "vercel": "^28.20.0"
   },
   "devDependencies": {
     "@types/react": "17.0.11",
