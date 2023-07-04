@@ -52,6 +52,6 @@
     "next-router-mock": "^0.6.3",
     "typescript": "^5.1.6",
     "typescript-plugin-css-modules": "^3.2.0",
-    "loader-utils": ">=1.4.1"
+    "loader-utils": ">=1.4.2"
   }
 }
