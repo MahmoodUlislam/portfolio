@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "resolutions": {
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.14"
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.6"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -22,7 +22,6 @@
     "@mui/material": "^5.13.7",
     "@mui/styles": "^5.13.7",
     "@react-google-maps/api": "^2.18.1",
-    "@types/react-dom": "^18.2.6",
     "@typescript-eslint/parser": "^5.61.0",
     "@uploadcare/nextjs-loader": "^1.0.0",
     "circular-json": "^0.5.9",
@@ -44,7 +43,8 @@
     "vercel": "^31.0.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.14",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.6",
     "@vercel/node": "^2.15.3",
     "eslint-config-next": "^13.4.8",
     "loader-utils": ">=3.2.1",
