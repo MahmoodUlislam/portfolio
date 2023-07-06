@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { makeStyles } from 'tss-react/mui';
 import BackTop from "./BackTop";
-import DrawerComponent from "./DrawerComponent";
+import SwipeableTemporaryDrawer from "./DrawerComponent";
 import styles from "./menubar.module.scss";
 
 const useStyles = makeStyles()((theme) => ({
@@ -62,7 +62,7 @@ export default function Navbar(props) {
               alignItems: "center",
             }}
           >
-            <DrawerComponent />
+            <SwipeableTemporaryDrawer />
             <Image
               loader={uploadcareLoader}
               src="/Mi-logoWhite.svg"
