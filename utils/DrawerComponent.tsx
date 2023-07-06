@@ -1,21 +1,31 @@
-import MailIcon from '@mui/icons-material/Mail';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MenuIcon from "@mui/icons-material/Menu";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import SearchIcon from "@mui/icons-material/Search";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { alpha, styled } from "@mui/material/styles";
+import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+import Image from "next/image";
+import Link from "next/link";
 import * as React from 'react';
-
-
-
-
+import {
+  gitHubLogo,
+  gitHubLogoHover,
+  gmailLogo,
+  gmailLogoHover,
+  linkedInLogo,
+  linkedInLogoHover
+} from "../assets";
+import styles from "./DrawerComponent.module.scss";
+import { VIcon } from "./icon";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
@@ -23,10 +33,10 @@ const Search = styled("div")(({ theme }) => ({
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginLeft: 0,
-  width: "100%",
+  marginRight: 0,
+  width: "80%",
   [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
     width: "auto",
   },
 }));
@@ -48,7 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "#ffffff",
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    paddingRight: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("sm")]: {
@@ -59,14 +69,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-type Anchor = 'top' | 'left' | 'bottom' | 'right';
+type Anchor = 'right';
 export default function SwipeableTemporaryDrawer() {
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
+  const [state, setState] = React.useState({ right: false });
+
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -85,44 +91,152 @@ export default function SwipeableTemporaryDrawer() {
 
   const list = (anchor: Anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: 250, backgroundColor: "#1c1c1c" }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItemButton >
+          <Image
+            loader={uploadcareLoader}
+            src="/Mi-logoWhite.svg"
+            alt="obizatrik"
+            width={220}
+            height={200}
+          />
+        </ListItemButton>
+        <ListItemButton
+          style={{ textAlign: "center" }}>
+          <ListItemText>
+            <Link href={`/`} className={styles.link}>
+              HOME
+            </Link>
+          </ListItemText>
+        </ListItemButton>
+
+        <ListItemButton
+          style={{ textAlign: "center" }}>
+          <ListItemText>
+            <Link href={`/work`} className={styles.link}>
+              WORK
+            </Link>{" "}
+          </ListItemText>
+        </ListItemButton>
+
+        <ListItemButton
+          style={{ textAlign: "center" }}>
+          <ListItemText>
+            <Link href={`/projects`} className={styles.link}>
+              PROJECTS
+            </Link>{" "}
+          </ListItemText>
+        </ListItemButton>
+
+        <ListItemButton
+          style={{ textAlign: "center" }}>
+          <ListItemText>
+            {" "}
+            <Link href={`/about`} className={styles.link}>
+              ABOUT
+            </Link>
+          </ListItemText>
+        </ListItemButton>
+
+        <ListItemButton style={{ textAlign: "center" }}>
+          <ListItemText>
+            <Link href={`/contacts`} className={styles.link}>
+              CONTACTS
+            </Link>{" "}
+          </ListItemText>
+        </ListItemButton>
       </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <Divider style={{ width: "230", color: "#ffffff" }} variant="middle" />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center ",
+        }}
+      >
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+
+        <Button>
+          <Link href="/contacts" className={styles.button}>
+            send E-mail
+          </Link>
+        </Button>
+
+        <div style={{ marginTop: "3vh" }}>
+          <div style={{ display: "flex" }}>
+            <a
+              className={styles.link}
+              style={{ fontSize: "20px" }}
+              rel={"external"}
+              href="tel:+13062618482"
+            >
+              {" "}
+
+              <PhoneInTalkIcon sx={{ width: "50px" }} />
+              +13062618482
+            </a>
+          </div>
+          <div style={{ display: "flex" }}>
+            <a
+              className={styles.link}
+              style={{ fontSize: "16px" }}
+              rel={"external"}
+              href="mailto:mahmood.islam@gmail.com"
+            >
+              {" "}
+              <i className="fal fa-phone" />{" "}
+              <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
+              mahmood.islam@gmail.com
+            </a>
+          </div>
+        </div>
+        <div style={{ display: "flex", margin: "2vh 0", gap: "2rem" }}>
+          <VIcon
+            defaulIcon={linkedInLogo}
+            onHoverIcon={linkedInLogoHover}
+            href="https://www.linkedin.com/in/mahmoodislam/"
+            height={30}
+            width={30}
+            name="LinkedIn"
+          />
+          <VIcon
+            defaulIcon={gmailLogo}
+            onHoverIcon={gmailLogoHover}
+            href="mailto:mahmood.islam@gmail.com"
+            height={30}
+            width={30}
+            name="Gmail"
+          />
+          <VIcon
+            defaulIcon={gitHubLogo}
+            onHoverIcon={gitHubLogoHover}
+            href="https://github.com/MahmoodUlislam"
+            height={30}
+            width={30}
+            name="GitHub"
+          />
+        </div>
+      </div>
     </Box>
   );
 
   return (
     <div>
-      {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
+      {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
@@ -131,173 +245,15 @@ export default function SwipeableTemporaryDrawer() {
           >
             {list(anchor)}
           </SwipeableDrawer>
+          <IconButton
+            className={styles.iconButtonContainer}
+            onClick={toggleDrawer(anchor, true)}
+            disableRipple
+          >
+            <MenuIcon className={styles.menuIconToggle} />
+          </IconButton>
         </React.Fragment>
       ))}
     </div>
   );
 }
-//   <Drawer
-//     anchor="left"
-//     classes={{ paper: classes.drawerContainer }}
-//     onClose={() => setOpenDrawer(false)}
-//     open={openDrawer}
-//     onOpen={() => setOpenDrawer(true)}
-//   >
-//     <List>
-//       <ListItemButton >
-//         <Image
-//           loader={uploadcareLoader}
-//           src="/Mi-logoWhite.svg"
-//           alt="obizatrik"
-//           width={220}
-//           height={200}
-
-//         />
-//       </ListItemButton>
-//       <ListItemButton
-//         style={{ textAlign: "center" }}
-
-//         onClick={() => setOpenDrawer(false)}
-//       >
-//         <ListItemText>
-//           <Link href={`/`} className={styles.link}>
-//             HOME
-//           </Link>
-//         </ListItemText>
-//       </ListItemButton>
-
-//       <ListItemButton
-//         style={{ textAlign: "center" }}
-//         onClick={() => setOpenDrawer(false)}
-//       >
-//         <ListItemText>
-//           <Link href={`/work`} className={styles.link}>
-//             WORK
-//           </Link>{" "}
-//         </ListItemText>
-//       </ListItemButton>
-
-//       <ListItemButton
-//         style={{ textAlign: "center" }}
-//         onClick={() => setOpenDrawer(false)}
-//       >
-//         <ListItemText>
-//           <Link href={`/projects`} className={styles.link}>
-//             PROJECTS
-//           </Link>{" "}
-//         </ListItemText>
-//       </ListItemButton>
-
-//       <ListItemButton
-//         style={{ textAlign: "center" }}
-//         onClick={() => setOpenDrawer(false)}
-//       >
-//         <ListItemText>
-//           {" "}
-//           <Link href={`/about`} className={styles.link}>
-//             ABOUT
-//           </Link>
-//         </ListItemText>
-//       </ListItemButton>
-
-//       <ListItemButton
-//         style={{ textAlign: "center" }}
-//         onClick={() => setOpenDrawer(false)}
-//       >
-//         <ListItemText>
-//           <Link href={`/contacts`} className={styles.link}>
-//             CONTACTS
-//           </Link>{" "}
-//         </ListItemText>
-//       </ListItemButton>
-//     </List>
-//     <Divider style={{ width: "230", color: "#ffffff" }} variant="middle" />
-//     <div
-//       style={{
-//         display: "flex",
-//         flexDirection: "column",
-//         alignItems: "center ",
-//       }}
-//     >
-//       <Search>
-//         <SearchIconWrapper>
-//           <SearchIcon />
-//         </SearchIconWrapper>
-//         <StyledInputBase
-//           placeholder="Search…"
-//           inputProps={{ "aria-label": "search" }}
-//         />
-//       </Search>
-
-//       <Button>
-//         <Link href="/contacts" className={styles.button}>
-//           send E-mail
-//         </Link>
-//       </Button>
-
-//       <div style={{ marginTop: "3vh" }}>
-//         <div style={{ display: "flex" }}>
-//           <a
-//             className={styles.link}
-//             style={{ fontSize: "20px" }}
-//             rel={"external"}
-//             href="tel:+13062618482"
-//           >
-//             {" "}
-
-//             <PhoneInTalkIcon sx={{ width: "50px" }} />
-//             +13062618482
-//           </a>
-//         </div>
-//         <div style={{ display: "flex" }}>
-//           <a
-//             className={styles.link}
-//             style={{ fontSize: "16px" }}
-//             rel={"external"}
-//             href="mailto:mahmood.islam@gmail.com"
-//           >
-//             {" "}
-//             <i className="fal fa-phone" />{" "}
-//             <MailOutlineIcon sx={{ width: "50px", marginRight: "1vw" }} />
-//             mahmood.islam@gmail.com
-//           </a>
-//         </div>
-//       </div>
-//       <div style={{ display: "flex", marginTop: "2vh" }}>
-//         <VIcon
-//           defaulIcon={linkedInLogo}
-//           onHoverIcon={linkedInLogoHover}
-//           href="https://www.linkedin.com/in/mahmoodislam/"
-//           height="30px"
-//           width="30px"
-//           name="LinkedIn"
-//         />
-//         <VIcon
-//           defaulIcon={gmailLogo}
-//           onHoverIcon={gmailLogoHover}
-//           href="mailto:mahmood.islam@gmail.com"
-//           height="30px"
-//           width="30px"
-//           name="Gmail"
-//         />
-//         <VIcon
-//           defaulIcon={gitHubLogo}
-//           onHoverIcon={gitHubLogoHover}
-//           href="https://github.com/MahmoodUlislam"
-//           height="30px"
-//           width="30px"
-//           name="GitHub"
-//         />
-//       </div>
-//     </div>
-//   </Drawer>
-
-//   <IconButton
-//     className={classes.iconButtonContainer}
-//     onClick={() => setOpenDrawer(!openDrawer)}
-//     disableRipple
-//   >
-//     <MenuIcon className={classes.menuIconToggle} />
-//   </IconButton>
-// </>
-// };

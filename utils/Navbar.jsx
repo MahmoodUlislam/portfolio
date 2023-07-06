@@ -7,29 +7,10 @@ import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { makeStyles } from 'tss-react/mui';
 import BackTop from "./BackTop";
 import SwipeableTemporaryDrawer from "./DrawerComponent";
 import styles from "./menubar.module.scss";
 
-const useStyles = makeStyles()((theme) => ({
-  navbar: {
-    display: "flex",
-    justifyContent: "flex-start",
-    height: "20vh",
-    backgroundColor: "#3466aa",
-    alignItems: "center",
-  },
-  appBar: {
-    background: "transparent",
-    boxShadow: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-    position: "absolute !important",
-  },
-}));
 // type MenuBarProps = {
 //   activeTab: "Home" | "Work"| "Projects" | "About" | "Contacts"
 // }
@@ -39,30 +20,27 @@ const myLoader = () => {
 export default function Navbar(props) {
   // const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
-  const { classes } = useStyles();
+
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-  // const handleClickTab = (e, newValue) => {
-  //   setValue(newValue);
-  // };
-  // const handleOpenMenu = (e) => {
-  //   setAnchorEl(e.currentTarget);
-  // };
+
   const handleCloseMenu = () => {
     setAnchorEl(null);
   };
   return (
-    <div className={classes.navbar}>
+    <div className={styles.navbar}>
       {isMatch ? (
         <>
           <div
             style={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-around",
               alignItems: "center",
+              margin: "1rem 0 0 0"
+
             }}
           >
-            <SwipeableTemporaryDrawer />
+
             <Image
               loader={uploadcareLoader}
               src="/Mi-logoWhite.svg"
@@ -70,6 +48,9 @@ export default function Navbar(props) {
               width={100}
               height={82}
             />
+
+            <SwipeableTemporaryDrawer />
+
           </div>
         </>
       ) : (
@@ -82,7 +63,7 @@ export default function Navbar(props) {
               color: "transparent"
             }}
           >
-            <AppBar className={classes.appBar}>
+            <AppBar className={styles.appBar}>
               <nav className={styles.menuBar}>
                 <Link className={styles.title} href={`/`} >
 

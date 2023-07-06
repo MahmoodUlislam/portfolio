@@ -34,7 +34,7 @@ export default function VAbout() {
           <p style={{ color: 'white', fontSize: '40px' }}>Long story short</p>
 
           <Fade>
-            <h2>
+            <h2 className={styles.aboutMyself}>
               {useTypedText(`An energetic and imaginative Full-stack developer along with the ability to create web & mobile applications of all standards. High awareness of industry issues and trends; particularly regarding accessibility, usability, emerging technologies, and open-source CMS.
                               	Full-stack web development:
                               •UI and UX design

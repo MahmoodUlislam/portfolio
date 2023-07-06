@@ -7,10 +7,9 @@
 
   .content {
     display: flex;
-
     flex-direction: column;
     justify-content: space-around;
-
+    margin-top: 10rem;
     .intro {
       min-height: calc(100vh - 100px);
       display: flex;

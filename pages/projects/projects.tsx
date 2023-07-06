@@ -89,9 +89,9 @@ export default function VProjects() {
                       target="_blank"
                       rel="stylesheet"
                       href={project.cloudLink}
-                      >
-                        
-                        web link of {project.name}
+                    >
+
+                      web link of {project.name}
                     </Link>
                     {/* <Iframe
                     unoptimized

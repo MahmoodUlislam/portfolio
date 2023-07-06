@@ -2,12 +2,12 @@
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: #ff0072;
+    color: #82b7dc;
   }
 }
 .button {
   color: #ffffff;
-  background-color: #ff0072;
+  background-color: #82b7dc;
   font-size: 16px;
   border-radius: 5px;
   margin-top: 5px;
@@ -19,6 +19,24 @@
 
   &:hover {
     background: #fff;
-    color: #ff0072;
+    color: #82b7dc;
+  }
+}
+.iconButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.menuIconToggle {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  &:hover {
+    color: #82b7dc;
   }
 }
