@@ -76,8 +76,15 @@ export default function VAbout() {
 
               <Image
                 loader={myLoader}
-                alt="CV mahmood"
-                src='/CVmahmood.png'
+                alt="CV mahmood-1"
+                src='/CVmahmood-1.jpg'
+                width={430}
+                height={556.47}
+              />
+              <Image
+                loader={myLoader}
+                alt="CV mahmood-2"
+                src='/CVmahmood-2.jpg'
                 width={430}
                 height={556.47}
               />

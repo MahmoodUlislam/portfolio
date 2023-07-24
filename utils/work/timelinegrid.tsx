@@ -95,8 +95,6 @@ export function VTimelineGrid() {
             </div>
           </div>
           <p className={styles.cardContentDescription}>
-            SELISE Digital Platforms<br />
-            1.6.2022 to {getDate()}<br /><br />
             Project: Sunrise-club (https://www.sunrise.ch/en/moments), an Event booking site for the Telco (Sunrise) user of Switzerland
             <br />
             job location: Dhaka, Bangladesh.
@@ -125,6 +123,63 @@ export function VTimelineGrid() {
             Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br />
             Version Control System: <b>Git</b>, <b>GitHub</b>, <b>GitLab</b><br />
             Issue trancing: <b>Trello</b><br />
+            Communication tools:<b>Microsoft Teams</b>, <b>Google meets</b>, <b>Zoom</b>.<br />
+          </p>
+        </div>
+      </div>
+      <div className={styles.timelineGridItemWide}>
+        <h1>2023</h1>
+
+      </div>
+      <div className={styles.timelineGridItemCard}>
+        <div className={styles.cardContent}>
+          <div className={styles.cardContentHeader}>
+            <div className={styles.companyLogo} >
+              <Image
+                loader={uploadcareLoader}
+                alt="Saaska Software logo."
+                src='/SaaskaLogo.png'
+                height={41}
+                width={52} />
+            </div>
+            <div className={styles.companyInfo}>
+              <h1 className={styles.companyTitle}>Saaska Software Inc.</h1>
+              <h2 className={styles.cardContentDetails}>Software Engineer and Technical Support Assistant</h2>
+              <h2 className={styles.cardContentDetails}>05.4.2023 – {getDate()}</h2>
+            </div>
+          </div>
+          <p className={styles.cardContentDescription}>
+
+            Project: esiKidz (https://esikidz.com/),<br />
+            Software solution for childcare institution management.
+            <br />
+            job location: Saskatoon, Saskatchewan, Canada.
+
+            <br />
+            My main responsibilities for the project:<br />
+            #  Working collaboratively in a team to maintain overall architecture and development of a highly scalable system integrated with ReactJS & React-Native APPs, communicating via Node JS API services and Lambda functions,<br />
+            # Performing optimization of developer toolchain to support instant provisioning of new services and infrastructure, fully automating the deployment, and minimizing development friction,<br />
+            # Designing and implementing to improve software’s reliability, scalability, performance, and security,<br />
+            # Supporting Business Development and Marketing by creating internal software to enhance tasks,<br />
+            # Performing software testing, improving existing systems, and adding new features,<br />
+            # Creating and maintaining documentation on test and development operations,<br />
+            # Demonstrating the system to new customers and technical support to existing customers,<br /><br />
+
+
+            Achievements I am most proud of:
+            # Learned React.js at the enterprise level,<br />
+            # Created a web app with high security,<br />
+            # Learned data science by creating crawling, data extraction, data filtration & alteration apps,<br />
+            # Experience AWS Lambda, S3-Bucket, MySQL etc,<br />
+            # Practiced various libraries for data extraction, filtration, and writing,<br />
+            # Achieve enterprise-level knowledge of mobile app development,<br />
+            # Building various internal apps to assist the software to manage childcare centers.<br />
+
+            Languages: <b>JavaScript</b>, <b>TypeScript</b>, <b>React.js</b>, <b>Next.js</b>.<br />
+            Database: <b>MongoDB</b>, <b>Firebase</b>.<br />
+            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br />
+            Version Control System: <b>Git</b>, <b>GitHub</b>, <b>GitLab</b><br />
+            Issue trancing: <b>Trello</b>,<b>Jira</b><br />
             Communication tools:<b>Microsoft Teams</b>, <b>Google meets</b>, <b>Zoom</b>.<br />
           </p>
         </div>
