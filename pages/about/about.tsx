@@ -5,7 +5,6 @@ import {
   VFooter
 } from '../../utils'
 import Navbar from '../../utils/Navbar'
-import { useTypedText } from '../../utils/typingtext'
 import styles from './about.module.scss'
 
 let width = 0;
@@ -34,38 +33,35 @@ export default function VAbout() {
           <p style={{ color: 'white', fontSize: '40px' }}>Long story short</p>
 
           <Fade>
-            <h2 className={styles.aboutMyself}>
-              {useTypedText(`An energetic and imaginative Full-stack developer along with the ability to create web & mobile applications of all standards. High awareness of industry issues and trends; particularly regarding accessibility, usability, emerging technologies, and open-source CMS.
-                              	Full-stack web development:
-                              •UI and UX design
-                              •Responsive design skills
-                              •Project management, Team management
-                              •Troubleshooting, Identifying technical solutions
-                              •Client facing skills
-                              •Excellent problem-solving skills
-                              •Analytical skills
-                              •Build process, Deployment, Logger implementation
-                              •Testing and debugging, Bug fixing
-                              •Web application development
-                              
-                              	Experience:
-                              •HTML, CSS, JavaScript & TypeScript
-                              •React.js, Next.js, Redux, Node.js, Express.js, Mongoose
-                              •Mongo-DB & Firebase
-                              •React-Native(Expo CLI)
-                              •Python
-                              •REST API, GraphQL, Apollo-GraphQL
-                              •Sass, Bootstrap, Tailwind CSS,
-                              •React-bootstrap, Material-UI, Ant-Design, NextUI
-                              •OAuth 2 + OIDC, Auth0
-                              •Wordpress, Storyblok
-                              •Git, GitHub, GitLab
-                              •Docker
-                              •Search Engine Optimization, Adobe Analytics
+            <pre className={styles.aboutMyself}>
+              <span className={styles.lineStyles}>
+                An imaginative Full-stack developer with expertise in creating web and mobile applications of all standards. Highly aware of industry issues and trends, especially in accessibility, usability, emerging technologies, and open-source CMS.
+              </span>
 
-                              Responsible for all the works that belong to the web development from start to finish.
-                              `, 30, 350)}
-            </h2>
+              <span className={styles.lineStyles}>
+                # Areas of expertise
+                • JavaScript, TypeScript, React.js, React Native Next.js
+                • Redux, Node.js, Express.js, Mongoose, Mongo-DB, Firebase
+                • REST API, GraphQL, Apollo-GraphQL • Sass, Bootstrap, Tailwind CSS, HTML and CSS
+                • React-bootstrap, Material-UI, Ant-Design, Tailwind CSS • OAuth 2 + OIDC, Auth0, WordPress, Storyblok CMS
+                • Git, GitHub, GitLab
+                • Docker, Search Engine Optimization
+              </span>
+
+              <span className={styles.lineStyles}>
+                # Key competencies and skills
+                • Web & Mobile APP development
+                • Build process, Deployment, and Testing
+                • Troubleshooting, Identifying technical solutions
+                • UI/UX design
+                • Project, Team, and client management
+                • Efficient problem-solving and analytical skills
+              </span>
+
+              <span className={styles.lineStyles}>
+                Responsible for overseeing all aspects of web development, from initiation to completion.
+              </span>
+            </pre>
           </Fade>
 
           <div className={styles.timelineGridItemCard}>

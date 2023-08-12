@@ -2,7 +2,15 @@
   margin-top: 6rem;
 }
 .aboutMyself {
-  height: 500px;
+  white-space: pre-wrap;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 2rem;
+}
+.lineStyles {
+  display: block;
+  margin: 1rem;
 }
 .timelineGrid {
   background-color: #82b7dc;
