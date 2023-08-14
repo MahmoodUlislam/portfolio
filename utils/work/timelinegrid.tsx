@@ -91,7 +91,7 @@ export function VTimelineGrid() {
             <div className={styles.companyInfo}>
               <h1 className={styles.companyTitle}>Selise Digital Platform</h1>
               <h2 className={styles.cardContentDetails}>Software Engineer</h2>
-              <h2 className={styles.cardContentDetails}>1.6.2022 – {getDate()}</h2>
+              <h2 className={styles.cardContentDetails}>1.6.2022 – 5.9.2022</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
@@ -127,10 +127,15 @@ export function VTimelineGrid() {
           </p>
         </div>
       </div>
+      <div className={styles.timelineGridItemAdjoiningCard} />
+
       <div className={styles.timelineGridItemWide}>
         <h1>2023</h1>
 
       </div>
+      <div className={styles.timelineGridItemAdjoiningCard} />
+      <div className={styles.timelineGridItem} />
+      <div className={styles.timelineGridItem} />
       <div className={styles.timelineGridItemCard}>
         <div className={styles.cardContent}>
           <div className={styles.cardContentHeader}>
@@ -186,7 +191,7 @@ export function VTimelineGrid() {
       </div>
       <div className={styles.timelineGridItemAdjoiningCard} />
       <div className={styles.timelineGridItem} />
-      <div className={styles.timelineGridItem} />
+
       <div className={styles.timelineGridItemWide}>
         <div className={styles.timelinePoint} />
         <h1>{

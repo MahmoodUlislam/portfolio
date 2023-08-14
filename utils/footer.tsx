@@ -24,7 +24,7 @@ export function VFooter() {
       <h4 className={styles.copyrights}>
         ©{new Date().getFullYear()}
         <br />
-        Build with <span>Next.js/TypeScript</span>
+        All rights reserve to <span>Mahmood</span>
       </h4>
       <div className={styles.icons}>
         <VIcon

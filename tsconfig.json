@@ -25,7 +25,8 @@
     "**/*.ts",
     "**/*.tsx",
     "utils/quill1.tsx",
-    "utils/home/toolstech.jsx"
+    "utils/home/toolstech.jsx",
+    "utils/BackTop.jsx"
   ],
   "exclude": ["node_modules"]
 }

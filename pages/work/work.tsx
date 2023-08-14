@@ -23,25 +23,10 @@ export default function VWork() {
           <h1>
             Work history
           </h1>
-
           <Fade>
             <h2>
-              Experienced in
-              •HTML, CSS, JavaScript & TypeScript
-              •React.js, Next.js, Redux, Node.js, Express.js, Mongoose
-              •Mongo-DB & Firebase
-              •React-Native(Expo CLI)
-              •Python
-              •REST API, GraphQL, Apollo-GraphQL
-              •Sass, Bootstrap, Tailwind CSS,
-              •React-bootstrap, Material-UI, Ant-Design, NextUI
-              •OAuth 2 + OIDC, Auth0
-              •Wordpress, Storyblok
-              •Git, GitHub, GitLab
-              •Docker
-              •Search Engine Optimization, Adobe Analytics
+              I'm a Software Engineer proficient in JavaScript, TypeScript, React.js, Next.js, React Native, Redux, Node.js, and MongoDB. With a focus on web and mobile app development, I excel in UI/UX design, troubleshooting, maintaining, and deploying robust solutions. At Saaska Software Inc., I contribute to securing childcare management software using React.js and React Native, optimizing architecture, testing, technical support, and enhancing reliability. At SELISE Digital Platforms, I helped create an event booking site with JavaScript, TypeScript, and Next.js. My experience also includes web development at Quantic Dynamics Ltd., where I built responsive websites and implemented search functions. I'm proficient in Git, Graph-QL, UI/UX design, and Data Science. Also, I assisted customers as a Computing Advisor at Best Buy. I possess exceptional skills in managing projects, teams, and clients.
             </h2>
-
           </Fade>
         </div>
         <Fade>

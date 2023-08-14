@@ -2,10 +2,11 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Fab from "@mui/material/Fab";
 import Toolbar from "@mui/material/Toolbar";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Zoom from "@mui/material/Zoom";
-import PropTypes from "prop-types";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import PropTypes from 'prop-types';
 import * as React from "react";
+
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -17,16 +18,14 @@ function ScrollTop(props) {
     disableHysteresis: true,
     threshold: 100,
   });
-
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      "#back-to-top-anchor"
+      '#back-to-top-anchor',
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
+        block: 'center',
       });
     }
   };
@@ -40,10 +39,9 @@ function ScrollTop(props) {
       >
         {children}
       </Box>
-    </Zoom>
+    </Zoom >
   );
 }
-
 ScrollTop.propTypes = {
   children: PropTypes.element.isRequired,
   /**
@@ -52,8 +50,7 @@ ScrollTop.propTypes = {
    */
   window: PropTypes.func,
 };
-
-export default function BackTop(props) {
+export default function BackToTop(props) {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -64,7 +61,7 @@ export default function BackTop(props) {
         <Fab
           sx={{
             color: "#82b7dc !important",
-            fontSize: "50px",
+            fontSize: "48px",
             paddingTop: "15px",
           }}
           size="small"
