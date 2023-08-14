@@ -19,6 +19,7 @@ function ScrollTop(props) {
   });
 
   const handleClick = (event) => {
+    console.log(event.target.ownerDocument);
     const anchor = (event.target.ownerDocument || document).querySelector(
       "#back-to-top-anchor"
     );
@@ -64,7 +65,7 @@ export default function BackTop(props) {
         <Fab
           sx={{
             color: "#82b7dc !important",
-            fontSize: "50px",
+            fontSize: "48px",
             paddingTop: "15px",
           }}
           size="small"
