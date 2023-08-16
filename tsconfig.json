@@ -20,12 +20,6 @@
     ],
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "utils/quill1.tsx",
-    "utils/home/toolstech.jsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/BackTop.jsx"],
   "exclude": ["node_modules"]
 }

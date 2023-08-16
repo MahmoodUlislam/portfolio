@@ -90,9 +90,6 @@ export default function VContactsForm(...pageProps) {
             defaultValue="Please enter your message here..."
             name="message"
           />
-
-          {/* <Quill placeholder="Enter you message" name="message" />
-          <Quill1 placeholder="Enter you message" name="quillRef" /> */}
           <Button
             style={{
               width: "30%",
