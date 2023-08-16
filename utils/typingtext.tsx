@@ -1,4 +1,5 @@
-import React from "react"
+import * as React from "react";
+
 
 export function useTypedText(text: string, speed: number, delayTime?: number) {
   const [textState, setTextState] = React.useState("")
@@ -10,7 +11,7 @@ export function useTypedText(text: string, speed: number, delayTime?: number) {
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
-      setTextState((prevText) => {
+      setTextState((prevText: any) => {
         if (prevText.length !== chars.length) {
           const newText = prevText.concat(chars[prevText.length])
           return newText

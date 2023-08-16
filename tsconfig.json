@@ -20,6 +20,12 @@
     ],
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/BackTop.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "utils/BackTop.jsx",
+    "utils/DrawerComponent.jsx"
+  ],
   "exclude": ["node_modules"]
 }

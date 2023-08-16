@@ -15,7 +15,7 @@ import { alpha, styled } from "@mui/material/styles";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Image from "next/image";
 import Link from "next/link";
-import * as React from 'react';
+import React, { useState } from 'react';
 import {
   gitHubLogo,
   gitHubLogoHover,
@@ -69,19 +69,19 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-type Anchor = 'right';
+
 export default function SwipeableTemporaryDrawer() {
-  const [state, setState] = React.useState({ right: false });
+  const [state, setState] = useState({ right: false });
 
 
   const toggleDrawer =
-    (anchor: Anchor, open: boolean) =>
-      (event: React.KeyboardEvent | React.MouseEvent) => {
+    (anchor, open) =>
+      (event) => {
         if (
           event &&
           event.type === 'keydown' &&
-          ((event as React.KeyboardEvent).key === 'Tab' ||
-            (event as React.KeyboardEvent).key === 'Shift')
+          ((event).key === 'Tab' ||
+            (event).key === 'Shift')
         ) {
           return;
         }
@@ -89,7 +89,7 @@ export default function SwipeableTemporaryDrawer() {
         setState({ ...state, [anchor]: open });
       };
 
-  const list = (anchor: Anchor) => (
+  const list = (anchor) => (
     <Box
       sx={{ width: 250, backgroundColor: "#1c1c1c" }}
       role="presentation"
@@ -235,7 +235,7 @@ export default function SwipeableTemporaryDrawer() {
 
   return (
     <div>
-      {(['right'] as const).map((anchor) => (
+      {(['right']).map((anchor) => (
         <React.Fragment key={anchor}>
           <SwipeableDrawer
             anchor={anchor}
