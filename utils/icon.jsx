@@ -2,19 +2,8 @@ import Image from 'next/image';
 import ReactTooltip from 'react-tooltip';
 import styles from './icon.module.scss';
 
-type IconProps = {
-  defaulIcon: any
-  onHoverIcon: any
-  href?: string
-  height: number
-  width: number
-  name: string
-  tooltipID?: string
-}
-
-
-export function VIcon(props: IconProps) {
-  const myLoader = ({ src, width, height }: any) => {
+export function VIcon(props) {
+  const myLoader = ({ src, width, height }) => {
     return `${process.env.NEXT_PUBLIC_BASE_URL}/${src}?w=${width}&h=${height}`
   }
   return (

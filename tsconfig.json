@@ -25,7 +25,9 @@
     "**/*.ts",
     "**/*.tsx",
     "utils/BackTop.jsx",
-    "utils/DrawerComponent.jsx"
+    "utils/DrawerComponent.jsx",
+    "utils/typingtext.jsx",
+    "utils/menubar.jsx"
   ],
   "exclude": ["node_modules"]
 }

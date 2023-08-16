@@ -1,6 +1,5 @@
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import type { AppProps } from 'next/app';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { TssCacheProvider } from "tss-react";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next/pagesDir";
@@ -21,7 +20,7 @@ const {
 export { augmentDocumentWithEmotionCache_tss };
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <CacheProvider value={cache}>
       <ParallaxProvider >

@@ -4,12 +4,10 @@ import Link from 'next/link';
 import BackTop from './BackTop';
 import styles from './menubar.module.scss';
 
-type MenuBarProps = {
-  activeTab: "Home" | "Work" | "Projects" | "About" | "Contacts"
-}
 
-export function VMenuBar(props: MenuBarProps) {
+export function VMenuBar(props) {
   return (
+
     <nav className={styles.menuBar}>
       <Link className={styles.title} href={`/`} >
 
