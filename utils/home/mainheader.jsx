@@ -9,7 +9,7 @@ export function VMainHeader() {
       <h1 className={styles.header}>
         Hello everyone!
         <br />
-        I'm Mahmood
+        I am Mahmood
       </h1>
       <h2 className={styles.heroBody}>
         {useTypedText("Welcome on my portfolio page! I'm a Software Developer & Designer, currently working as Full-stack Web Developer. Living in Saskatoon, Saskatchewan, Canada.", 30, 350)}

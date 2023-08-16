@@ -51,4 +51,11 @@
       height: 111px;
     }
   }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-height: 150px;
+    margin: 0 auto;
+  }
 }

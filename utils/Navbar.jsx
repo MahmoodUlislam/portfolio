@@ -40,14 +40,16 @@ export default function Navbar(props) {
 
             }}
           >
+            <Link href="/">
+              <Image
+                loader={uploadcareLoader}
+                src="/Mi-logoWhite.svg"
+                alt="myFace"
+                width={100}
+                height={82}
 
-            <Image
-              loader={uploadcareLoader}
-              src="/Mi-logoWhite.svg"
-              alt="myFace"
-              width={100}
-              height={82}
-            />
+              />
+            </Link>
 
             <SwipeableTemporaryDrawer />
 

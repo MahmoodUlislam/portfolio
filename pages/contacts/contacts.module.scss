@@ -20,8 +20,8 @@
       justify-content: center;
       min-width: 300px;
       max-width: 1500px;
-
       width: 70vw;
+      overflow: hidden;
     }
 
     .hobbies {
@@ -111,5 +111,8 @@
     .commissions {
       width: 70vw;
     }
+  }
+  .summary {
+    font-size: 0.75em;
   }
 }
