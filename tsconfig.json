@@ -27,7 +27,19 @@
     "utils/BackTop.jsx",
     "utils/DrawerComponent.jsx",
     "utils/typingtext.jsx",
-    "utils/menubar.jsx"
+    "utils/menubar.jsx",
+    "pages/index.jsx",
+    "pages/404.jsx",
+    "pages/_document.jsx",
+    "pages/_app.jsx",
+    "pages/work/work.jsx",
+    "pages/home/home.jsx",
+    "pages/about/about.jsx",
+    "utils/home/toolstech.jsx",
+    "utils/home/mainheader.jsx",
+    "utils/work/timelinegrid.jsx",
+    "utils/footer.jsx",
+    "utils/icon.jsx"
   ],
   "exclude": ["node_modules"]
 }
