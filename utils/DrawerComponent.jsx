@@ -1,7 +1,6 @@
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import MenuIcon from "@mui/icons-material/Menu";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import SearchIcon from "@mui/icons-material/Search";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -11,7 +10,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { alpha, styled } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,31 +25,31 @@ import {
 } from "../assets";
 import styles from "./DrawerComponent.module.scss";
 import { VIcon } from "./icon";
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginRight: 0,
-  width: "80%",
-  [theme.breakpoints.up("sm")]: {
-    marginRight: theme.spacing(1),
-    width: "auto",
-  },
-}));
+// const Search = styled("div")(({ theme }) => ({
+//   position: "relative",
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: alpha(theme.palette.common.white, 0.15),
+//   "&:hover": {
+//     backgroundColor: alpha(theme.palette.common.white, 0.25),
+//   },
+//   marginRight: 0,
+//   width: "80%",
+//   [theme.breakpoints.up("sm")]: {
+//     marginRight: theme.spacing(1),
+//     width: "auto",
+//   },
+// }));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: "#ffffff",
-}));
+// const SearchIconWrapper = styled("div")(({ theme }) => ({
+//   padding: theme.spacing(0, 2),
+//   height: "100%",
+//   position: "absolute",
+//   pointerEvents: "none",
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   color: "#ffffff",
+// }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
@@ -159,7 +158,7 @@ export default function SwipeableTemporaryDrawer() {
           alignItems: "center ",
         }}
       >
-        <Search>
+        {/* <Search>
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
@@ -167,7 +166,7 @@ export default function SwipeableTemporaryDrawer() {
 
             inputProps={{ "aria-label": "search" }}
           />
-        </Search>
+        </Search> */}
 
         <Button>
           <Link href="/contacts" className={styles.button}>
@@ -176,7 +175,7 @@ export default function SwipeableTemporaryDrawer() {
         </Button>
 
         <div style={{ marginTop: "3vh" }}>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", margin: "1rem" }}>
             <a
               className={styles.link}
               style={{ fontSize: "20px" }}
@@ -189,7 +188,7 @@ export default function SwipeableTemporaryDrawer() {
               +13062618482
             </a>
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", margin: "1rem" }}>
             <a
               className={styles.link}
               style={{ fontSize: "16px" }}

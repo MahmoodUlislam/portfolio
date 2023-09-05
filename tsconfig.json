@@ -40,6 +40,6 @@
     "utils/work/timelinegrid.jsx",
     "utils/footer.jsx",
     "utils/icon.jsx"
-  ],
+, "assets/index.jsx"  ],
   "exclude": ["node_modules"]
 }

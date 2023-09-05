@@ -18,6 +18,9 @@
       justify-content: center;
       text-align: center;
       width: 70vw;
+      & h2 {
+        font-size: 1.2em !important;
+      }
     }
 
     .timelineGridCotainer {
@@ -27,8 +30,16 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .summary {
-    width: 85vw !important;
+  .workContainer {
+    .content {
+      margin-top: 1rem;
+      .summary {
+        width: 85vw !important;
+        & h2 {
+          font-size: 1em !important;
+        }
+      }
+    }
   }
 
   .timelineGridCotainer {

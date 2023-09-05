@@ -249,6 +249,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .aboutContainer {
+    .content {
+      margin: 0;
+      .summary {
+        margin-top: 0;
+      }
+    }
+  }
   .hobbies {
     gap: 50px;
     flex-direction: column !important;
@@ -265,6 +273,9 @@
     }
   }
   .cardContent {
-    width: 100% !important;
+    width: fit-content !important;
+  }
+  .lineStyles {
+    font-size: 0.8em !important;
   }
 }

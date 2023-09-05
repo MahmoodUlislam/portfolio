@@ -97,6 +97,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .aboutContainer {
+    .content {
+      margin: 1rem;
+      .summary {
+        margin-top: 0;
+      }
+    }
+  }
   .hobbies {
     gap: 50px;
     flex-direction: column !important;

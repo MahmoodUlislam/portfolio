@@ -1,10 +1,15 @@
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
+import { Roboto } from 'next/font/google';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { TssCacheProvider } from "tss-react";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next/pagesDir";
 const cache = createCache({ key: 'css', prepend: true });
-
+// If loading a variable font, you don't need to specify the font weight
+const roboto = Roboto({
+  weight: '300',
+  subsets: ['latin'],
+})
 const {
   augmentDocumentWithEmotionCache: augmentDocumentWithEmotionCache_mui,
   withAppEmotionCache: withAppEmotionCache_mui
@@ -24,7 +29,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <CacheProvider value={cache}>
       <ParallaxProvider >
-        <Component {...pageProps} />
+        <main className={roboto.className}>
+          <Component {...pageProps} />
+        </main>
       </ParallaxProvider>
     </CacheProvider>
 

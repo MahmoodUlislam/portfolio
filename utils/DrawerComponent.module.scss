@@ -1,6 +1,8 @@
 .link {
   color: #fff;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
   &:hover {
     color: #82b7dc;
   }

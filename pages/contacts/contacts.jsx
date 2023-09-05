@@ -29,36 +29,36 @@ export default function VContacts() {
         <div className={styles.content}>
           <div className={styles.summary}>
             <h1>Contacts</h1>
-            <Fade>
-              <h2>
-                Email: mahmood.islam@gmail.com
-              </h2>
-              <h2>
-                <a
-                  style={{ textDecoration: "none", color: "white" }}
-                  href="https://github.com/MahmoodUlislam/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  #GitHub: https://github.com/MahmoodUlislam
-                </a>
-                <h2>
-                  Address: Saskatoon, Saskatchewan, Canada
-                </h2>
-              </h2>
-              <h2>
-                <a
-                  style={{ textDecoration: "none", color: "white" }}
-                  rel={"external"}
-                  href="tel:+13062618482"
-                >
-                  {" "}
-                  <i className="fal fa-phone" /> Contact# +13062618482
-                </a>
-              </h2>
+
+            <h2>
+              Email: mahmood.islam@gmail.com
+            </h2>
+            <h2>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="https://github.com/MahmoodUlislam/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                #GitHub: https://github.com/MahmoodUlislam
+              </a>
+              <h3>
+                Address: Saskatoon, Saskatchewan, Canada
+              </h3>
+            </h2>
+            <h2>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                rel={"external"}
+                href="tel:+13062618482"
+              >
+                {" "}
+                <i className="fal fa-phone" /> Contact# +1-306-261-8482
+              </a>
+            </h2>
 
 
-            </Fade>
+
             <h2>
               For any inquiries, the below form can be used...
             </h2>

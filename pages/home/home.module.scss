@@ -198,6 +198,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .homeContainer {
+    .content {
+      margin-top: 0rem;
+    }
+  }
   %rotatedLayer {
     height: 160vw !important;
   }
