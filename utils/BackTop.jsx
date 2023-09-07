@@ -1,79 +1,41 @@
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Fab from "@mui/material/Fab";
-import Toolbar from "@mui/material/Toolbar";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Zoom from "@mui/material/Zoom";
-import PropTypes from "prop-types";
-import * as React from "react";
+import { useEffect, useState } from 'react';
+import styles from './BackTop.module.scss';
 
-function ScrollTop(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-    disableHysteresis: true,
-    threshold: 100,
-  });
+const BackTop = () => {
+  // State to track whether the button should be visible
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleClick = (event) => {
-    console.log(event.target.ownerDocument);
-    const anchor = (event.target.ownerDocument || document).querySelector(
-      "#back-to-top-anchor"
-    );
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Add smooth scrolling behavior
+    });
   };
 
-  return (
-    <Zoom in={trigger}>
-      <Box
-        onClick={handleClick}
-        role="presentation"
-        sx={{ position: "fixed", right: "5px", bottom: "5px" }}
-      >
-        {children}
-      </Box>
-    </Zoom>
-  );
-}
+  // useEffect hook to handle scroll events and show/hide the button
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
 
-ScrollTop.propTypes = {
-  children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
+    window.addEventListener('scroll', scrollHandler);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
+  }, []);
+
+  return (
+    <>
+      <button className={isVisible ? styles.scrollTopButton : styles.hide} onClick={scrollToTop}>^</button>
+    </ >
+  )
 };
 
-export default function BackTop(props) {
-  return (
-    <React.Fragment>
-      <CssBaseline />
-
-      <Toolbar id="back-to-top-anchor" />
-
-      <ScrollTop {...props}>
-        <Fab
-          sx={{
-            color: "#82b7dc !important",
-            fontSize: "48px",
-            paddingTop: "15px",
-          }}
-          size="small"
-          aria-label="scroll back to top"
-        >
-          ^
-        </Fab>
-      </ScrollTop>
-    </React.Fragment>
-  );
-}
+export default BackTop;

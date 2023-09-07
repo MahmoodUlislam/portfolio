@@ -4,7 +4,9 @@ import { Roboto } from 'next/font/google';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { TssCacheProvider } from "tss-react";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next/pagesDir";
-const cache = createCache({ key: 'css', prepend: true });
+import '../styles/globals.scss';
+
+const cache = createCache({ key: 'scss', prepend: true });
 // If loading a variable font, you don't need to specify the font weight
 const roboto = Roboto({
   weight: '300',
@@ -15,25 +17,25 @@ const {
   withAppEmotionCache: withAppEmotionCache_mui
 } = createEmotionSsrAdvancedApproach({ "key": "mui", "prepend": true });
 
-export { augmentDocumentWithEmotionCache_mui };
+export { augmentDocumentWithEmotionCache_mui, withAppEmotionCache_mui };
 
 const {
   augmentDocumentWithEmotionCache: augmentDocumentWithEmotionCache_tss,
   withAppEmotionCache: withAppEmotionCache_tss
 } = createEmotionSsrAdvancedApproach({ "key": "tss" }, TssCacheProvider);
 
-export { augmentDocumentWithEmotionCache_tss };
+export { augmentDocumentWithEmotionCache_tss, withAppEmotionCache_tss };
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <CacheProvider value={cache}>
-      <ParallaxProvider >
-        <main className={roboto.className}>
+    <main className={roboto.className}>
+      <CacheProvider value={cache}>
+        <ParallaxProvider >
           <Component {...pageProps} />
-        </main>
-      </ParallaxProvider>
-    </CacheProvider>
+        </ParallaxProvider>
+      </CacheProvider>
+    </main>
 
   )
 }
