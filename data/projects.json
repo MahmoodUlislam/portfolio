@@ -1,5 +1,11 @@
 [
   {
+    "name": "Esikidz",
+    "src": "/esiKidzLogo.png",
+    "cloudLink": "https://esikidz.com/",
+    "description": "a childcare management software Project’s usage: JavaScript, React.js, React Native, node.js, REST APIs, SASS, CSS, Git, GitHub, GitLab, Trello, Jira. • Learning React.js & React Native at the enterprise level. • Specialize in developing and managing secure web and mobile apps. • Learning data science by creating apps for web crawling, data extraction, and manipulation. • Practicing various libraries for data extraction, filtration, and writing. • Experiencing AWS Lambda, S3-Bucket, MySQL, and other related technologies. • Developing multiple internal applications to support the software system in efficiently managing childcare centers."
+  },
+  {
     "name": "Sunrise-club",
     "src": "/SunriseLogo.svg",
     "cloudLink": "https://www.sunrise.ch/en/moments",
