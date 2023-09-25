@@ -191,7 +191,7 @@ export default function SwipeableTemporaryDrawer() {
           <div style={{ display: "flex", margin: "1rem" }}>
             <a
               className={styles.link}
-              style={{ fontSize: "16px" }}
+              style={{ fontSize: "12px" }}
               rel={"external"}
               href="mailto:mahmood.islam@gmail.com"
             >
