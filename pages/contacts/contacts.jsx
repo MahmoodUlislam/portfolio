@@ -34,18 +34,19 @@ export default function VContacts() {
               Email: mahmood.islam@gmail.com
             </h2>
             <h2>
+              Address: Saskatoon, Saskatchewan, Canada
+            </h2>
+            <h3>
+              #GitHub:
               <a
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "underline", color: "#82b7dc" }}
                 href="https://github.com/MahmoodUlislam/"
                 target="_blank"
                 rel="noreferrer"
               >
-                #GitHub: https://github.com/MahmoodUlislam
+                https://github.com/MahmoodUlislam
               </a>
-              <h3>
-                Address: Saskatoon, Saskatchewan, Canada
-              </h3>
-            </h2>
+            </h3>
             <h2>
               <a
                 style={{ textDecoration: "none", color: "white" }}
