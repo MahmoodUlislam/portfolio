@@ -12,6 +12,12 @@
     "description": "An Event booking site for the Telco (Sunrise) users of Switzerland. Project’s usage: JavaScript, TypeScript, React.js, Next.js, MongoDB, REST APIs, Storyblok CMS, Material UI, Ant Design UI, React-bootstrap, SASS, bootstrap, CSS"
   },
   {
+    "name": "Saskatoon Waterpaws",
+    "src": "/Skwaterpaws-website.PNG",
+    "cloudLink": "https://skwaterpaws.ca/",
+    "description": "A wordpress site for a pet grooming & swimming shop. Project’s usage: WordPress, PHP, HTML, CSS, JavaScript, Git, GitHub, Jira."
+  },
+  {
     "name": "Obhizatrik Foundation",
     "src": "/obhizatrikLanding.gif",
     "cloudLink": "https://ozf1.vercel.app/",
