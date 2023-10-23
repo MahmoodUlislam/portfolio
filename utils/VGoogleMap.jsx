@@ -27,7 +27,7 @@ function VGoogleMap() {
     setMap(map);
   }, []);
 
-  const onUnmount = React.useCallback(function callback() {
+  const onUnmount = React.useCallback(function callback(map) {
     setMap(null);
   }, []);
 
