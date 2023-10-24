@@ -39,5 +39,4 @@ next.config.js
 .env
 
 #lock files
-package-lock.json
 yarn.lock
