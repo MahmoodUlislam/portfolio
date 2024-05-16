@@ -1,5 +1,5 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import React from "react";
+import React, { useCallback } from "react";
 
 const containerStyle = {
   width: "100%",
@@ -17,25 +17,32 @@ function VGoogleMap() {
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
   });
 
-  const [map, setMap] = React.useState(null);
+  // Use useRef to hold the map instance
+  const mapRef = React.useRef(null);
 
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = useCallback((map) => {
+    mapRef.current = map;
     const bounds = new window.google.maps.LatLngBounds();
     bounds.extend(center);
-
     map.fitBounds(bounds);
-    setMap(map);
+
+    // Ensure the zoom level is set after fitBounds
+    map.addListener("idle", () => {
+      if (map.getZoom() > 12) {
+        map.setZoom(12);
+      }
+    });
   }, []);
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
+  const onUnmount = React.useCallback(() => {
+    mapRef.current = null;
   }, []);
 
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={11}
+      zoom={12}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
