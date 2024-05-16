@@ -48,7 +48,7 @@ export default function VProjects() {
               <Fade>
                 <h3>
                   {useTypedText(
-                    "Please see bellow for some of my projects to find out my experience regarding to the web & mobile app development",
+                    "Please see bellow for some of my projects to find out my experience.",
                     30,
                     350
                   )}
@@ -71,7 +71,6 @@ export default function VProjects() {
                     <div className={styles.image}>
 
                       <Image
-
                         src={project.src}
                         loader={uploadcareLoader}
                         alt={`Picture of ${project.name} Landing Page`}
@@ -93,18 +92,6 @@ export default function VProjects() {
 
                       web link of {project.name}
                     </Link>
-                    {/* <Iframe
-                    unoptimized
-                    url="http://www.youtube.com/embed/8riiLr668q4"
-                    height="450px"
-                    id="myId"
-                    className="myClassname"
-                    display="initial"
-                    position="relative"
-                    width="850px"
-                    allowFullScreen={true}
-                  /> */}
-
                     <Fade>
                       <h2>
 
@@ -113,11 +100,7 @@ export default function VProjects() {
                       </h2>
                     </Fade>
                   </div>
-
                 </div>
-
-
-
               </Item>
             </Grid>
           ))}

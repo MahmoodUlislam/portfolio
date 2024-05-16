@@ -74,15 +74,11 @@
       border-radius: 30px;
       border: 5px solid #ffffff;
       min-height: 250px;
-      transition: transform 0.2s;
       padding: 15px;
-      width: 470px;
+      width: fit-content;
       height: fit-content;
       text-align: center;
       overflow: hidden;
-      &:hover {
-        transform: scale(2);
-      }
 
       &Header {
         display: flex;
@@ -273,7 +269,7 @@
     }
   }
   .cardContent {
-    width: fit-content !important;
+    width: auto !important;
   }
   .lineStyles {
     font-size: 0.8em !important;
