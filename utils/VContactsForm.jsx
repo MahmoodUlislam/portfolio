@@ -10,8 +10,7 @@ export default function VContactsForm(...pageProps) {
 
     emailjs.sendForm(process.env.GMAIL_SERVICE, process.env.EMAIL_TEMPLATE, e.target, "sOMVkqwdTURyN9zIE").then(
       (result) => {
-        console.log(process.env.GMAIL_SERVICE);
-        alert(result.text);
+        alert("Message Sent, I will get back to you shortly via email");
       },
       (error) => {
         alert(error.text);
