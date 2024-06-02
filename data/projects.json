@@ -3,13 +3,13 @@
     "name": "Esikidz",
     "src": "/esiKidzLogo.png",
     "cloudLink": "https://esikidz.com/",
-    "description": "a childcare management software Project's usage: JavaScript, React.js, React Native, node.js, REST APIs, SASS, CSS, Git, GitHub, GitLab, Trello, Jira. • Learning React.js & React Native at the enterprise level. • Specialize in developing and managing secure web and mobile apps. • Learning data science by creating apps for web crawling, data extraction, and manipulation. • Practicing various libraries for data extraction, filtration, and writing. • Experiencing AWS Lambda, S3-Bucket, MySQL, and other related technologies. • Developing multiple internal applications to support the software system in efficiently managing childcare centers."
+    "description": "A childcare management software Project's usage: JavaScript, React.js, React Native, node.js, REST APIs, SASS, CSS, Git, GitHub, GitLab, Trello, Jira. • Learning React.js & React Native at the enterprise level. • Specialize in developing and managing secure web and mobile apps. • Learning data science by creating apps for web crawling, data extraction, and manipulation. • Practicing various libraries for data extraction, filtration, and writing. • Experiencing AWS Lambda, S3-Bucket, MySQL, and other related technologies. • Developing multiple internal applications to support the software system in efficiently managing childcare centers."
   },
   {
     "name": "Sunrise-club",
     "src": "/SunriseLogo.svg",
     "cloudLink": "https://www.sunrise.ch/en/moments",
-    "description": "An Event booking site for the Telco (Sunrise) users of Switzerland. Project's usage: JavaScript, TypeScript, React.js, Next.js, MongoDB, REST APIs, Storyblok CMS, Material UI, Ant Design UI, React-bootstrap, SASS, bootstrap, CSS"
+    "description": "An Event booking site for Sunrise (a Telco) users of Switzerland. Project's usage: JavaScript, TypeScript, React.js, Next.js, MongoDB, REST APIs, Storyblok CMS, Material UI, Ant Design UI, React-bootstrap, SASS, bootstrap, CSS"
   },
   {
     "name": "Saskatoon Waterpaws",
@@ -21,7 +21,7 @@
     "name": "Obhizatrik Foundation",
     "src": "/obhizatrikLanding.gif",
     "cloudLink": "https://ozf1.vercel.app/",
-    "description": "A reactJS project with AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
+    "description": "A React.js project with Material UI & AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
   },
   {
     "name": "Rental app",
@@ -33,7 +33,7 @@
     "name": "dev-meetup-nextjs",
     "src": "/devMeetupLanding.gif",
     "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
-    "description": "A next.js application for developers' meetup ##Opinions regarding the task: # I have used CSS in moduler way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
+    "description": "A next.js application for developers' meetup ##Opinions regarding the task: # I have used CSS in modular way for easy implementation of any future optimization in this app # I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
   {
     "name": "User Analyzer for food delivery app",
