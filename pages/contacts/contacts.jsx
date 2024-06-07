@@ -36,17 +36,7 @@ export default function VContacts() {
             <h2>
               Address: Saskatoon, Saskatchewan, Canada
             </h2>
-            <h3>
-              #GitHub:
-              <a
-                style={{ textDecoration: "underline", color: "#82b7dc" }}
-                href="https://github.com/MahmoodUlislam/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://github.com/MahmoodUlislam
-              </a>
-            </h3>
+
             <h2>
               <a
                 style={{ textDecoration: "none", color: "white" }}
@@ -57,8 +47,6 @@ export default function VContacts() {
                 <i className="fal fa-phone" /> Contact# +1-306-261-8482
               </a>
             </h2>
-
-
 
             <h2>
               For any inquiries, the below form can be used...
