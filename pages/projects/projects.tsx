@@ -40,25 +40,24 @@ export default function VProjects() {
         <link rel="shortcut icon" href="/Mi-logo.svg" type="image/x-icon" />
       </Head>
       <Navbar activeTab="Projects" />
-      <Fade>
-        <div className={styles.timelineGridCotainer}>
-          <div className={styles.content}>
-            <div className={styles.summary}>
-              <h1>Projects</h1>
-              <Fade>
-                <h3>
-                  {useTypedText(
-                    "Please see bellow for some of my projects to find out my experience.",
-                    30,
-                    350
-                  )}
-                </h3>
-              </Fade>
-            </div>
-            <Divider sx={{ color: '#fff' }} />
+      <div className={styles.timelineGridCotainer}>
+        <div className={styles.content}>
+          <div className={styles.summary}>
+            <h1>Projects</h1>
+            <Fade>
+              <h2>
+                {useTypedText(
+                  "Please see bellow for some of my projects to find out my experience.",
+                  30,
+                  350
+                )}
+              </h2>
+            </Fade>
           </div>
+          <Divider sx={{ color: '#fff' }} />
         </div>
-      </Fade><Box sx={{ flexGrow: 1 }}>
+      </div>
+      <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={4}>
           {projects.map((project: any) => (
             <Grid item xs={12} lg={6} key={project.name}>
@@ -69,7 +68,6 @@ export default function VProjects() {
                       {project.name}
                     </h1>
                     <div className={styles.image}>
-
                       <Image
                         src={project.src}
                         loader={uploadcareLoader}
@@ -89,16 +87,11 @@ export default function VProjects() {
                       rel="stylesheet"
                       href={project.cloudLink}
                     >
-
                       web link of {project.name}
                     </Link>
-                    <Fade>
-                      <h2>
-
-                        {project.description}
-
-                      </h2>
-                    </Fade>
+                    <h2>
+                      {project.description}
+                    </h2>
                   </div>
                 </div>
               </Item>

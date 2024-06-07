@@ -39,13 +39,12 @@ export default function VAbout() {
               </span>
 
               <span className={styles.lineStyles}>
-                # Areas of expertise
-                • JavaScript, TypeScript, React.js, React Native, Next.js
-                • Node.js, Express.js, Mongo-DB, SQL
-                • REST API, GraphQL, Apollo-GraphQL
-                • Sass, Bootstrap, Tailwind CSS, HTML and CSS
-                • Python, UI & testing libraries for React, PDF-make library
-                • OAuth 2 + OIDC, Auth0, WordPress, Storyblok CMS
+                • JavaScript, TypeScript, Python, C, C++
+                • React.js, Next.js, React Native
+                • Node.js, Express.js, Mongo-DB, MySQL
+                • REST API, GraphQL, Apollo-GraphQL • HTML, CSS, Sass, WordPress, Storyblok CMS
+                • UI, utility, and testing libraries for React.js
+                • OAuth 2 + OIDC, Auth0, NumPy, Matplotlib.
                 • Git, GitHub, GitLab, Bitbucket, Jira, Trello
                 • Docker, Search Engine Optimization
               </span>
@@ -56,9 +55,10 @@ export default function VAbout() {
                 • Build process, Deployment, and Testing
                 • Troubleshooting and identifying technical solutions
                 • API & Microservice system development
-                • Project, Team, and client management
                 •	Experience working on complex analytics, data visualization, or mapping applications.
-                •	Efficient problem-solving and analytical skills
+                •	Machine learning, Deep learning, and Nural Network
+                • Project, Team, and client management
+                • Efficient problem-solving and analytical skills
               </span>
 
               <span className={styles.lineStyles}>
