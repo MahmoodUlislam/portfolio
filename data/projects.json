@@ -30,13 +30,13 @@
     "description": "A next.js application for Rental app for electrical equipments Opinions regarding the task:  I have used Material UI for easy implementation of any future optimization in this app  I have used a layout option for the app that can be used for multiple pages also in future optimization."
   },
   {
-    "name": "dev-meetup-nextjs",
+    "name": "Dev-meetup-nextjs",
     "src": "/devMeetupLanding.gif",
     "cloudLink": "https://dev-meetup-nextjs.vercel.app/",
     "description": "A next.js application for developers' meetup Opinions regarding the task:  I have used CSS in modular way for easy implementation of any future optimization in this app  I have used a layout option for the app that can be used for multiple pages also in future optimization"
   },
   {
-    "name": "User Analyzer for food delivery app",
+    "name": "Food delivery app",
     "src": "/userAnalyzerFoodApp.gif",
     "cloudLink": "https://user-analyzer-of-food-delivery-app.vercel.app/",
     "description": "A react.js application for user analysis of food delivery app Opinions regarding the task:  I have used Material UI for easy implementation of any future optimization in this app  I have used a layout option for the app that can be used for multiple pages also in future optimization."
