@@ -34,7 +34,7 @@ export default function VContacts() {
               Email: mahmood.islam@gmail.com
             </h2>
             <h2>
-              Address: Saskatoon, Saskatchewan, Canada
+              Address: Toronto, Ontario, Canada
             </h2>
 
             <h2>

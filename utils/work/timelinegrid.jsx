@@ -1,6 +1,5 @@
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Image from 'next/image';
-import { getDate } from '../date';
 import styles from './timelinegrid.module.scss';
 
 export function VTimelineGrid() {
@@ -148,7 +147,7 @@ export function VTimelineGrid() {
             <div className={styles.companyInfo}>
               <h1 className={styles.companyTitle}>Saaska Software Inc.</h1>
               <h2 className={styles.cardContentDetails}>Software Engineer and Technical Support Assistant</h2>
-              <h2 className={styles.cardContentDetails}>05.4.2023 - {getDate()}</h2>
+              <h2 className={styles.cardContentDetails}>05.4.2023 - 14.6.2024</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
