@@ -186,7 +186,61 @@ export function VTimelineGrid() {
       </div>
       <div className={styles.timelineGridItemAdjoiningCard} />
       <div className={styles.timelineGridItem} />
+      <div className={styles.timelineGridItem} />
+      <div className={styles.timelineGridItemCard}>
+        <div className={styles.cardContent}>
+          <div className={styles.cardContentHeader}>
+            <div className={styles.companyLogo} >
+              <Image
+                loader={uploadcareLoader}
+                alt="Virtual Health Hub logo."
+                src='/VHH_Logo.jpg'
+                height={41}
+                width={52} />
+            </div>
+            <div className={styles.companyInfo}>
+              <h1 className={styles.companyTitle}>Virtual Health Hub</h1>
+              <h2 className={styles.cardContentDetails}>Software Developer</h2>
+              <h2 className={styles.cardContentDetails}>01.8.2024 - Present</h2>
+            </div>
+          </div>
+          <p className={styles.cardContentDescription}>
 
+            Project: Virtual Health Hub (https://research-groups.usask.ca/remote-presence/index.php),<br /><br />
+            Advanced Virtual Care Technology<br />
+            Advancing healthcare delivery through wearable device technology for virtual care.<br />
+            <br />
+            job location: Saskatoon, Saskatchewan, Canada.
+            <br />
+            <br />
+            {/* Project's usage: <br />
+            JavaScript, React.js, React Native, node.js, REST APIs, MySQL, SASS, CSS, Git, GitHub, GitLab, Trello, Jira<br />
+            • SAAS development by React.js & React Native at the enterprise level<br />
+            • Specialize in developing and managing secure web and mobile apps<br />
+            • Learning data science by creating apps for web crawling, data extraction, and manipulation<br />
+            • Creating & practicing various libraries for data extraction, filtration, and React UI styling<br />
+            • Experiencing AWS Lambda, S3-Bucket, MySQL, and other related technologies<br />
+            • Developing multiple internal applications & custom libraries to support the software system in efficiently managing clients<br />
+            <br />
+            Project's specific works: <br />
+            • Working collaboratively in a team to maintain the overall architecture and develop a highly scalable system integrated with ReactJS & React-Native APPs, communicating via Node JS API services<br />
+            • Performing optimization of developer toolchain to support instant provisioning of new services and infrastructure, fully automating the deployment, and minimizing development friction<br />
+            • Designing and implementing to improve software's reliability, scalability, performance, and security<br />
+            • Supporting Business Development and Marketing by creating internal software to enhance tasks<br />
+            • Performing software testing, improving existing systems, and adding new features<br />
+            • Creating and maintaining documentation on test and development operations<br />
+            • Demonstrating the system to new customers and technical support to existing customers<br />
+            <br />
+            Languages: <b>JavaScript</b>, <b>TypeScript</b>, <b>React.js</b>, <b>Next.js</b>.<br />
+            Database: <b>MongoDB</b>, <b>Firebase</b>.<br />
+            Styling: <b>Material UI</b>, <b>Ant Design UI</b>, <b>React-boostrap</b>, <b>SASS</b>, <b>boostrap</b>, <b>CSS</b>.<br />
+            Version Control System: <b>Git</b>, <b>GitHub</b>, <b>GitLab</b><br />
+            Issue trancing: <b>Trello</b>,<b>Jira</b><br /> */}
+          </p>
+        </div>
+      </div>
+      <div className={styles.timelineGridItemAdjoiningCard} />
+      <div className={styles.timelineGridItem} />
       <div className={styles.timelineGridItemWide}>
         <div className={styles.timelinePoint} />
         <h1>{

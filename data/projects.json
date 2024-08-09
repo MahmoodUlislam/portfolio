@@ -1,5 +1,11 @@
 [
   {
+    "name": "Virtual Health Hub",
+    "src": "/VHH_Logo.jpg",
+    "cloudLink": "https://research-groups.usask.ca/remote-presence/index.php",
+    "description": " Advanced Virtual Care Technology---Advancing healthcare delivery through wearable device technology for virtual care."
+  },
+  {
     "name": "Esikidz",
     "src": "/esiKidzLogo.png",
     "cloudLink": "https://esikidz.com/",
