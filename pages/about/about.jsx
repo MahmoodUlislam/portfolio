@@ -39,9 +39,9 @@ export default function VAbout() {
               </span>
 
               <span className={styles.lineStyles}>
-                • JavaScript, TypeScript, Python, C, C++
-                • React.js, Next.js, React Native
-                • Node.js, Express.js, Mongo-DB, MySQL
+                • JavaScript, TypeScript, Python, C++
+                • React.js, Next.js, React Native, Vue.js
+                • Node.js, Express.js, Mongo-DB, MySQL, PostgreSQL, Sequelize, Prisma, Firebase
                 • REST API, GraphQL, Apollo-GraphQL • HTML, CSS, Sass, WordPress, Storyblok CMS
                 • UI, utility, and testing libraries for React.js
                 • OAuth 2 + OIDC, Auth0, NumPy, Matplotlib.

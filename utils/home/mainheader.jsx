@@ -12,7 +12,7 @@ export function VMainHeader() {
         I am Mahmood
       </h1>
       <h2 className={styles.heroBody}>
-        {useTypedText("Welcome on my portfolio site! I'm a Software Engineer, currently working as Full-stack Web Developer. Working in Canada.", 30, 350)}
+        {useTypedText("Welcome on my portfolio site! I'm a Software Engineer, currently working as Full-stack Software Developer. Working in Canada.", 30, 350)}
       </h2>
       <div className={styles.footer}>
         <div className={styles.icons}>
