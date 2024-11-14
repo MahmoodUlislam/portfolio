@@ -24,12 +24,6 @@
     "description": "A wordpress site for a pet grooming & swimming shop. Project's usage: WordPress, PHP, HTML, CSS, JavaScript, Git, GitHub, Jira."
   },
   {
-    "name": "Obhizatrik Foundation",
-    "src": "/obhizatrikLanding.gif",
-    "cloudLink": "https://ozf1.vercel.app/",
-    "description": "A React.js project with Material UI & AntDesign UI library at frontend. This website is for Obhizatrik Foundation. Also there are systems for online payment."
-  },
-  {
     "name": "Rental app",
     "src": "/rentalAppLanding.gif",
     "cloudLink": "https://rental-app-beta.vercel.app/",
