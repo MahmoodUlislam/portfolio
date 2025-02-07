@@ -52,7 +52,6 @@ function VGoogleMap() {
 
   useEffect(() => {
     if (mapInstance && googleMaps) {
-      console.log("Adding Marker...");
 
       // Load the marker library correctly
       googleMaps.importLibrary("marker").then(() => {
@@ -62,7 +61,23 @@ function VGoogleMap() {
         });
 
         marker.addListener("click", ({ domEvent, latLng }) => {
-          console.log("Marker clicked at:", latLng);
+
+          // Do open a tooltip containing ""Hello World"
+          new googleMaps.InfoWindow({
+            content: `
+    <div style="
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 0 32px 32px 32px;
+      max-width: 250px;
+    ">
+      <p style="margin: 0; text-align: center;">
+        🌍 I am open to relocating across Canada or the USA for the right opportunity.
+      </p>
+    </div>
+  `,
+            position: latLng,
+          }).open(mapInstance, marker);
         });
       });
     }
