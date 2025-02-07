@@ -65,17 +65,17 @@ function VGoogleMap() {
           // Do open a tooltip containing ""Hello World"
           new googleMaps.InfoWindow({
             content: `
-    <div style="
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      padding: 0 32px 32px 32px;
-      max-width: 250px;
-    ">
-      <p style="margin: 0; text-align: center;">
-        🌍 I am open to relocating across Canada or the USA for the right opportunity.
-      </p>
-    </div>
-  `,
+                      <div style="
+                        font-family: Arial, sans-serif;
+                        font-size: 18px;
+                        padding: 0 32px 32px 32px;
+                        max-width: 250px;
+                      ">
+                        <p style="margin: 0; text-align: center;">
+                          🌍 I am open to relocating across Canada or the USA for the right opportunity.
+                        </p>
+                      </div>
+                    `,
             position: latLng,
           }).open(mapInstance, marker);
         });
