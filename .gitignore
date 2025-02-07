@@ -40,3 +40,4 @@ next.config.js
 
 #lock files
 yarn.lock
+.env*.local

@@ -1,65 +1,74 @@
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import React, { useCallback } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const containerStyle = {
-  width: "100%",
-  height: "80vh",
-};
-
+const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
 const center = {
   lat: 52.163688828747254,
   lng: -106.55476328465744
 };
 
 function VGoogleMap() {
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
-  });
+  const mapRef = useRef(null);
+  const [googleMaps, setGoogleMaps] = useState(null);
+  const [mapInstance, setMapInstance] = useState(null);
 
-  // Use useRef to hold the map instance
-  const mapRef = React.useRef(null);
-
-  const onLoad = useCallback((map) => {
-    mapRef.current = map;
-    const bounds = new window.google.maps.LatLngBounds();
-    bounds.extend(center);
-    map.fitBounds(bounds);
-
-    // Ensure the zoom level is set after fitBounds
-    map.addListener("idle", () => {
-      if (map.getZoom() > 12) {
-        map.setZoom(12);
+  useEffect(() => {
+    const loadGoogleMaps = async () => {
+      if (window.google?.maps) {
+        setGoogleMaps(window.google.maps);
+        return;
       }
-    });
-  }, []);
 
-  const onUnmount = React.useCallback(() => {
-    mapRef.current = null;
-  }, []);
-
-  return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={12}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
-    >
-      <Marker
-        key={1}
-        animation={window.google.maps.Animation.BOUNCE}
-        position={center}
-        onClick={
-          function callback() {
-            alert("You clicked me! if you want to find me, please contact me at: mahmood.islam@gmail.com");
-          }
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = async () => {
+        if (window.google?.maps) {
+          setGoogleMaps(window.google.maps);
         }
-      />
-    </GoogleMap>
-  ) : (
-    <></>
-  );
+      };
+      document.body.appendChild(script);
+    };
+
+    loadGoogleMaps();
+
+    return () => {
+      document.body.querySelectorAll("script[src*='maps.googleapis.com']").forEach((script) => {
+        script.remove();
+      });
+    };
+  }, []);
+
+  useEffect(() => {
+    if (googleMaps && mapRef.current) {
+      const map = new googleMaps.Map(mapRef.current, {
+        center,
+        zoom: 11,
+        mapId: process.env.REACT_APP_GOOGLE_MAP_ID, // Optional but recommended
+      });
+      setMapInstance(map);
+    }
+  }, [googleMaps]);
+
+  useEffect(() => {
+    if (mapInstance && googleMaps) {
+      console.log("Adding Marker...");
+
+      // Load the marker library correctly
+      googleMaps.importLibrary("marker").then(() => {
+        const marker = new googleMaps.marker.AdvancedMarkerElement({
+          map: mapInstance,
+          position: center,
+        });
+
+        marker.addListener("click", ({ domEvent, latLng }) => {
+          console.log("Marker clicked at:", latLng);
+        });
+      });
+    }
+  }, [mapInstance]);
+
+  return <div ref={mapRef} style={{ width: "100%", height: "80vh" }} />;
 }
 
-export default React.memo(VGoogleMap);
+export default VGoogleMap;

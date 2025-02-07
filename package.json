@@ -20,7 +20,7 @@
     "@googlemaps/react-wrapper": "^1.1.35",
     "@mui/icons-material": "^5.13.7",
     "@mui/material": "^5.13.7",
-    "@react-google-maps/api": "^2.18.1",
+    "@react-google-maps/api": "^2.20.5",
     "@typescript-eslint/parser": "^5.61.0",
     "@uploadcare/nextjs-loader": "^1.0.0",
     "circular-json": "^0.5.9",

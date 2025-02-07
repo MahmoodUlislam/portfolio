@@ -79,7 +79,6 @@ export default function VAbout() {
                 src='/CVmahmood-1.jpg'
                 width={430}
                 height={556.47}
-                layout="responsive"
               />
               <Image
                 loader={myLoader}
@@ -87,7 +86,6 @@ export default function VAbout() {
                 src='/CVmahmood-2.jpg'
                 width={430}
                 height={556.47}
-                layout="responsive"
               />
             </div>
           </div>
