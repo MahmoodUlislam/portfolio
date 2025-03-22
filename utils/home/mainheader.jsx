@@ -7,12 +7,12 @@ export function VMainHeader() {
   return (
     <div className={styles.aboutInfo}>
       <h1 className={styles.header}>
-        Hello everyone!
+        Hello!
         <br />
         I am Mahmood
       </h1>
       <h2 className={styles.heroBody}>
-        {useTypedText("Welcome on my portfolio site! I'm a Software Engineer, currently working as Full-stack Software Developer. Working in Canada.", 30, 350)}
+        {useTypedText("Welcome to my portfolio site! I'm a Lead Software Engineer | Cloud & AI Architect, currently working in Canada.", 30, 350)}
       </h2>
       <div className={styles.footer}>
         <div className={styles.icons}>

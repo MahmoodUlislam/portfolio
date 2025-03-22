@@ -75,48 +75,51 @@
       border: 5px solid #ffffff;
       min-height: 250px;
       padding: 15px;
-      width: fit-content;
-      height: fit-content;
+      width: 100%; // updated from `fit-content`
+      max-width: 1000px; // optional, to avoid overly wide images
       text-align: center;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; // add spacing between images
+    }
 
-      &Header {
+    &Header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .company {
+      &Info {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
       }
 
-      .company {
-        &Info {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-        }
-
-        &Title {
-          font-size: 20px;
-          margin: 0;
-          color: #82b7dc;
-        }
-
-        &Logo {
-          align-items: center;
-          border-radius: 35px;
-          display: flex;
-          justify-content: center;
-        }
-      }
-
-      &Details {
-        font-size: 15px;
+      &Title {
+        font-size: 20px;
         margin: 0;
-        color: #800a45;
+        color: #82b7dc;
       }
 
-      &Description {
-        color: #ffffff;
-        font-size: 13px;
-        margin: 10px 20px;
+      &Logo {
+        align-items: center;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
       }
+    }
+
+    &Details {
+      font-size: 15px;
+      margin: 0;
+      color: #800a45;
+    }
+
+    &Description {
+      color: #ffffff;
+      font-size: 13px;
+      margin: 10px 20px;
     }
   }
 }
@@ -140,6 +143,22 @@
 
     &:hover {
       transform: none !important;
+    }
+  }
+
+  .resumeImageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
   }
 

@@ -1,44 +1,79 @@
-export { default as chevronDown } from "./chevronDown.svg";
 export { default as adobeXDLogo } from "./logos/adobeXDLogo.svg";
 export { default as adobeXDLogoHover } from "./logos/adobeXDLogoHover.svg";
 export { default as antDesignLogo } from "./logos/antDesignLogo.svg";
 export { default as antDesignLogoHover } from "./logos/antDesignLogoHover.svg";
-export { default as boostrapLogo } from "./logos/boostrapLogo.svg";
-export { default as boostrapLogoHover } from "./logos/boostrapLogoHover.svg";
+export { default as bootstrapLogo } from "./logos/boostrapLogo.svg";
+export { default as bootstrapLogoHover } from "./logos/boostrapLogoHover.svg";
+export { default as chartJsLogo } from "./logos/chartJsLogo.svg"; // Add later
 export { default as cssLogo } from "./logos/cssLogo.svg";
 export { default as cssLogoHover } from "./logos/cssLogoHover.svg";
+export { default as echartsLogo } from "./logos/echartsLogo.png"; // Add later
+export { default as eslintLogo } from "./logos/eslintLogo.svg";
+export { default as expressLogo } from "./logos/expressLogo.png"; // Add later
 export { default as figmaLogo } from "./logos/figmaLogo.svg";
 export { default as figmaLogoHover } from "./logos/figmaLogoHover.svg";
-export { default as gitLogoHover } from "./logos/git-logo - hover.svg";
+export { default as firebaseLogo } from "./logos/firebaseLogo.svg";
 export { default as gitLogo } from "./logos/git-logo.svg";
+export { default as dockerLogo } from "./logos/dockerLogo.svg";
 export { default as gitHubLogo } from "./logos/github.svg";
+export { default as bitbucketLogo } from "./logos/bitbucketLogo.svg";
 export { default as gitHubLogoHover } from "./logos/githubHover.svg";
-export { default as gmailLogo } from "./logos/gmail.svg";
-export { default as gmailLogoHover } from "./logos/gmailHover.svg";
+export { default as gitHubActionsLogo } from "./logos/gitHubActionsLogo.png"; // Add later
+export { default as graphqlLogo } from "./logos/graphqlLogo.svg";
+export { default as apolloLogo } from "./logos/apolloLogo.png";
 export { default as htmlLogo } from "./logos/htmlLogo.svg";
 export { default as htmlLogoHover } from "./logos/htmlLogoHover.svg";
+export { default as i18nextLogo } from "./logos/i18nextLogo.png"; // Add later
 export { default as jestLogo } from "./logos/jestLogo.svg";
 export { default as jestLogoHover } from "./logos/jestLogoHover.svg";
 export { default as jsLogo } from "./logos/jsLogo.svg";
 export { default as jsLogoHover } from "./logos/jsLogoHover.svg";
-export { default as lessLogo } from "./logos/lessLogo.svg";
-export { default as lessLogoHover } from "./logos/lessLogoHover.svg";
-export { default as linkedInLogo } from "./logos/linkedin.svg";
-export { default as linkedInLogoHover } from "./logos/linkedinHover.svg";
 export { default as materialUILogo } from "./logos/materialUILogo.svg";
 export { default as materialUILogoHover } from "./logos/materialUILogoHover.svg";
-export { default as nextLogoHover } from "./logos/nextjs-logo -Hover.svg";
+export { default as mongoLogo } from "./logos/mongoLogo.svg";
+export { default as mysqlLogo } from "./logos/mysqlLogo.svg";
 export { default as nextLogo } from "./logos/nextjs-logo.svg";
+export { default as nodeLogo } from "./logos/nodeLogo.png";
+export { default as pdfMakeLogo } from "./logos/pdfMakeLogo.png"; // Add later
+export { default as postgresqlLogo } from "./logos/postgresqlLogo.png";
+export { default as prettierLogo } from "./logos/prettierLogo.svg";
+export { default as prismaLogo } from "./logos/prismaLogo.svg"; // Add later
+export { default as puppeteerLogo } from "./logos/puppeteerLogo.svg"; // Add later
+export { default as pythonLogo } from "./logos/pythonLogo.svg"; // Add later
+export { default as quasarLogo } from "./logos/quasarLogo.svg"; // Add later
 export { default as reactLogo } from "./logos/reactLogo.svg";
 export { default as reactLogoHover } from "./logos/reactLogoHover.svg";
+export { default as reactQueryLogo } from "./logos/reactQueryLogo.png"; // Add later
+export { default as reactCalendarLogo } from "./logos/reactCalendarLogo.svg"; // Add later
 export { default as reduxLogo } from "./logos/reduxLogo.svg";
 export { default as reduxLogoHover } from "./logos/reduxLogoHover.svg";
 export { default as sassLogo } from "./logos/sassLogo.svg";
 export { default as sassLogoHover } from "./logos/sassLogoHover.svg";
+export { default as sequelizeLogo } from "./logos/sequelizeLogo.png"; // Add later
 export { default as tsLogo } from "./logos/tsLogo.svg";
 export { default as tsLogoHover } from "./logos/tsLogoHover.svg";
+export { default as viteLogo } from "./logos/viteLogo.svg";
+export { default as vueCalLogo } from "./logos/vueCalLogo.svg"; // Add later
+export { default as vueLogo } from "./logos/vueLogo.svg"; // Add later
 export { default as vsLogo } from "./logos/vsLogo.svg";
 export { default as vsLogoHover } from "./logos/vsLogoHover.svg";
+export { default as webpackLogo } from "./logos/webpackLogo.png";
 export { default as yarnLogo } from "./logos/yarnLogo.svg";
 export { default as yarnLogoHover } from "./logos/yarnLogoHover.svg";
 
+/** AWS Cloud & AI */
+export { default as awsApiGatewayLogo } from "./logos/awsApiGatewayLogo.jpg";
+export { default as awsAmplifyLogo } from "./logos/awsAmplifyLogo.png";
+export { default as awsBedrockLogo } from "./logos/awsBedrockLogo.png"; // Add later
+export { default as awsCognitoLogo } from "./logos/awsCognitoLogo.png";
+export { default as awsDynamoLogo } from "./logos/awsDynamoLogo.svg";
+export { default as awsEcsLogo } from "./logos/awsEcsLogo.png";
+export { default as awsEc2Logo } from "./logos/awsEc2Logo.png";
+export { default as awsEventBridgeLogo } from "./logos/awsEventBridgeLogo.svg"; // Add later
+export { default as awsHealthLakeLogo } from "./logos/awsHealthLakeLogo.jpg"; // Add later
+export { default as awsLambdaLogo } from "./logos/awsLambdaLogo.png";
+export { default as awsPinpointLogo } from "./logos/awsPinpointLogo.png"; // Add later
+export { default as awsRekognitionLogo } from "./logos/awsRekognitionLogo.jpg"; // Add later
+export { default as awsS3Logo } from "./logos/awsS3Logo.svg";
+export { default as awsTranscribeLogo } from "./logos/awsTranscribeLogo.png"; // Add later
+export { default as awsPollyLogo } from "./logos/awsPollyLogo.jpg"; // Add later

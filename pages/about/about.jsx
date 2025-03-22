@@ -35,58 +35,62 @@ export default function VAbout() {
           <Fade>
             <pre className={styles.aboutMyself}>
               <span className={styles.lineStyles}>
-                I am a quick learner and can rapidly adapt to new technologies. Therefore, if there is something that does not fit my technical skills, I am willing to learn to fit well in any position.
+                I'm a dedicated and versatile Software Engineer with strong expertise in full-stack web and mobile app development, cloud architecture, and modern DevOps practices. I thrive in fast-paced environments, learning and adapting to new technologies quickly to deliver secure, scalable, and efficient solutions.
               </span>
 
               <span className={styles.lineStyles}>
-                • JavaScript, TypeScript, Python, C++
-                • React.js, Next.js, React Native, Vue.js
-                • Node.js, Express.js, Mongo-DB, MySQL, PostgreSQL, Sequelize, Prisma, Firebase
-                • REST API, GraphQL, Apollo-GraphQL • HTML, CSS, Sass, WordPress, Storyblok CMS
-                • UI, utility, and testing libraries for React.js
-                • OAuth 2 + OIDC, Auth0, NumPy, Matplotlib.
-                • Git, GitHub, GitLab, Bitbucket, Jira, Trello
-                • Docker, Search Engine Optimization
+                • JavaScript, Python - strong foundation in modern programming
+                • React.js, Next.js, Vue.js, React Native (Expo), Quasar - advanced frontend frameworks
+                • Node.js, Express.js - robust backend and REST API development
+                • PostgreSQL, MySQL, MongoDB, DynamoDB, Firebase - database design & optimization
+                • AWS: Cognito, Lambda, API Gateway, Chime SDK, ECS (Fargate), RDS, S3, EventBridge - cloud-native systems
+                • GraphQL, Apollo, WebSockets, Amazon Chime SDK, WebRTC - advanced API and real-time communication
+                • Prisma, Sequelize - ORM and schema management
+                • Auth0, OAuth 2.0, OIDC, bcrypt.js, Crypto.js - secure authentication practices
+                • Docker, GitHub Actions, Vite, Webpack - containerization, CI/CD, and modern build tools
+                • Chart.js, ECharts, vue-cal, PDFMake - data visualization & reporting
+                • WordPress, Storyblok CMS - headless CMS integration
               </span>
 
               <span className={styles.lineStyles}>
-                # Key competencies and skills
-                • Full-stack Web and mobile APP development
-                • Build process, Deployment, and Testing
-                • Troubleshooting and identifying technical solutions
-                • API & Microservice system development
-                •	Experience working on complex analytics, data visualization, or mapping applications.
-                •	Machine learning, Deep learning, and Nural Network
-                • Project, Team, and client management
-                • Efficient problem-solving and analytical skills
+                # Key Competencies and Skills
+                • End-to-end project leadership in cloud-based healthcare platforms
+                • Expertise in AWS architecture, deployment, and serverless infrastructure
+                • Real-time telehealth solutions using Amazon Chime SDK and AI services
+                • AI integration using Amazon Bedrock, Rekognition, Transcribe & HealthLake
+                • Strong focus on UI/UX, testing, automation, and scalable system design
+                • Effective collaboration with stakeholders, researchers, and cross-functional teams
+                • Agile development, continuous deployment, and DevOps implementation
               </span>
 
               <span className={styles.lineStyles}>
-                I have good experience in React & its eco-system. Also in my current job, I am working for a React base system. I have enterprise-level experience in React, Next.js and all related libraries & frameworks.
+                Currently, I'm leading full-stack development and DevOps for “Lifeline,” a virtual mental healthcare platform built with Vue.js, React Native, and AWS. From developing APIs to building custom native modules and AI integrations, I focus on delivering secure, accessible, and impactful digital health solutions. My past experience includes working on enterprise SaaS platforms, event booking systems, and data-driven applications across multiple industries.
               </span>
             </pre>
           </Fade>
+
 
           <div className={styles.timelineGridItemCard}>
             <h2 className={styles.hoverTip}>
               My resume
             </h2>
             <div className={styles.cardContent}>
-
-              <Image
-                loader={myLoader}
-                alt="CV mahmood-page-1"
-                src='/CVmahmood-1.jpg'
-                width={430}
-                height={556.47}
-              />
-              <Image
-                loader={myLoader}
-                alt="CV mahmood-page-2"
-                src='/CVmahmood-2.jpg'
-                width={430}
-                height={556.47}
-              />
+              <div className={styles.resumeImageWrapper}>
+                <Image
+                  loader={myLoader}
+                  alt="CV mahmood-page-1"
+                  src='/CVmahmood-1.jpg'
+                  width={850}
+                  height={1100}
+                />
+                <Image
+                  loader={myLoader}
+                  alt="CV mahmood-page-2"
+                  src='/CVmahmood-2.jpg'
+                  width={850}
+                  height={1100}
+                />
+              </div>
             </div>
           </div>
         </div>
