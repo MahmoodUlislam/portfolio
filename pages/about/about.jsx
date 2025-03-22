@@ -35,7 +35,7 @@ export default function VAbout() {
           <Fade>
             <pre className={styles.aboutMyself}>
               <span className={styles.lineStyles}>
-                I'm a dedicated and versatile Software Engineer with strong expertise in full-stack web and mobile app development, cloud architecture, and modern DevOps practices. I thrive in fast-paced environments, learning and adapting to new technologies quickly to deliver secure, scalable, and efficient solutions.
+                I&apos;m a dedicated and versatile Software Engineer with strong expertise in full-stack web and mobile app development, cloud architecture, and modern DevOps practices. I thrive in fast-paced environments, learning and adapting to new technologies quickly to deliver secure, scalable, and efficient solutions.
               </span>
 
               <span className={styles.lineStyles}>
@@ -64,7 +64,7 @@ export default function VAbout() {
               </span>
 
               <span className={styles.lineStyles}>
-                Currently, I'm leading full-stack development and DevOps for “Lifeline,” a virtual mental healthcare platform built with Vue.js, React Native, and AWS. From developing APIs to building custom native modules and AI integrations, I focus on delivering secure, accessible, and impactful digital health solutions. My past experience includes working on enterprise SaaS platforms, event booking systems, and data-driven applications across multiple industries.
+                Currently, I&apos;m leading full-stack development and DevOps for “Lifeline,” a virtual mental healthcare platform built with Vue.js, React Native, and AWS. From developing APIs to building custom native modules and AI integrations, I focus on delivering secure, accessible, and impactful digital health solutions. My past experience includes working on enterprise SaaS platforms, event booking systems, and data-driven applications across multiple industries.
               </span>
             </pre>
           </Fade>

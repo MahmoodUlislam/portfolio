@@ -25,7 +25,7 @@ export default function VWork() {
           </h1>
           <Fade>
             <h2>
-              I am a Software Engineer proficient in JavaScript, TypeScript, React.js, Next.js, React Native, Node.js, and MongoDB. With a focus on web and mobile app development, I excel in UI/UX design, troubleshooting, maintaining, and deploying robust solutions. At Saaska Software Inc., I contribute to securing childcare management software using React.js and React Native, optimizing architecture, testing, technical support, and enhancing reliability. At SELISE Digital Platforms, I helped create an event booking site with JavaScript, TypeScript, and Next.js. I am proficient in Git, Graph-QL, UI/UX design, and Data Science. Also, I assisted customers as a Computing Advisor at Best Buy. I possess exceptional skills in managing projects, teams, and clients.
+              I am a Software Developer at Virtual Health Hub, where I lead the development of LifeLine, a virtual mental health treatment platform built with Vue.js, React.js, Quasar, and React Native (Expo). I specialize in full-stack development, cloud architecture, and AI/ML integrations, delivering HIPAA-compliant, scalable healthcare solutions. My work includes building REST APIs with Node.js and PostgreSQL, creating native modules to bridge Amazon Chime SDK with React Native, and architecting secure AWS infrastructure using ECS (Fargate), Cognito, EventBridge, and Bedrock. I&apos;ve also developed advanced features like appointment scheduling, medication reminders, and an AI-driven health chatbot, collaborating with medical professionals and researchers to shape impactful digital health tools.
             </h2>
           </Fade>
         </div>
