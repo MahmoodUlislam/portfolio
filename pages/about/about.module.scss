@@ -82,6 +82,24 @@
       display: flex;
       flex-direction: column;
       gap: 2rem; // add spacing between images
+      .resumeImageWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+          transition: transform 0.3s ease;
+          border-radius: 12px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          cursor: zoom-in;
+
+          &:hover {
+            transform: scale(1.5);
+            z-index: 5;
+          }
+        }
+      }
     }
 
     &Header {
@@ -122,6 +140,22 @@
       margin: 10px 20px;
     }
   }
+
+  .downloadBtn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -143,22 +177,6 @@
 
     &:hover {
       transform: none !important;
-    }
-  }
-
-  .resumeImageWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-bottom: 2rem;
-
-    img {
-      width: 100% !important;
-      height: auto !important;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
   }
 

@@ -74,7 +74,18 @@ export default function VAbout() {
             <h2 className={styles.hoverTip}>
               My resume
             </h2>
+
+
             <div className={styles.cardContent}>
+              <a
+                href="/assets/Mahmood-CV.pdf"
+                download="Mahmood-CV.pdf"
+                className={styles.downloadBtn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📄 Download CV (PDF)
+              </a>
               <div className={styles.resumeImageWrapper}>
                 <Image
                   loader={myLoader}
@@ -91,6 +102,7 @@ export default function VAbout() {
                   height={1100}
                 />
               </div>
+
             </div>
           </div>
         </div>
