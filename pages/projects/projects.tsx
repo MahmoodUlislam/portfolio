@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
@@ -18,17 +17,16 @@ const projects = require("../../data/projects.json");
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#0d0107',
   ...theme.typography.body2,
-  height: '500px',
+  height: 'auto',
   borderRadius: '10px',
-  justifyContent: 'center',
+  padding: '20px',
+  margin: '20px 0',
   textAlign: 'center',
 }));
 
-
-
 export default function VProjects() {
   return (
-    <div className={styles.workContainer}>
+    <div className={styles.projectContainer}>
       <Head>
         <title>Projects</title>
         <meta
@@ -44,62 +42,48 @@ export default function VProjects() {
         <div className={styles.content}>
           <div className={styles.summary}>
             <h1>Projects</h1>
-            <Fade>
-              <h2>
-                {useTypedText(
-                  "Please see bellow for some of my projects to find out my experience.",
-                  30,
-                  350
-                )}
-              </h2>
-            </Fade>
+            <h2>
+              Please see below for some of my projects to find out my experience
+            </h2>
           </div>
-          <Divider sx={{ color: '#fff' }} />
+
         </div>
       </div>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={4}>
-          {projects.map((project: any) => (
-            <Grid item xs={12} lg={6} key={project.name}>
-              <Item>
-                <div className={styles.content}>
-                  <div className={styles.summary}>
-                    <h1 style={{ display: "flex", justifyContent: "center" }}>
-                      {project.name}
-                    </h1>
-                    <div className={styles.image}>
-                      <Image
-                        src={project.src}
-                        loader={uploadcareLoader}
-                        alt={`Picture of ${project.name} Landing Page`}
-                        width={400}
-                        height={200}
-                      />
-                    </div>
-                    <Link
-                      className={styles.link}
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      target="_blank"
-                      rel="stylesheet"
-                      href={project.cloudLink}
-                    >
-                      web link of {project.name}
-                    </Link>
-                    <h2>
-                      {project.description}
-                    </h2>
-                  </div>
-                </div>
-              </Item>
-            </Grid>
-          ))}
-        </Grid>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
+        {projects.map((project: any) => (
+          <Item key={project.name}>
+            <h1 style={{ marginBottom: '10px' }}>{project.name}</h1>
+            <div className={styles.image} style={{ marginBottom: '20px' }}>
+              <Image
+                src={project.src}
+                loader={uploadcareLoader}
+                alt={`Picture of ${project.name} Landing Page`}
+                width={400}
+                height={200}
+              />
+            </div>
+            <p style={{ marginBottom: '20px', fontSize: '16px', color: '#fff' }}>
+              {project.description}
+            </p>
+            <Link
+              className={styles.link}
+              style={{
+                display: 'inline-block',
+                padding: '10px 20px',
+                backgroundColor: '#3466aa',
+                color: '#fff',
+                borderRadius: '5px',
+                textDecoration: 'none',
+              }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.cloudLink}
+            >
+              Visit {project.name}
+            </Link>
+          </Item>
+        ))}
       </Box>
-
       <VFooter />
     </div>
   );

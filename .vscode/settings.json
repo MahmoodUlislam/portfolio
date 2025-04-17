@@ -76,5 +76,10 @@
   "material-icon-theme.activeIconPack": "react",
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "python.analysis.generateWithTypeAnnotation": true,
+  "salesforce.einsteinForDevelopers.enableDebugLogging": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.newWorkspaceCreation.enabled": true,
+  "github.copilot.chat.agent.thinkingTool": true
 }

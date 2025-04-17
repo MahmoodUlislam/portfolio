@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
+import { Tooltip } from 'react-tooltip';
 import {
   VFooter
 } from '../../utils'
@@ -81,6 +82,7 @@ export default function VAbout() {
                 href="/assets/Mahmood-CV.pdf"
                 download="Mahmood-CV.pdf"
                 className={styles.downloadBtn}
+                style={{ textDecoration: 'none', color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
