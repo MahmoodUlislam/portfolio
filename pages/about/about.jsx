@@ -79,7 +79,7 @@ export default function VAbout() {
 
             <div className={styles.cardContent}>
               <a
-                href="/assets/Mahmood-CV.pdf"
+                href="/Mahmood-CV.pdf"
                 download="Mahmood-CV.pdf"
                 className={styles.downloadBtn}
                 style={{ textDecoration: 'none', color: 'white' }}
