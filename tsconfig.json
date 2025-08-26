@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ES2016.Array.Include"],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "es6"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -9,37 +9,31 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules"
+        "name": "next"
       }
     ],
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["./components/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/public/*": ["./public/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "utils/BackTop.jsx",
-    "utils/DrawerComponent.jsx",
-    "utils/typingtext.jsx",
-    "utils/menubar.jsx",
-    "pages/index.jsx",
-    "pages/404.jsx",
-    "pages/_document.jsx",
-    "pages/_app.jsx",
-    "pages/work/work.jsx",
-    "pages/home/home.jsx",
-    "pages/about/about.jsx",
-    "utils/home/toolstech.jsx",
-    "utils/home/mainheader.jsx",
-    "utils/work/timelinegrid.jsx",
-    "utils/footer.jsx",
-    "utils/icon.jsx"
-, "assets/index.jsx"  ],
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
