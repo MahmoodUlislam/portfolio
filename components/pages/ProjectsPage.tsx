@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { ExternalLink, Github, Eye } from 'lucide-react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import DecorativeElement from '@/components/ui/DecorativeElement'
 import styles from './ProjectsPage.module.css'
 
 const projects = [
@@ -69,6 +70,7 @@ export default function ProjectsPage() {
                 and experiences I have achieved while working with those projects...
               </p>
             </div>
+            <DecorativeElement page="projects" />
           </div>
         </section>
 

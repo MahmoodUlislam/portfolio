@@ -22,6 +22,7 @@ const navItems = [
 export default function Navbar({ activeTab }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isLogoHovered, setIsLogoHovered] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,10 +42,15 @@ export default function Navbar({ activeTab }: NavbarProps) {
       >
         <div className={styles.navbarContainer}>
           {/* Logo */}
-          <Link href="/" className={styles.logo}>
+          <Link
+            href="/"
+            className={styles.logo}
+            onMouseEnter={() => setIsLogoHovered(true)}
+            onMouseLeave={() => setIsLogoHovered(false)}
+          >
             <div className={styles.logoImage}>
               <Image
-                src="/Mi-logoWhite.svg"
+                src={isLogoHovered ? "/Mi-logo.svg" : "/Mi-logoWhite.svg"}
                 alt="Mahmood ul Islam"
                 fill
                 sizes="(max-width: 768px) 120px, 150px"

@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { Mail, Phone, Globe, Github, Linkedin, Download } from 'lucide-react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import DecorativeElement from '@/components/ui/DecorativeElement'
 import styles from './AboutPage.module.css'
 
 export default function AboutPage() {
@@ -34,6 +35,7 @@ export default function AboutPage() {
                 Senior Software Developer | Cloud & AI Specialist
               </p>
             </motion.div>
+            <DecorativeElement page="about" />
           </div>
         </section>
 

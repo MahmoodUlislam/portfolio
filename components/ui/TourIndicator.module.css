@@ -1,0 +1,52 @@
+.tourIndicator {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 8px 32px rgba(59, 130, 246, 0.2),
+      0 0 0 1px rgba(59, 130, 246, 0.3);
+  }
+}
+
+.tourContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.playIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #10b981;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .tourIndicator {
+    top: 4rem;
+    right: 1rem;
+    left: 1rem;
+  }
+}

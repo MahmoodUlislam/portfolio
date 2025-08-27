@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import DecorativeElement from '@/components/ui/DecorativeElement'
 import styles from './WorkPage.module.css'
 
 const workExperience = [
@@ -103,6 +104,7 @@ export default function WorkPage() {
                 My professional journey in software development and engineering
               </p>
             </motion.div>
+            <DecorativeElement page="work" />
           </div>
         </section>
 

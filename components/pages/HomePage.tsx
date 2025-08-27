@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronDown, ArrowRight } from 'lucide-react'
@@ -10,6 +10,7 @@ import Navbar from '@/components/layout/Navbar'
 import MainHeader from '@/components/sections/MainHeader'
 import ToolsTech from '@/components/sections/ToolsTech'
 import Footer from '@/components/layout/Footer'
+import DecorativeElement from '@/components/ui/DecorativeElement'
 import styles from './HomePage.module.css'
 
 const fadeInUp = {
@@ -106,7 +107,7 @@ export default function HomePage() {
 
                   <div className={styles.imageOverlay} />
                 </div>
-                <div className={styles.decorativeElement} />
+                <DecorativeElement page="home" />
               </motion.div>
             </div>
           </motion.div>
@@ -121,7 +122,7 @@ export default function HomePage() {
         </section>
 
         {/* Work History Section */}
-        <section className={styles.workHistorySection}>
+        <section className={styles.workHistorySection} data-section="work">
           <div className={styles.workHistoryBackground} />
           <motion.div
             ref={ref}
@@ -153,7 +154,7 @@ export default function HomePage() {
         </section>
 
         {/* Technologies Section */}
-        <section className={styles.technologiesSection}>
+        <section className={styles.technologiesSection} data-section="technologies">
           <motion.div
             className={styles.technologiesContainer}
             initial={{ opacity: 0 }}
@@ -171,7 +172,7 @@ export default function HomePage() {
         </section>
 
         {/* About Section */}
-        <section className={styles.aboutSection}>
+        <section className={styles.aboutSection} data-section="about">
           <div className={styles.aboutBackground} />
           <motion.div
             className={styles.aboutContainer}

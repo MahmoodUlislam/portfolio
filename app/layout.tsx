@@ -53,16 +53,14 @@ export const metadata: Metadata = {
   },
 }
 
-
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable}`} data-scroll-behavior="smooth">
-      <body className={`${roboto.className} antialiased`} suppressHydrationWarning={true}>
+    <html lang="en">
+      <body className={`${inter.variable} ${roboto.variable} font-sans`}>
         {children}
       </body>
     </html>

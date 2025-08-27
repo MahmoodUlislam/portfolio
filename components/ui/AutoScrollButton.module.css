@@ -1,0 +1,105 @@
+.autoScrollButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autoScrollButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.autoScrollButton.active {
+  background: rgba(59, 130, 246, 0.2);
+  box-shadow:
+    0 8px 32px rgba(59, 130, 246, 0.3),
+    0 0 0 1px rgba(59, 130, 246, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 8px 32px rgba(59, 130, 246, 0.3),
+      0 0 0 1px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 8px 32px rgba(59, 130, 246, 0.5),
+      0 0 0 1px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.playIcon {
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid white;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  margin-left: 0.25rem;
+}
+
+.stopIcon {
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .autoScrollButton {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .buttonIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .playIcon {
+    border-left-width: 0.625rem;
+    border-top-width: 0.4375rem;
+    border-bottom-width: 0.4375rem;
+    margin-left: 0.1875rem;
+  }
+
+  .stopIcon {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
