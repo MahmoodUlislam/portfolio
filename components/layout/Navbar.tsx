@@ -50,9 +50,7 @@ export default function Navbar({ activeTab }: NavbarProps) {
                 className={styles.logoImageInner}
               />
             </div>
-            <span className={styles.logoText}>
-              Mahmood ul Islam
-            </span>
+
           </Link>
 
           {/* Desktop Navigation */}

@@ -51,7 +51,7 @@
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -79,7 +79,13 @@
 
 .timeline {
   position: relative;
-  padding: 2rem 0;
+  padding: 0.5rem 0 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .timeline {
+    padding: 1rem 0 5rem 0;
+  }
 }
 
 .timeline::before {
@@ -226,6 +232,17 @@
 @media (min-width: 1024px) {
   .skillsSection {
     padding: 8rem 0;
+  }
+}
+
+/* Hero section specific styling */
+.heroSection {
+  padding: 3rem 0 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .heroSection {
+    padding: 4rem 0 2rem 0;
   }
 }
 

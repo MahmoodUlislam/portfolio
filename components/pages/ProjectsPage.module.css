@@ -11,12 +11,12 @@
 }
 
 .heroSection {
-  padding: 5rem 0;
+  padding: 3rem 0 2rem 0;
 }
 
 @media (min-width: 1024px) {
   .heroSection {
-    padding: 8rem 0;
+    padding: 4rem 0 2rem 0;
   }
 }
 
@@ -52,7 +52,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1;
 }
 
 @media (min-width: 1024px) {
@@ -64,16 +63,19 @@
 .heroSubtitle {
   font-size: 1.25rem;
   color: #d1d5db;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projectsSection {
-  padding: 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 
 @media (min-width: 1024px) {
   .projectsSection {
-    padding: 8rem 0;
+    padding: 3rem 0 8rem 0;
   }
 }
 
@@ -163,17 +165,18 @@
   height: 12rem;
   overflow: hidden;
   border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 
 .projectImage {
   object-fit: contain;
   transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
 }
 
 .projectCard:hover .projectImage {

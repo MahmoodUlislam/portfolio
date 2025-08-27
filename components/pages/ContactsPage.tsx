@@ -270,28 +270,6 @@ export default function ContactsPage() {
                   </div>
                 </div>
 
-                <div>
-                  <h3 className={styles.socialTitle}>Follow Me</h3>
-                  <div className={styles.socialLinks}>
-                    {socialLinks.map((link, index) => (
-                      <motion.a
-                        key={link.name}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.socialLink}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
-                        viewport={{ once: true }}
-                      >
-                        <link.icon className={styles.socialIcon} />
-                      </motion.a>
-                    ))}
-                  </div>
-                </div>
 
                 <div className={styles.workTogetherCard}>
                   <h3 className={styles.workTogetherTitle}>Let&apos;s Work Together</h3>

@@ -88,7 +88,7 @@ export default function WorkPage() {
 
       <main className={styles.mainContent}>
         {/* Hero Section */}
-        <section className={styles.skillsSection}>
+        <section className={styles.heroSection}>
           <div className={styles.container}>
             <motion.div
               className={styles.header}
@@ -118,7 +118,7 @@ export default function WorkPage() {
             >
               {workExperience.map((work, index) => (
                 <motion.div
-                  key={work.company}
+                  key={`${work.company}-${work.position}-${index}`}
                   variants={itemVariants}
                   className={styles.timelineItem}
                 >

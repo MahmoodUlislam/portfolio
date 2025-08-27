@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                 My Projects
               </h1>
               <p className={styles.heroSubtitle}>
-                Here you can find out more about the projects I have been part of,
+                Here you can find out more about some of the projects I have been part of,
                 and experiences I have achieved while working with those projects...
               </p>
             </div>
@@ -84,11 +84,15 @@ export default function ProjectsPage() {
                   className={styles.projectCard}
                 >
                   {/* Project Image */}
-                  <div className={styles.projectImageContainer}>
+                  <div
+                    className={styles.projectImageContainer}
+                    data-project={project.title.split(' - ')[0]}
+                  >
                     <Image
                       src={project.image}
                       alt={project.title}
-                      fill
+                      width={200}
+                      height={200}
                       className={styles.projectImage}
                     />
                     <div className={styles.projectImageOverlay} />

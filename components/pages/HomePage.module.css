@@ -44,28 +44,36 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
   .heroContent {
     flex-direction: row;
     gap: 5rem;
+    align-items: flex-start; /* Align to top to prevent vertical centering issues */
   }
 }
 
 .heroText {
   flex: 1;
   text-align: center;
+  min-width: 0; /* Prevent flex item from growing beyond container */
+  max-width: 48rem; /* Match the description max-width */
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
   .heroText {
     text-align: left;
+    flex: 0 0 48rem; /* Don't grow, don't shrink, fixed size 48rem */
+    width: 48rem; /* Fixed width to reserve space from the start */
   }
 }
 
 .heroImageContainer {
   position: relative;
+  flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .profileImageWrapper {
