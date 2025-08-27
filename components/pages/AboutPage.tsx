@@ -84,12 +84,12 @@ export default function AboutPage() {
               <div className={styles.overviewInfo}>
                 <h2 className={styles.overviewTitle}>Professional Overview</h2>
                 <p className={styles.overviewDescription}>
-                  I'm a passionate Senior Software Developer and Cloud & AI Specialist with over 5 years of experience 
-                  in building AI-powered healthcare applications and cloud-native solutions. Currently working at Virtual Health Hub in Canada, 
+                  I&apos;m a passionate Senior Software Developer and Cloud & AI Specialist with over 5 years of experience
+                  in building AI-powered healthcare applications and cloud-native solutions. Currently working at Virtual Health Hub in Canada,
                   I specialize in modern web technologies, AWS cloud infrastructure, and AI/ML integration.
                 </p>
                 <p className={styles.overviewDescription}>
-                  My expertise spans across full-stack development, cloud architecture, AI/ML, and healthcare technology. 
+                  My expertise spans across full-stack development, cloud architecture, AI/ML, and healthcare technology.
                   I love solving complex problems and creating innovative solutions that make a real impact in healthcare.
                 </p>
               </div>
@@ -206,11 +206,11 @@ export default function AboutPage() {
             >
               <h2 className={styles.aiTitle}>AI Workflow Integration</h2>
               <p className={styles.aiDescription}>
-                Designed and productionized multi-agent and computer-vision pipelines across healthcare apps. For LifeLine, built an agentic system on Amazon Bedrock 
-                (chatbot, session-summary, and risk-analytics agents) with streaming I/O, Polly TTS, and Transcribe STT; integrated Chime SDK for sessions and ambient 
-                listening (text + Rekognition facial/engagement cues) to generate real-time summaries and risk signals, with structured memory and secure backend 
-                context injection. For SkinScan, implemented a two-stage CV pipeline—Rekognition pre-screen (skin/quality) → custom vision model trained and deployed 
-                on Amazon SageMaker—with confidence thresholds, safe defaults, and CloudWatch monitoring (latency/error/confidence) and rollback. Both solutions run 
+                Designed and productionized multi-agent and computer-vision pipelines across healthcare apps. For LifeLine, built an agentic system on Amazon Bedrock
+                (chatbot, session-summary, and risk-analytics agents) with streaming I/O, Polly TTS, and Transcribe STT; integrated Chime SDK for sessions and ambient
+                listening (text + Rekognition facial/engagement cues) to generate real-time summaries and risk signals, with structured memory and secure backend
+                context injection. For SkinScan, implemented a two-stage CV pipeline—Rekognition pre-screen (skin/quality) → custom vision model trained and deployed
+                on Amazon SageMaker—with confidence thresholds, safe defaults, and CloudWatch monitoring (latency/error/confidence) and rollback. Both solutions run
                 in VPC-isolated AWS environments with Cognito auth, presigned S3 media flows, and full audit/reporting for privacy and accountability.
               </p>
             </motion.div>

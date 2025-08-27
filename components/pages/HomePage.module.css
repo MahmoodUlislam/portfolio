@@ -116,6 +116,27 @@
 .absoluteInset0 {
   position: absolute;
   inset: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* First image (laptop closed) - visible by default */
+.firstImage {
+  opacity: 1;
+}
+
+/* Second image (laptop open) - hidden by default */
+.secondImage {
+  opacity: 0;
+}
+
+/* When scrolled, fade out first image */
+.fadeOut {
+  opacity: 0;
+}
+
+/* When scrolled, fade in second image */
+.fadeIn {
+  opacity: 1;
 }
 
 .scrollIndicatorIcon {

@@ -1,6 +1,7 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronDown, ArrowRight } from 'lucide-react'
@@ -31,9 +32,20 @@ export default function HomePage() {
     threshold: 0.1
   })
 
-  const { scrollYProgress } = useScroll()
-  const imageOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
-  const secondImageOpacity = useTransform(scrollYProgress, [0.1, 0.4], [0, 1])
+  const [hasScrolled, setHasScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setHasScrolled(true)
+      } else {
+        setHasScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <div className={styles.homeContainer}>
@@ -69,10 +81,7 @@ export default function HomePage() {
               >
                 <div className={styles.profileImageWrapper}>
                   {/* First Image (Closed Laptop) */}
-                  <motion.div
-                    className={styles.absoluteInset0}
-                    style={{ opacity: imageOpacity }}
-                  >
+                  <div className={`${styles.absoluteInset0} ${styles.firstImage} ${hasScrolled ? styles.fadeOut : ''}`}>
                     <Image
                       src="/pro-pic1.jpg"
                       alt="Mahmood ul Islam - Laptop Closed"
@@ -80,21 +89,18 @@ export default function HomePage() {
                       className={styles.profileImage}
                       priority
                     />
-                  </motion.div>
+                  </div>
 
                   {/* Second Image (Open Laptop) */}
-                  <motion.div
-                    className={styles.absoluteInset0}
-                    style={{ opacity: secondImageOpacity }}
-                  >
+                  <div className={`${styles.absoluteInset0} ${styles.secondImage} ${hasScrolled ? styles.fadeIn : ''}`}>
                     <Image
-                      src="/pro-pic1.jpg"
+                      src="/pro-pic2.jpg"
                       alt="Mahmood ul Islam - Laptop Open"
                       fill
                       className={styles.profileImage}
                       priority
                     />
-                  </motion.div>
+                  </div>
 
                   <div className={styles.imageOverlay} />
                 </div>
@@ -221,6 +227,6 @@ export default function HomePage() {
       </main>
 
       <Footer />
-    </div>
+    </div >
   )
 }
