@@ -15,8 +15,8 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Mahmood ul Islam - Senior Software Developer | Cloud & AI Specialist',
-    template: '%s | Mahmood ul Islam'
+    default: 'Mahmood - Portfolio',
+    template: '%s | Mahmood'
   },
   description: 'Senior Software Developer and Cloud & AI Specialist at Virtual Health Hub. Specializing in AI-powered healthcare applications, AWS cloud infrastructure, and modern web technologies.',
   keywords: ['Mahmood ul Islam', 'Senior Software Developer', 'Cloud & AI Specialist', 'Healthcare Technology', 'AWS', 'React', 'Next.js', 'Portfolio'],

@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 23, 42;
-  --background-end-rgb: 30, 41, 59;
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 * {
@@ -12,23 +11,16 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
   scroll-behavior: smooth;
+  /* Optimize for smooth scrolling */
+  -webkit-overflow-scrolling: touch;
+  scroll-padding-top: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
   font-family:
-    "Inter",
+    var(--font-inter),
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -42,11 +34,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* Optimize for smooth scrolling */
+  -webkit-overflow-scrolling: touch;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Enhanced smooth scrolling for auto-scroll */
+html.auto-scrolling {
+  scroll-behavior: smooth;
+  /* Force hardware acceleration */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+html.auto-scrolling * {
+  /* Optimize all elements during auto-scroll */
+  will-change: scroll-position;
 }
 
 /* Custom scrollbar */
@@ -59,12 +65,47 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(59, 130, 246, 0.5);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(59, 130, 246, 0.7);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.5) rgba(255, 255, 255, 0.1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
 }
 
 /* Selection styles */
@@ -73,10 +114,9 @@ a {
   color: white;
 }
 
-/* Focus styles */
-*:focus {
-  outline: 2px solid rgba(59, 130, 246, 0.5);
-  outline-offset: 2px;
+::-moz-selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: white;
 }
 
 /* Utility classes */

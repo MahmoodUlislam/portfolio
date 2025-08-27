@@ -21,7 +21,7 @@ export default function TourIndicator({ isActive }: TourIndicatorProps) {
         >
             <div className={styles.tourContent}>
                 <Play className={styles.playIcon} />
-                <span>Auto-scrolling...</span>
+                <span>Touring...</span>
             </div>
         </motion.div>
     )

@@ -64,7 +64,7 @@ export default function MainHeader() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {text}
-          <span className={`${styles.cursor} ${isTyping ? styles.typing : ''}`} />
+          {isTyping && <span className={`${styles.cursor} ${styles.typing}`} />}
         </motion.h2>
       </div>
 

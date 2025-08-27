@@ -57,15 +57,24 @@
 
 .cursor {
   display: inline-block;
-  width: 0.125rem;
-  height: 1.5rem;
+  width: 0.25rem;
+  height: 1.6em;
   background: #60a5fa;
-  margin-left: 0.25rem;
+  margin-left: 0.125rem;
   flex-shrink: 0; /* Prevent cursor from shrinking */
+  vertical-align: baseline; /* Align with text baseline */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: relative;
+  top: 0.1em; /* Fine-tune vertical alignment */
 }
 
 .cursor.typing {
   animation: pulse 1s infinite;
+}
+
+.cursor:not(.typing) {
+  opacity: 0;
 }
 
 @keyframes pulse {
