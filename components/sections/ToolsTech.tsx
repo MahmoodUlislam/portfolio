@@ -119,7 +119,7 @@ const techStack = [
     category: "Build & Deployment",
     technologies: [
       { name: "GitHub", icon: "/logos/github.png", color: "#181717" },
-      { name: "Bitbucket", icon: "/logos/bitbucket-official.png", color: "#0052CC" },
+      { name: "Bitbucket", icon: "/logos/bitbucket.jpeg", color: "#0052CC" },
       { name: "GitHub Actions", icon: "/logos/github.png", color: "#181717" },
       { name: "AWS Amplify CI/CD", icon: "/logos/aws-amplify-official.svg", color: "#FF9900" },
       { name: "Docker", icon: "/logos/docker.png", color: "#2496ED" },
