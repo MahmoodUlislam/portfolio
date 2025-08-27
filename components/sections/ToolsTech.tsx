@@ -97,6 +97,11 @@ const techStack = [
   {
     category: "AI & Machine Learning",
     technologies: [
+      { name: "PyTorch", icon: "/logos/pytorch-official.png", color: "#EE4C2C" },
+      { name: "TensorFlow", icon: "/logos/tensorflow-official.png", color: "#FF6F00" },
+      { name: "NumPy", icon: "/logos/numpy-official.svg", color: "#4DABCF" },
+      { name: "Matplotlib", icon: "/logos/matplotlib-official.png", color: "#11557C" },
+      { name: "Scikit-learn", icon: "/logos/scikit-learn-official.png", color: "#F7931E" },
       { name: "Amazon Bedrock", icon: "/logos/aws-bedrock.svg", color: "#FF9900" },
       { name: "Amazon Transcribe", icon: "/logos/aws-transcribe.svg", color: "#FF9900" },
       { name: "Amazon Polly", icon: "/logos/aws-polly.svg", color: "#FF9900" },
