@@ -215,6 +215,7 @@ export default function ToolsTech() {
                       src={tech.icon}
                       alt={tech.name}
                       fill
+                      sizes="(max-width: 768px) 50px, (max-width: 1024px) 60px, 70px"
                       className={styles.techIcon}
                       onError={(e) => {
                         // Fallback for missing images

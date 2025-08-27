@@ -61,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${inter.variable} ${roboto.variable}`} data-scroll-behavior="smooth">
       <body className={`${roboto.className} antialiased`} suppressHydrationWarning={true}>
         {children}
       </body>

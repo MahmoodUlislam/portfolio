@@ -86,6 +86,7 @@ export default function HomePage() {
                       src="/pro-pic1.jpg"
                       alt="Mahmood ul Islam - Laptop Closed"
                       fill
+                      sizes="(max-width: 768px) 320px, (max-width: 1024px) 384px, 480px"
                       className={styles.profileImage}
                       priority
                     />
@@ -97,6 +98,7 @@ export default function HomePage() {
                       src="/pro-pic2.jpg"
                       alt="Mahmood ul Islam - Laptop Open"
                       fill
+                      sizes="(max-width: 768px) 320px, (max-width: 1024px) 384px, 480px"
                       className={styles.profileImage}
                       priority
                     />

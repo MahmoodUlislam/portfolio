@@ -47,6 +47,7 @@ export default function Navbar({ activeTab }: NavbarProps) {
                 src="/Mi-logoWhite.svg"
                 alt="Mahmood ul Islam"
                 fill
+                sizes="(max-width: 768px) 120px, 150px"
                 className={styles.logoImageInner}
               />
             </div>

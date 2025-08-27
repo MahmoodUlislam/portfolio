@@ -130,6 +130,7 @@ export default function WorkPage() {
                             src={work.logo}
                             alt={work.company}
                             fill
+                            sizes="(max-width: 768px) 60px, (max-width: 1024px) 80px, 100px"
                             className={styles.logoImage}
                           />
                         </div>

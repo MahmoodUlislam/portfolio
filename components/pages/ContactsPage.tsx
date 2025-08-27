@@ -1,9 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react'
-import emailjs from '@emailjs/browser'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import styles from './ContactsPage.module.css'
@@ -55,49 +54,33 @@ export default function ContactsPage() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [statusMessage, setStatusMessage] = useState('')
 
-  // Initialize EmailJS
-  useEffect(() => {
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '')
-  }, [])
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus('idle')
     setStatusMessage('')
 
-    // Check if EmailJS is configured
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-
-    if (!serviceId || !templateId || !publicKey) {
-      setSubmitStatus('error')
-      setStatusMessage('Email service not configured. Please contact me directly at mahmood.islam@gmail.com')
-      setIsSubmitting(false)
-      return
-    }
-
     try {
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        to_name: 'Mahmood ul Islam'
-      }
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-      const result = await emailjs.send(serviceId, templateId, templateParams)
+      const result = await response.json()
 
-      if (result.status === 200) {
+      if (result.success) {
         setSubmitStatus('success')
-        setStatusMessage('Message sent successfully! I\'ll get back to you soon.')
+        setStatusMessage(result.message)
         setFormData({ name: '', email: '', subject: '', message: '' })
       } else {
-        throw new Error('Failed to send message')
+        setSubmitStatus('error')
+        setStatusMessage(result.message)
       }
     } catch (error) {
-      console.error('EmailJS Error:', error)
+      console.error('Contact Error:', error)
       setSubmitStatus('error')
       setStatusMessage('Failed to send message. Please try again or contact me directly at mahmood.islam@gmail.com')
     } finally {
