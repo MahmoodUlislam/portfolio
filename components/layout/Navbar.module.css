@@ -220,7 +220,7 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  z-index: 40;
+  z-index: 1000;
   padding: 0.75rem;
   background: #2563eb;
   color: white;

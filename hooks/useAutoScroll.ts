@@ -2,8 +2,24 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 export const useAutoScroll = () => {
   const [isAutoScrolling, setIsAutoScrolling] = useState(false);
-  const autoScrollRef = useRef<number | null>(null);
   const isScrollingRef = useRef(false);
+  const autoScrollRef = useRef<number | null>(null);
+
+  // Global function to stop auto-scroll from anywhere
+  const globalStopAutoScroll = () => {
+    setIsAutoScrolling(false);
+    isScrollingRef.current = false;
+    document.documentElement.classList.remove("auto-scrolling");
+    if (autoScrollRef.current) {
+      cancelAnimationFrame(autoScrollRef.current);
+      autoScrollRef.current = null;
+    }
+  };
+
+  // Make it available globally
+  if (typeof window !== "undefined") {
+    (window as any).stopAutoScrollGlobal = globalStopAutoScroll;
+  }
 
   const stopAutoScroll = useCallback(() => {
     if (isAutoScrolling) {
@@ -24,13 +40,16 @@ export const useAutoScroll = () => {
       return;
     }
 
-    // Start auto-scrolling immediately
+    // Start auto-scrolling using medium speed
     setIsAutoScrolling(true);
     isScrollingRef.current = true;
     document.documentElement.classList.add("auto-scrolling");
 
+    // Medium speed auto-scroll with smooth animation
     const scrollToBottom = () => {
-      if (!isScrollingRef.current) return;
+      if (!isScrollingRef.current) {
+        return;
+      }
 
       const scrollHeight = document.documentElement.scrollHeight;
       const clientHeight = document.documentElement.clientHeight;
@@ -38,17 +57,20 @@ export const useAutoScroll = () => {
       const currentScroll = window.scrollY;
 
       if (currentScroll < maxScroll) {
-        // Faster smooth scroll with larger increment
+        // Medium speed scroll - balanced increments for smooth animation
         window.scrollTo({
-          top: currentScroll + 3,
-          behavior: "smooth",
+          top: currentScroll + 100,
+          behavior: "auto",
         });
 
-        // Faster updates for smoother animation
+        // Continue scrolling with medium speed
         autoScrollRef.current = requestAnimationFrame(scrollToBottom);
       } else {
         // Reached bottom, stop
+
+        isScrollingRef.current = false; // Immediately stop the loop
         stopAutoScroll();
+        return; // Exit the function immediately
       }
     };
 
@@ -62,6 +84,11 @@ export const useAutoScroll = () => {
       // Don't stop if clicking on the decorative element itself
       const target = event.target as HTMLElement;
       if (target.closest(".decorativeElement")) {
+        return;
+      }
+
+      // Don't stop if clicking on the scroll to top button
+      if (target.closest(".backToTopButton")) {
         return;
       }
 
@@ -82,11 +109,11 @@ export const useAutoScroll = () => {
   // Cleanup on unmount
   useEffect(() => {
     return () => {
+      document.documentElement.classList.remove("auto-scrolling");
+      isScrollingRef.current = false;
       if (autoScrollRef.current) {
         cancelAnimationFrame(autoScrollRef.current);
       }
-      document.documentElement.classList.remove("auto-scrolling");
-      isScrollingRef.current = false;
     };
   }, []);
 

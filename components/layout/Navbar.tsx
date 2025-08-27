@@ -26,7 +26,13 @@ export default function Navbar({ activeTab }: NavbarProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      const scrollY = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = document.documentElement.clientHeight;
+      const maxScroll = scrollHeight - clientHeight;
+
+      // Show button when scrolled down, but hide when at the very bottom
+      setIsScrolled(scrollY > 50 && scrollY < maxScroll - 10);
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -121,7 +127,15 @@ export default function Navbar({ activeTab }: NavbarProps) {
       <AnimatePresence>
         {isScrolled && (
           <motion.button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => {
+
+              // Stop auto-scroll first if it's running
+              if (typeof window !== 'undefined' && (window as any).stopAutoScrollGlobal) {
+                (window as any).stopAutoScrollGlobal();
+              }
+              // Direct scroll to top with immediate effect
+              window.scrollTo(0, 0);
+            }}
             className={styles.backToTopButton}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
