@@ -37,7 +37,8 @@ next.config.js
 # vercel
 .vercel
 .env
+.env*.local
 
 #lock files
+package-lock.json
 yarn.lock
-.env*.local

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+  <path d="M6 8h12v8H6z" fill="#000000"/>
+  <path d="M8 10h8v2H8z" fill="#F7DF1E"/>
+  <path d="M8 13h8v2H8z" fill="#F7DF1E"/>
+  <path d="M8 16h6v1H8z" fill="#F7DF1E"/>
+  <text x="12" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="#F7DF1E">bcrypt.js</text>
+</svg>

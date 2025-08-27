@@ -1,10 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import styles from './ContactsPage.module.css'
 
 const contactInfo = [
   {
@@ -49,11 +51,58 @@ export default function ContactsPage() {
     subject: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [statusMessage, setStatusMessage] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '')
+  }, [])
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+    setStatusMessage('')
+
+    // Check if EmailJS is configured
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmitStatus('error')
+      setStatusMessage('Email service not configured. Please contact me directly at mahmood.islam@gmail.com')
+      setIsSubmitting(false)
+      return
+    }
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Mahmood ul Islam'
+      }
+
+      const result = await emailjs.send(serviceId, templateId, templateParams)
+
+      if (result.status === 200) {
+        setSubmitStatus('success')
+        setStatusMessage('Message sent successfully! I\'ll get back to you soon.')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      console.error('EmailJS Error:', error)
+      setSubmitStatus('error')
+      setStatusMessage('Failed to send message. Please try again or contact me directly at mahmood.islam@gmail.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -64,23 +113,23 @@ export default function ContactsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div className={styles.contactsContainer}>
       <Navbar activeTab="Contacts" />
-      
-      <main className="pt-20">
+
+      <main className={styles.mainContent}>
         {/* Hero Section */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
+        <section className={styles.heroSection}>
+          <div className={styles.heroContainer}>
             <motion.div
-              className="text-center max-w-4xl mx-auto"
+              className={styles.heroContent}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-gradient">
+              <h1 className={styles.heroTitle}>
                 Get In Touch
               </h1>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className={styles.heroSubtitle}>
                 Let&apos;s discuss your next project or just say hello
               </p>
             </motion.div>
@@ -88,9 +137,9 @@ export default function ContactsPage() {
         </section>
 
         {/* Contact Content */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section className={styles.contactSection}>
+          <div className={styles.contactContainer}>
+            <div className={styles.contactGrid}>
               {/* Contact Form */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -98,11 +147,11 @@ export default function ContactsPage() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold text-white mb-8">Send a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <h2 className={styles.formTitle}>Send a Message</h2>
+                <form onSubmit={handleSubmit} className={styles.contactForm}>
+                  <div className={styles.formRow}>
+                    <div className={styles.formGroup}>
+                      <label htmlFor="name" className={styles.formLabel}>
                         Name
                       </label>
                       <input
@@ -111,13 +160,13 @@ export default function ContactsPage() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300"
+                        className={styles.formInput}
                         placeholder="Your name"
                         required
                       />
                     </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                    <div className={styles.formGroup}>
+                      <label htmlFor="email" className={styles.formLabel}>
                         Email
                       </label>
                       <input
@@ -126,14 +175,14 @@ export default function ContactsPage() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300"
+                        className={styles.formInput}
                         placeholder="your.email@example.com"
                         required
                       />
                     </div>
                   </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                  <div className={styles.formGroup}>
+                    <label htmlFor="subject" className={styles.formLabel}>
                       Subject
                     </label>
                     <input
@@ -142,13 +191,13 @@ export default function ContactsPage() {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300"
+                      className={styles.formInput}
                       placeholder="What's this about?"
                       required
                     />
                   </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <div className={styles.formGroup}>
+                    <label htmlFor="message" className={styles.formLabel}>
                       Message
                     </label>
                     <textarea
@@ -157,18 +206,34 @@ export default function ContactsPage() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors duration-300 resize-none"
+                      className={styles.formTextarea}
                       placeholder="Tell me about your project..."
                       required
                     />
                   </div>
                   <button
                     type="submit"
-                    className="btn-primary w-full"
+                    className={styles.formButton}
+                    disabled={isSubmitting}
                   >
-                    <Send className="w-4 h-4" />
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <div className={styles.spinner} />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className={styles.sendIcon} />
+                        Send Message
+                      </>
+                    )}
                   </button>
+
+                  {submitStatus !== 'idle' && (
+                    <div className={`${styles.statusMessage} ${styles[submitStatus]}`}>
+                      {statusMessage}
+                    </div>
+                  )}
                 </form>
               </motion.div>
 
@@ -178,27 +243,27 @@ export default function ContactsPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="space-y-8"
+                className={styles.contactInfo}
               >
                 <div>
-                  <h2 className="text-3xl font-bold text-white mb-8">Contact Information</h2>
-                  <div className="space-y-6">
+                  <h2 className={styles.contactInfoTitle}>Contact Information</h2>
+                  <div className={styles.contactInfoList}>
                     {contactInfo.map((info, index) => (
                       <motion.a
                         key={info.title}
                         href={info.href}
-                        className="flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 group"
+                        className={styles.contactInfoItem}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: index * 0.1 }}
                         viewport={{ once: true }}
                       >
-                        <div className="p-3 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors duration-300">
-                          <info.icon className="w-6 h-6 text-blue-400" />
+                        <div className={styles.contactInfoIcon}>
+                          <info.icon className={styles.contactInfoIconSvg} />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-white">{info.title}</h3>
-                          <p className="text-gray-300">{info.value}</p>
+                          <h3 className={styles.contactInfoItemTitle}>{info.title}</h3>
+                          <p className={styles.contactInfoItemValue}>{info.value}</p>
                         </div>
                       </motion.a>
                     ))}
@@ -206,15 +271,15 @@ export default function ContactsPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-6">Follow Me</h3>
-                  <div className="flex space-x-4">
+                  <h3 className={styles.socialTitle}>Follow Me</h3>
+                  <div className={styles.socialLinks}>
                     {socialLinks.map((link, index) => (
                       <motion.a
                         key={link.name}
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`p-4 bg-white/10 backdrop-blur-sm rounded-full text-white transition-all duration-300 ${link.color} hover:bg-white/20 hover:scale-110`}
+                        className={styles.socialLink}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         initial={{ opacity: 0, scale: 0 }}
@@ -222,16 +287,16 @@ export default function ContactsPage() {
                         transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
                         viewport={{ once: true }}
                       >
-                        <link.icon className="w-6 h-6" />
+                        <link.icon className={styles.socialIcon} />
                       </motion.a>
                     ))}
                   </div>
                 </div>
 
-                <div className="p-6 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl border border-blue-500/30">
-                  <h3 className="text-lg font-bold text-white mb-3">Let&apos;s Work Together</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    I&apos;m always open to discussing new opportunities, interesting projects, 
+                <div className={styles.workTogetherCard}>
+                  <h3 className={styles.workTogetherTitle}>Let&apos;s Work Together</h3>
+                  <p className={styles.workTogetherDescription}>
+                    I&apos;m always open to discussing new opportunities, interesting projects,
                     or just having a chat about technology and development.
                   </p>
                 </div>

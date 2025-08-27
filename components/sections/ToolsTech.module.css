@@ -1,0 +1,147 @@
+/* ToolsTech.module.css */
+
+.techContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.techCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .categoryTitle {
+    font-size: 1.875rem;
+  }
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .techGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .techGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .techGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.techCard {
+  position: relative;
+  cursor: pointer;
+}
+
+.techCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.techCard:hover .techCardContent {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.techIconContainer {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .techIconContainer {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.techIcon {
+  object-fit: contain;
+}
+
+.techFallback {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.techName {
+  font-size: 0.875rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.techCard:hover .techName {
+  color: white;
+}
+
+.techTooltip {
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.techCard:hover .techTooltip {
+  opacity: 1;
+}
+
+.tooltipContent {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}

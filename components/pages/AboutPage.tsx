@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import styles from './AboutPage.module.css'
 
 export default function AboutPage() {
   const [ref, inView] = useInView({
@@ -13,23 +14,23 @@ export default function AboutPage() {
   })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div className={styles.aboutContainer}>
       <Navbar activeTab="About" />
 
-      <main className="pt-20">
+      <main className={styles.mainContent}>
         {/* Hero Section */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
+        <section className={styles.heroSection}>
+          <div className={styles.heroContainer}>
             <motion.div
-              className="text-center max-w-4xl mx-auto"
+              className={styles.heroContent}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-gradient">
+              <h1 className={styles.heroTitle}>
                 About Me
               </h1>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className={styles.heroSubtitle}>
                 Lead Software Engineer & Cloud & AI Architect
               </p>
             </motion.div>
@@ -37,24 +38,24 @@ export default function AboutPage() {
         </section>
 
         {/* About Content */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section className={styles.aboutContentSection}>
+          <div className={styles.aboutContentContainer}>
+            <div className={styles.aboutGrid}>
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className="relative">
+                <div className={styles.profileImageContainer}>
                   <Image
                     src="/pro-pic1.jpg"
                     alt="Mahmood ul Islam"
                     width={500}
                     height={600}
-                    className="rounded-2xl shadow-2xl"
+                    className={styles.profileImage}
                   />
-                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 animate-pulse" />
+                  <div className={styles.decorativeElement} />
                 </div>
               </motion.div>
 
@@ -64,39 +65,39 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="space-y-6"
+                className={styles.aboutTextContent}
               >
-                <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                <h2 className={styles.aboutHeading}>
                   Hi, I&apos;m Mahmood ul Islam
                 </h2>
 
-                <p className="text-gray-300 leading-relaxed">
+                <p className={styles.aboutDescription}>
                   I&apos;m a passionate Senior Software Developer and Cloud & AI Specialist with over 5 years of experience
                   in building AI-powered healthcare applications and cloud-native solutions. Currently working at Virtual Health Hub in Canada,
                   I specialize in modern web technologies, AWS cloud infrastructure, and AI/ML integration.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed">
+                <p className={styles.aboutDescription}>
                   My expertise spans across full-stack development, cloud architecture, AI/ML, and healthcare technology.
                   I love solving complex problems and creating innovative solutions that make a real impact in healthcare.
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 pt-6">
-                  <div className="text-center p-4 bg-white/5 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">5+</div>
-                    <div className="text-sm text-gray-400">Years Experience</div>
+                <div className={styles.statsGrid}>
+                  <div className={styles.statCard}>
+                    <div className={styles.statNumber}>5+</div>
+                    <div className={styles.statLabel}>Years Experience</div>
                   </div>
-                  <div className="text-center p-4 bg-white/5 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">10+</div>
-                    <div className="text-sm text-gray-400">Projects Completed</div>
+                  <div className={styles.statCard}>
+                    <div className={styles.statNumber}>10+</div>
+                    <div className={styles.statLabel}>Projects Completed</div>
                   </div>
-                  <div className="text-center p-4 bg-white/5 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">25+</div>
-                    <div className="text-sm text-gray-400">Technologies</div>
+                  <div className={styles.statCard}>
+                    <div className={styles.statNumber}>25+</div>
+                    <div className={styles.statLabel}>Technologies</div>
                   </div>
-                  <div className="text-center p-4 bg-white/5 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-400">100%</div>
-                    <div className="text-sm text-gray-400">Client Satisfaction</div>
+                  <div className={styles.statCard}>
+                    <div className={styles.statNumber}>100%</div>
+                    <div className={styles.statLabel}>Client Satisfaction</div>
                   </div>
                 </div>
               </motion.div>
@@ -105,24 +106,24 @@ export default function AboutPage() {
         </section>
 
         {/* Skills Section */}
-        <section className="section-padding bg-black/20">
-          <div className="container mx-auto px-4">
+        <section className={styles.skillsSection}>
+          <div className={styles.skillsContainer}>
             <motion.div
-              className="text-center mb-16"
+              className={styles.skillsHeader}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-gradient">
+              <h2 className={styles.skillsTitle}>
                 My Expertise
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className={styles.skillsDescription}>
                 Areas where I excel and technologies I master
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={styles.skillsGrid}>
               {[
                 {
                   title: 'Frontend Development',
@@ -157,19 +158,19 @@ export default function AboutPage() {
               ].map((category, index) => (
                 <motion.div
                   key={category.title}
-                  className="card"
+                  className={styles.skillCard}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-xl font-bold text-white mb-3">{category.title}</h3>
-                  <p className="text-gray-300 text-sm mb-4">{category.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <h3 className={styles.skillTitle}>{category.title}</h3>
+                  <p className={styles.skillDescription}>{category.description}</p>
+                  <div className={styles.skillTags}>
                     {category.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs border border-blue-500/30"
+                        className={styles.skillTag}
                       >
                         {skill}
                       </span>

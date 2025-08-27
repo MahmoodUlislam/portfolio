@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import styles from './WorkPage.module.css'
 
 const workExperience = [
   {
@@ -22,7 +23,7 @@ const workExperience = [
     duration: 'August 2024 - February 2025',
     location: 'Saskatoon, Saskatchewan, Canada',
     description: 'Developed full-stack healthcare applications using React.js, Vue.js, and Node.js. Implemented AI integrations and cloud infrastructure.',
-    technologies: ['React.js', 'Vue.js', 'Node.js', 'AWS', 'PostgreSQL', 'SASS'],
+    technologies: ['React.js', 'Vue.js', 'Node.js', 'AWS', 'PostgreSQL'],
     logo: '/VHH_Logo.jpg'
   },
   {
@@ -82,23 +83,23 @@ export default function WorkPage() {
   })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div className={styles.workContainer}>
       <Navbar activeTab="Work" />
 
-      <main className="pt-20">
+      <main className={styles.mainContent}>
         {/* Hero Section */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
+        <section className={styles.skillsSection}>
+          <div className={styles.container}>
             <motion.div
-              className="text-center max-w-4xl mx-auto"
+              className={styles.header}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-gradient">
+              <h1 className={styles.title}>
                 Work Experience
               </h1>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className={styles.subtitle}>
                 My professional journey in software development and engineering
               </p>
             </motion.div>
@@ -106,60 +107,53 @@ export default function WorkPage() {
         </section>
 
         {/* Timeline Section */}
-        <section className="section-padding bg-black/20">
-          <div className="container mx-auto px-4">
+        <section className={styles.skillsSection}>
+          <div className={styles.container}>
             <motion.div
               ref={ref}
               variants={timelineVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="relative"
+              className={styles.timeline}
             >
-              {/* Timeline Line */}
-              <div className="absolute left-8 lg:left-1/2 lg:transform lg:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-purple-500" />
-
               {workExperience.map((work, index) => (
                 <motion.div
                   key={work.company}
                   variants={itemVariants}
-                  className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                    }`}
+                  className={styles.timelineItem}
                 >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 z-10" />
-
-                  {/* Content Card */}
-                  <div className={`ml-16 lg:ml-0 lg:w-5/12 ${index % 2 === 0 ? 'lg:mr-auto lg:pr-8' : 'lg:ml-auto lg:pl-8'}`}>
-                    <div className="card group hover:scale-105 transition-transform duration-300">
-                      <div className="flex items-start gap-4">
-                        <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-white/5 flex items-center justify-center p-2">
+                  <div className={styles.timelineContent}>
+                    <div className={styles.card}>
+                      <div className={styles.cardContent}>
+                        <div className={styles.logoContainer}>
                           <Image
                             src={work.logo}
                             alt={work.company}
                             fill
-                            className="object-contain"
+                            className={styles.logoImage}
                           />
                         </div>
-                        <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+
+                        <div className={styles.content}>
+                          <h3 className={styles.companyName}>
                             {work.company}
                           </h3>
-                          <h4 className="text-lg font-semibold text-blue-400 mb-1">
+                          <h4 className={styles.position}>
                             {work.position}
                           </h4>
-                          <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
+                          <div className={styles.meta}>
                             <span>{work.duration}</span>
                             <span>•</span>
                             <span>{work.location}</span>
                           </div>
-                          <p className="text-gray-300 mb-4 leading-relaxed">
+                          <p className={styles.description}>
                             {work.description}
                           </p>
-                          <div className="flex flex-wrap gap-2">
+                          <div className={styles.technologies}>
                             {work.technologies.map((tech) => (
                               <span
                                 key={tech}
-                                className="px-3 py-1 bg-white/10 rounded-full text-xs text-white/80 border border-white/20"
+                                className={styles.techTag}
                               >
                                 {tech}
                               </span>
@@ -176,24 +170,24 @@ export default function WorkPage() {
         </section>
 
         {/* Skills Section */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
+        <section className={styles.skillsSection}>
+          <div className={styles.container}>
             <motion.div
-              className="text-center mb-16"
+              className={styles.header}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-gradient">
+              <h2 className={styles.title}>
                 Key Skills
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className={styles.subtitle}>
                 Technologies and tools I&apos;ve worked with throughout my career
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={styles.skillsGrid}>
               {[
                 { title: 'Frontend', skills: ['React.js', 'Vue.js', 'Next.js', 'React Native', 'Swift (iOS)'] },
                 { title: 'Backend', skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets'] },
@@ -204,18 +198,18 @@ export default function WorkPage() {
               ].map((category, index) => (
                 <motion.div
                   key={category.title}
-                  className="card"
+                  className={styles.skillCard}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-xl font-bold text-white mb-4">{category.title}</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <h3 className={styles.skillTitle}>{category.title}</h3>
+                  <div className={styles.skillTags}>
                     {category.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30"
+                        className={styles.skillTag}
                       >
                         {skill}
                       </span>

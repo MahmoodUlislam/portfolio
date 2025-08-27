@@ -1,0 +1,168 @@
+/* MainHeader.module.css */
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainHeading {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .mainHeading {
+    font-size: 4.5rem;
+  }
+}
+
+.greeting {
+  background: linear-gradient(to right, #60a5fa, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.name {
+  color: white;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  max-width: 48rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.125rem;
+  height: 1.5rem;
+  background: #60a5fa;
+  margin-left: 0.25rem;
+}
+
+.cursor.typing {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.ctaButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .ctaButtons {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialLink {
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.socialLinkBlue:hover {
+  color: #60a5fa;
+}
+
+.socialLinkGray:hover {
+  color: #9ca3af;
+}
+
+.socialLinkRed:hover {
+  color: #f87171;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.primaryButton:hover {
+  background: linear-gradient(to right, #1d4ed8, #6d28d9);
+  transform: scale(1.05);
+}
+
+.skillsTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.skillTag {
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.socialIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.downloadIcon {
+  width: 1rem;
+  height: 1rem;
+}

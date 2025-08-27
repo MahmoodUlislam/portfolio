@@ -1,0 +1,27 @@
+/* Loading.module.css */
+
+.loadingContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+}
+
+.loadingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loaderIcon {
+  height: 2rem;
+  width: 2rem;
+  color: #2563eb;
+}
+
+.loadingText {
+  color: #475569;
+  font-weight: 500;
+}

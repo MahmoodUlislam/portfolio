@@ -1,12 +1,12 @@
 # Mahmood ul Islam - Portfolio
 
-A modern, responsive portfolio website built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. This project showcases my skills, experience, and projects as a **Senior Software Developer | Cloud & AI Specialist** at Virtual Health Hub, with a focus on AI-powered healthcare applications.
+A modern, responsive portfolio website built with **Next.js 15**, **TypeScript**, and **CSS Modules**. This project showcases my skills, experience, and projects as a **Senior Software Developer | Cloud & AI Specialist** at Virtual Health Hub, with a focus on AI-powered healthcare applications.
 
 ## 🚀 Features
 
 - **Next.js 14 App Router** - Latest Next.js features with App Router
 - **TypeScript** - Full type safety and better development experience
-- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **CSS Modules** - Scoped CSS for component-based styling
 - **Framer Motion** - Smooth animations and transitions
 - **Responsive Design** - Mobile-first approach with perfect responsiveness
 - **Modern UI/UX** - Glass morphism, gradients, and modern design patterns
@@ -20,7 +20,7 @@ A modern, responsive portfolio website built with **Next.js 14**, **TypeScript**
 
 - **Next.js 14** - React framework with App Router
 - **TypeScript** - Type-safe JavaScript
-- **Tailwind CSS** - Utility-first CSS framework
+- **CSS Modules** - Scoped CSS for component-based styling
 - **Framer Motion** - Animation library
 - **Lucide React** - Beautiful icon library
 
@@ -28,8 +28,7 @@ A modern, responsive portfolio website built with **Next.js 14**, **TypeScript**
 
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixing
+
 
 ## 📁 Project Structure
 
@@ -48,7 +47,7 @@ portfolio/
 │   ├── sections/         # Section components
 │   └── ui/               # UI components
 ├── hooks/                # Custom React hooks
-├── styles/               # Global styles and Tailwind config
+├── styles/               # Global styles
 ├── public/               # Static assets
 └── utils/                # Utility functions
 ```
@@ -66,7 +65,7 @@ portfolio/
 ### Responsive Design
 
 - **Mobile First** - Designed for mobile devices first
-- **Breakpoint System** - Tailwind's responsive breakpoints
+- **Breakpoint System** - Responsive design with CSS media queries
 - **Flexible Layouts** - Grid and Flexbox layouts
 - **Touch Friendly** - Optimized for touch interactions
 
@@ -160,7 +159,7 @@ portfolio/
 - **TypeScript** - Better type safety and IntelliSense
 - **Modern Tooling** - Latest versions of all dependencies
 - **Clean Architecture** - Well-organized component structure
-- **Consistent Styling** - Tailwind CSS for consistent design
+- **Consistent Styling** - CSS Modules for consistent design
 
 ### User Experience
 
@@ -173,10 +172,10 @@ portfolio/
 
 ### Colors and Themes
 
-The project uses Tailwind CSS with custom color schemes. You can modify the colors in:
+The project uses CSS Modules with custom color schemes. You can modify the colors in:
 
-- `tailwind.config.js` - Custom color palette
-- `styles/globals.scss` - Global styles and CSS variables
+- `styles/globals.css` - Global styles and CSS variables
+- Component-specific `.module.css` files - Scoped styles for each component
 
 ### Content
 
@@ -191,8 +190,8 @@ Update the content in the respective component files:
 ### Styling
 
 - Modify `styles/globals.scss` for global styles
-- Update `tailwind.config.js` for theme customization
-- Edit component-specific styles using Tailwind classes
+- Update `styles/globals.css` for theme customization
+- Edit component-specific styles using CSS Modules
 
 ## 📦 Deployment
 
@@ -231,4 +230,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ using Next.js 14, TypeScript, and Tailwind CSS
+Built with ❤️ using Next.js 15, TypeScript, and CSS Modules
