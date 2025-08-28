@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -183,6 +183,31 @@
   opacity: 0;
   transition: all 0.3s ease;
   pointer-events: none;
+}
+
+/* Mobile-specific styles for better blur and opacity */
+@media (max-width: 768px) {
+  .mobileMenu {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Ensure proper positioning and no interference with content */
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  /* Ensure mobile menu links are properly spaced */
+  .mobileNavLinks {
+    padding: 1rem 0;
+  }
+
+  .mobileNavLink {
+    margin: 0.25rem 0;
+  }
 }
 
 .mobileMenu.open {

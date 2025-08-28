@@ -4,6 +4,17 @@
   background: #0f172a;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem 0;
+  /* Ensure no extra spacing on mobile */
+  margin: 0;
+}
+
+/* Mobile-specific footer adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+    /* Remove any potential extra spacing */
+    margin-bottom: 0;
+  }
 }
 
 .footerContainer {
