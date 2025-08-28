@@ -112,10 +112,10 @@
   border-radius: 50%;
   opacity: 0.2;
   animation:
-    float 6s fade-in-out infinite,
-    pulse 4s fade-in-out infinite,
+    float 6s ease-in-out infinite,
+    pulse 4s ease-in-out infinite,
     rotate 20s linear infinite,
-    colorShift 8s fade-in-out infinite;
+    colorShift 8s ease-in-out infinite;
   box-shadow:
     0 0 20px rgba(59, 130, 246, 0.3),
     0 0 40px rgba(139, 92, 246, 0.2);
@@ -234,16 +234,6 @@
   height: 2rem;
   color: rgba(255, 255, 255, 0.6);
   animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
 }
 
 .workHistorySection {

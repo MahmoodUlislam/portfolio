@@ -1,29 +1,42 @@
 .tourIndicator {
   position: fixed;
-  top: 5rem;
+  top: 2rem;
   right: 2rem;
-  z-index: 40;
-  background: rgba(255, 255, 255, 0.1);
+  z-index: 50;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(147, 51, 234, 0.95));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 1rem;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.1);
-  animation: pulse 2s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: float 3s ease-in-out infinite;
+  min-width: 280px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes pulse {
-  0%,
-  100% {
+  0%, 100% {
     box-shadow:
-      0 8px 32px rgba(0, 0, 0, 0.1),
+      0 20px 25px -5px rgba(0, 0, 0, 0.3),
+      0 10px 10px -5px rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(255, 255, 255, 0.1);
   }
   50% {
     box-shadow:
-      0 8px 32px rgba(59, 130, 246, 0.2),
+      0 20px 25px -5px rgba(59, 130, 246, 0.4),
+      0 10px 10px -5px rgba(59, 130, 246, 0.3),
       0 0 0 1px rgba(59, 130, 246, 0.3);
   }
 }
@@ -31,22 +44,133 @@
 .tourContent {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   color: white;
-  font-weight: 500;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .playIcon {
-  width: 1rem;
-  height: 1rem;
-  color: #10b981;
-  animation: pulse 1s ease-in-out infinite;
+  width: 0.875rem;
+  height: 0.875rem;
+  color: white;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-1px);
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+}
+
+.mainText {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  letter-spacing: 0.025em;
+}
+
+.subText {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.stopButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.stopButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.stopIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: white;
 }
 
 @media (max-width: 768px) {
   .tourIndicator {
-    top: 4rem;
+    top: 1rem;
     right: 1rem;
     left: 1rem;
+    min-width: auto;
+    padding: 0.875rem 1rem;
+  }
+  
+  .textContent {
+    gap: 0.25rem;
+  }
+  
+  .mainText {
+    font-size: 0.8125rem;
+  }
+  
+  .subText {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tourIndicator {
+    top: 0.75rem;
+    right: 0.75rem;
+    left: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .iconContainer {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  
+  .playIcon {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  .stopButton {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .stopIcon {
+    width: 0.625rem;
+    height: 0.625rem;
   }
 }

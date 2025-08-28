@@ -41,17 +41,17 @@
   width: 100%;
   max-width: 48rem;
   line-height: 1.6;
-  min-height: 4.5rem; /* Fixed height to prevent layout shift */
+  min-height: 4.5rem;
   display: flex;
   align-items: flex-start;
-  position: relative; /* For absolute positioning of cursor */
+  position: relative;
 }
 
 @media (min-width: 1024px) {
   .description {
     font-size: 1.5rem;
-    min-height: 5.5rem; /* Larger fixed height for desktop */
-    width: 48rem; /* Fixed width to reserve space from the start */
+    min-height: 5.5rem;
+    width: 48rem;
   }
 }
 
@@ -61,12 +61,11 @@
   height: 1.6em;
   background: #60a5fa;
   margin-left: 0.125rem;
-  flex-shrink: 0; /* Prevent cursor from shrinking */
-  vertical-align: baseline; /* Align with text baseline */
-  opacity: 1;
+  flex-shrink: 0;
+  vertical-align: baseline;
   transition: opacity 0.3s ease;
   position: relative;
-  top: 0.1em; /* Fine-tune vertical alignment */
+  top: 0.1em;
 }
 
 .cursor.typing {

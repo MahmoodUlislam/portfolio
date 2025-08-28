@@ -343,7 +343,4 @@
   border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
-.formButton:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+
