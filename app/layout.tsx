@@ -61,7 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${roboto.variable} font-sans`}>
-
         {children}
       </body>
     </html>

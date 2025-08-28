@@ -1,6 +1,6 @@
 .tourIndicator {
   position: fixed;
-  top: 5rem;
+  top: 7rem;
   right: 2rem;
   z-index: 150;
   background: linear-gradient(
@@ -136,7 +136,7 @@
 
 @media (max-width: 768px) {
   .tourIndicator {
-    top: 4rem;
+    top: 6rem;
     right: 1rem;
     left: 1rem;
     min-width: auto;
@@ -158,7 +158,7 @@
 
 @media (max-width: 480px) {
   .tourIndicator {
-    top: 3.5rem;
+    top: 5.5rem;
     right: 0.75rem;
     left: 0.75rem;
     padding: 0.75rem;

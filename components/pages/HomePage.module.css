@@ -4,10 +4,27 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
   color: white;
+  /* Ensure background extends behind navbar */
+  padding-top: 0;
+}
+
+/* Mobile-specific container adjustments */
+@media (max-width: 768px) {
+  .homeContainer {
+    /* Ensure proper background coverage on mobile */
+    min-height: 100vh;
+  }
 }
 
 .mainContent {
   position: relative;
+}
+
+/* Mobile-specific adjustments for main content */
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 0; /* Remove global padding since we're handling it per section */
+  }
 }
 
 .heroSection {
@@ -20,6 +37,14 @@
   overflow: hidden;
 }
 
+/* Mobile-specific padding to account for fixed navbar */
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 4rem;
+    min-height: calc(100vh - 4rem);
+  }
+}
+
 .heroBackground {
   position: absolute;
   inset: 0;
@@ -29,6 +54,15 @@
     rgba(147, 51, 234, 0.2) 50%,
     rgba(236, 72, 153, 0.2) 100%
   );
+}
+
+/* Mobile-specific hero background adjustments */
+@media (max-width: 768px) {
+  .heroBackground {
+    /* Ensure background extends behind navbar area */
+    top: -4rem;
+    height: calc(100% + 4rem);
+  }
 }
 
 .heroContainer {

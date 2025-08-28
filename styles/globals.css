@@ -215,8 +215,6 @@ img {
   main {
     margin: 0;
     padding: 0;
-    /* Add padding-top to account for fixed navbar */
-    padding-top: 4rem;
   }
 
   /* Ensure page containers don't have extra spacing */
@@ -243,7 +241,7 @@ img {
 
   /* Ensure proper spacing for main content on all pages */
   .mainContent {
-    padding-top: 4rem;
+    /* Let individual pages handle their own padding */
   }
 }
 
