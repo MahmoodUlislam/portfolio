@@ -42,9 +42,9 @@
   max-width: 48rem;
   line-height: 1.6;
   min-height: 4.5rem;
-  display: flex;
-  align-items: flex-start;
   position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 @media (min-width: 1024px) {
@@ -61,15 +61,15 @@
   height: 1.6em;
   background: #60a5fa;
   margin-left: 0.125rem;
-  flex-shrink: 0;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   transition: opacity 0.3s ease;
+  animation: pulse 1s infinite;
   position: relative;
   top: 0.1em;
 }
 
 .cursor.typing {
-  animation: pulse 1s infinite;
+  opacity: 1;
 }
 
 .cursor:not(.typing) {

@@ -1,9 +1,13 @@
 .tourIndicator {
   position: fixed;
-  top: 2rem;
+  top: 5rem;
   right: 2rem;
-  z-index: 50;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(147, 51, 234, 0.95));
+  z-index: 150;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.95),
+    rgba(147, 51, 234, 0.95)
+  );
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 1rem;
@@ -18,7 +22,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -27,7 +32,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow:
       0 20px 25px -5px rgba(0, 0, 0, 0.3),
       0 10px 10px -5px rgba(0, 0, 0, 0.2),
@@ -68,7 +74,11 @@
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -126,21 +136,21 @@
 
 @media (max-width: 768px) {
   .tourIndicator {
-    top: 1rem;
+    top: 4rem;
     right: 1rem;
     left: 1rem;
     min-width: auto;
     padding: 0.875rem 1rem;
   }
-  
+
   .textContent {
     gap: 0.25rem;
   }
-  
+
   .mainText {
     font-size: 0.8125rem;
   }
-  
+
   .subText {
     font-size: 0.6875rem;
   }
@@ -148,27 +158,27 @@
 
 @media (max-width: 480px) {
   .tourIndicator {
-    top: 0.75rem;
+    top: 3.5rem;
     right: 0.75rem;
     left: 0.75rem;
     padding: 0.75rem;
   }
-  
+
   .iconContainer {
     width: 1.75rem;
     height: 1.75rem;
   }
-  
+
   .playIcon {
     width: 0.75rem;
     height: 0.75rem;
   }
-  
+
   .stopButton {
     width: 1.25rem;
     height: 1.25rem;
   }
-  
+
   .stopIcon {
     width: 0.625rem;
     height: 0.625rem;
