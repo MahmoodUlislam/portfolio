@@ -211,9 +211,10 @@ export default function AboutPage() {
                 Designed and productionized multi-agent and computer-vision pipelines across healthcare apps. For LifeLine, built an agentic system on Amazon Bedrock
                 (chatbot, session-summary, and risk-analytics agents) with streaming I/O, Polly TTS, and Transcribe STT; integrated Chime SDK for sessions and ambient
                 listening (text + Rekognition facial/engagement cues) to generate real-time summaries and risk signals, with structured memory and secure backend
-                context injection. For SkinScan, implemented a two-stage CV pipeline—Rekognition pre-screen (skin/quality) → custom vision model trained and deployed
-                on Amazon SageMaker—with confidence thresholds, safe defaults, and CloudWatch monitoring (latency/error/confidence) and rollback. Both solutions run
-                in VPC-isolated AWS environments with Cognito auth, presigned S3 media flows, and full audit/reporting for privacy and accountability.
+                context injection. For SkinScan, implemented a three-stage CV pipeline—Rekognition pre-screen, SageMaker classification, and serverless wound
+                segmentation with RLE masks—plus Bedrock agents for wound staging, healing assessment, and clinical recommendations; integrated Comprehend Medical
+                for ICD-10/RxNorm inference and real-time SSE streaming for analysis progress. Both solutions run in VPC-isolated AWS environments with Cognito auth,
+                presigned S3 media flows, and full audit/reporting for privacy and accountability.
               </p>
             </motion.div>
           </div>

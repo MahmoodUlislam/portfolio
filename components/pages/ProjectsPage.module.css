@@ -133,6 +133,12 @@
   gap: 2rem;
 }
 
+@media (max-width: 375px) {
+  .projectsGrid {
+    gap: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .projectsGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -230,11 +236,23 @@
   padding: 1.5rem;
 }
 
+@media (max-width: 375px) {
+  .projectContent {
+    padding: 1rem;
+  }
+}
+
 .projectTitle {
   font-size: 1.25rem;
   font-weight: bold;
   color: white;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 375px) {
+  .projectTitle {
+    font-size: 1.125rem;
+  }
 }
 
 .projectDescription {

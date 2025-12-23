@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -23,20 +23,29 @@ export default function Navbar({ activeTab }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isLogoHovered, setIsLogoHovered] = useState(false)
+  const ticking = useRef(false)
+
+  // Throttled scroll handler for better performance
+  const handleScroll = useCallback(() => {
+    if (!ticking.current) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY
+        const scrollHeight = document.documentElement.scrollHeight
+        const clientHeight = document.documentElement.clientHeight
+        const maxScroll = scrollHeight - clientHeight
+
+        // Show button when scrolled down, but hide when at the very bottom
+        setIsScrolled(scrollY > 50 && scrollY < maxScroll - 10)
+        ticking.current = false
+      })
+      ticking.current = true
+    }
+  }, [])
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const scrollHeight = document.documentElement.scrollHeight;
-      const clientHeight = document.documentElement.clientHeight;
-      const maxScroll = scrollHeight - clientHeight;
-
-      // Show button when scrolled down, but hide when at the very bottom
-      setIsScrolled(scrollY > 50 && scrollY < maxScroll - 10);
-    }
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [handleScroll])
 
   return (
     <>

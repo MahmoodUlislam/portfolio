@@ -37,6 +37,7 @@ const techStack = [
     category: "Data Visualization & UI",
     technologies: [
       { name: "Chart.js", icon: "/logos/chartjs-official.png", color: "#FF6384" },
+      { name: "ECharts", icon: "/logos/echarts-official.svg", color: "#AA344D" },
       { name: "react-calendar", icon: "/logos/react.png", color: "#61DAFB" },
       { name: "vue-cal", icon: "/logos/vuejs.png", color: "#4FC08D" },
       { name: "PDFMake", icon: "/logos/javascript.png", color: "#F7DF1E" },
@@ -174,7 +175,8 @@ const itemVariants = {
 export default function ToolsTech() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0,
+    rootMargin: '50px 0px'
   })
 
   return (
@@ -206,7 +208,7 @@ export default function ToolsTech() {
                 animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{
                   duration: 0.3,
-                  delay: categoryIndex * 0.1 + techIndex * 0.05
+                  delay: Math.min(categoryIndex * 0.05 + techIndex * 0.02, 0.5)
                 }}
               >
                 <div className={styles.techCardContent}>

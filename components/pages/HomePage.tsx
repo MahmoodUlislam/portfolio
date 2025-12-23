@@ -93,7 +93,7 @@ export default function HomePage() {
                     />
                   </div>
 
-                  {/* Second Image (Open Laptop) */}
+                  {/* Second Image (Open Laptop) - No priority, loads after first image */}
                   <div className={`${styles.absoluteInset0} ${styles.secondImage} ${hasScrolled ? styles.fadeIn : ''}`}>
                     <Image
                       src="/pro-pic2.jpg"
@@ -101,7 +101,7 @@ export default function HomePage() {
                       fill
                       sizes="(max-width: 768px) 320px, (max-width: 1024px) 384px, 480px"
                       className={styles.profileImage}
-                      priority
+                      loading="eager"
                     />
                   </div>
 

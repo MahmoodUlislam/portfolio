@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* Fonts are loaded via next/font/google in layout.tsx for better performance */
 
 :root {
   --font-inter: "Inter", sans-serif;
@@ -54,8 +54,8 @@ html.auto-scrolling {
   -webkit-transform: translateZ(0);
 }
 
-html.auto-scrolling * {
-  /* Optimize all elements during auto-scroll */
+html.auto-scrolling main {
+  /* Optimize only main content during auto-scroll - not all elements */
   will-change: scroll-position;
 }
 
@@ -78,7 +78,7 @@ html.auto-scrolling * {
 }
 
 /* Firefox scrollbar */
-* {
+html {
   scrollbar-width: thin;
   scrollbar-color: rgba(59, 130, 246, 0.5) rgba(255, 255, 255, 0.1);
 }
@@ -101,9 +101,15 @@ img {
   height: auto;
 }
 
-/* Smooth transitions for all elements */
-* {
-  transition: all 0.3s ease;
+/* Smooth transitions for interactive elements only - NOT all elements */
+a,
+button,
+input,
+textarea,
+.card,
+.btn-primary,
+.btn-secondary {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Focus styles for accessibility */

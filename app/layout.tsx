@@ -5,12 +5,16 @@ import '../styles/globals.css'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap', // Prevents FOIT (Flash of Invisible Text)
+  preload: true,
 })
 
 const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
+  weight: ['400', '700'], // Reduced from 4 weights to 2 for faster loading
   subsets: ['latin'],
   variable: '--font-roboto',
+  display: 'swap',
+  preload: true,
 })
 
 export const metadata: Metadata = {

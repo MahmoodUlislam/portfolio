@@ -83,6 +83,12 @@
   padding: 0 1rem;
 }
 
+@media (max-width: 375px) {
+  .contactContainer {
+    padding: 0 0.75rem;
+  }
+}
+
 @media (min-width: 640px) {
   .contactContainer {
     padding: 0 1.5rem;
@@ -119,6 +125,12 @@
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
+}
+
+@media (max-width: 375px) {
+  .contactForm {
+    padding: 1.25rem;
+  }
 }
 
 .formTitle {
@@ -200,6 +212,10 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .formButton:hover {

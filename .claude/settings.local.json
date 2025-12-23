@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run lint:*)",
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "Bash(while read icon)",
+      "Bash(do)",
+      "Bash(file=\"public$icon\")",
+      "Bash(if [ ! -f \"$file\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(node -e:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
