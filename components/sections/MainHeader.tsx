@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, Download } from 'lucide-react'
+import Image from 'next/image'
 import { useTypingText } from '@/hooks/useTypingText'
 import styles from './MainHeader.module.css'
 
@@ -109,6 +110,35 @@ export default function MainHeader() {
           <Download className={styles.downloadIcon} />
           Download CV
         </motion.a>
+      </motion.div>
+
+      {/* AWS Certification Badge */}
+      <motion.div
+        className={styles.certificationBadge}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1.1 }}
+      >
+        <a
+          href="https://www.credly.com/badges/0e1a5b1c-f08c-483a-bf10-23ccdba8a23b/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.certificationLink}
+        >
+          <div className={styles.certificationImageWrapper}>
+            <Image
+              src="/aws-certified-machine-learning-engineer-associate.png"
+              alt="AWS Certified Machine Learning Engineer – Associate"
+              width={64}
+              height={64}
+              className={styles.certificationImage}
+            />
+          </div>
+          <div className={styles.certificationInfo}>
+            <span className={styles.certificationTitle}>AWS Certified</span>
+            <span className={styles.certificationName}>Machine Learning Engineer – Associate</span>
+          </div>
+        </a>
       </motion.div>
 
       {/* Skills Tags */}

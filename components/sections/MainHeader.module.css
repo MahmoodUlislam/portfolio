@@ -182,3 +182,62 @@
   width: 1rem;
   height: 1rem;
 }
+
+/* AWS Certification Badge */
+.certificationBadge {
+  padding-top: 0.5rem;
+}
+
+.certificationLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.12), rgba(255, 153, 0, 0.05));
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.certificationLink:hover {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.1));
+  border-color: rgba(255, 153, 0, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 153, 0, 0.15);
+}
+
+.certificationImageWrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.certificationImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.certificationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.certificationTitle {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #ff9900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.certificationName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.3;
+}

@@ -504,6 +504,140 @@
   left: 0;
 }
 
+/* Certifications Section */
+.certificationsSection {
+  padding: 5rem 0;
+}
+
+.certificationsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .certificationsContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certificationsContainer {
+    padding: 0 2rem;
+  }
+}
+
+.certificationsContent {
+  text-align: center;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.certificationsTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #ff9900, #ffb84d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 1024px) {
+  .certificationsTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.certificationCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.08), rgba(255, 153, 0, 0.02));
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 153, 0, 0.2);
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .certificationCard {
+    flex-direction: row;
+    text-align: left;
+    padding: 2rem 2.5rem;
+  }
+}
+
+.certificationCard:hover {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.15), rgba(255, 153, 0, 0.05));
+  border-color: rgba(255, 153, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(255, 153, 0, 0.1);
+}
+
+.certificationBadgeImage {
+  flex-shrink: 0;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.certBadgeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.certificationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.certIssuer {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ff9900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.certName {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1.3;
+}
+
+.certDescription {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.certVerify {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff9900;
+  margin-top: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.certificationCard:hover .certVerify {
+  color: #ffb84d;
+}
+
 /* Education Section */
 .educationSection {
   padding: 5rem 0;

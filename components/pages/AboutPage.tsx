@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Mail, Phone, Globe, Github, Linkedin, Download } from 'lucide-react'
+import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import DecorativeElement from '@/components/ui/DecorativeElement'
@@ -325,6 +326,51 @@ export default function AboutPage() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Certifications Section */}
+        <section className={styles.certificationsSection}>
+          <div className={styles.certificationsContainer}>
+            <motion.div
+              className={styles.certificationsContent}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className={styles.certificationsTitle}>Certifications</h2>
+              <div className={styles.certificationsGrid}>
+                <motion.a
+                  href="https://www.credly.com/badges/0e1a5b1c-f08c-483a-bf10-23ccdba8a23b/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certificationCard}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <div className={styles.certificationBadgeImage}>
+                    <Image
+                      src="/aws-certified-machine-learning-engineer-associate.png"
+                      alt="AWS Certified Machine Learning Engineer – Associate"
+                      width={120}
+                      height={120}
+                      className={styles.certBadgeImg}
+                    />
+                  </div>
+                  <div className={styles.certificationDetails}>
+                    <span className={styles.certIssuer}>Amazon Web Services (AWS)</span>
+                    <h3 className={styles.certName}>AWS Certified Machine Learning Engineer – Associate</h3>
+                    <p className={styles.certDescription}>
+                      Validates expertise in building, training, tuning, and deploying machine learning models using AWS services.
+                    </p>
+                    <span className={styles.certVerify}>
+                      Verify on Credly &rarr;
+                    </span>
+                  </div>
+                </motion.a>
+              </div>
+            </motion.div>
           </div>
         </section>
 
