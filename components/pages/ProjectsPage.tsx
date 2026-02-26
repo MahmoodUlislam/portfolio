@@ -11,19 +11,19 @@ const projects = [
   {
     id: 1,
     title: 'LifeLine - Virtual Mental Health Platform',
-    description: 'AI-powered virtual mental health treatment platform with video conferencing, AI chatbot, and real-time session analysis. Features ambient listening, risk analytics, and comprehensive patient management.',
+    description: 'Virtual mental health treatment platform featuring multi-agent AI on Amazon Bedrock, Chime SDK video conferencing with ambient listening, and HIPAA-compliant AWS architecture.',
     image: '/LifeLineAPPicon-NoBackground.png',
-    technologies: ['React.js', 'Vue.js', 'Next.js', 'Node.js', 'AWS Bedrock', 'Chime SDK', 'PostgreSQL'],
+    technologies: ['React.js', 'Vue.js', 'Quasar', 'React Native', 'Node.js', 'AWS Bedrock', 'Chime SDK', 'PostgreSQL', 'Swift', 'Kotlin'],
     category: 'Healthcare',
     liveUrl: 'https://lifelineapp.ca',
     featured: true
   },
   {
     id: 2,
-    title: 'SkinScan - AI Dermatology Platform',
-    description: 'End-to-end dermatology imaging platform with computer vision pipeline. Features AR-guided photo capture, AI-powered skin analysis, and clinician portal.',
+    title: 'SkinScan - AI Wound-Care Imaging Platform',
+    description: 'AI-powered wound-care imaging platform with a custom SageMaker CV model for classification and segmentation, AR-guided iOS capture, and Bedrock agents for clinical recommendations.',
     image: '/SkinScanLogo.png',
-    technologies: ['Swift (iOS)', 'Next.js', 'Node.js', 'AWS SageMaker', 'Rekognition', 'S3', 'PostgreSQL'],
+    technologies: ['Swift (iOS)', 'Next.js', 'Node.js', 'SageMaker AI', 'Bedrock', 'Rekognition', 'Comprehend Medical', 'PostgreSQL'],
     category: 'Healthcare',
     liveUrl: 'https://skinscanapp.ca',
     featured: true
@@ -31,9 +31,9 @@ const projects = [
   {
     id: 3,
     title: 'esiKidz - Childcare Management Software',
-    description: 'Enterprise-level childcare management software with web and mobile applications. Features client management, scheduling, and comprehensive reporting.',
+    description: 'Enterprise SaaS childcare management software built with React.js and React Native, powered by Node.js APIs and AWS cloud infrastructure.',
     image: '/esiKidzLogo.png',
-    technologies: ['React.js', 'React Native', 'Node.js', 'MySQL', 'AWS Lambda', 'S3'],
+    technologies: ['React.js', 'React Native', 'Node.js', 'MySQL', 'AWS Lambda', 'Amazon S3'],
     category: 'SaaS',
     liveUrl: 'https://esikidz.com',
     featured: true
@@ -41,9 +41,9 @@ const projects = [
   {
     id: 4,
     title: 'Sunrise-club - Event Booking Platform',
-    description: 'Event booking site for Telco (Sunrise) users of Switzerland. Features high security with web firewall, OAuth 2 + OIDC authentication, Adobe Analytics, and complete language translation system.',
+    description: 'Event booking platform for Sunrise (Telco) users in Switzerland with OAuth 2 + OIDC authentication, Storyblok CMS, and multi-language support.',
     image: '/SunriseLogo.svg',
-    technologies: ['React.js', 'Next.js', 'TypeScript', 'MongoDB', 'Storyblok CMS', 'Material UI', 'Ant Design', 'SASS'],
+    technologies: ['React.js', 'Next.js', 'TypeScript', 'MongoDB', 'Storyblok CMS', 'Material UI', 'SASS'],
     category: 'E-commerce',
     liveUrl: 'https://www.sunrise.ch/en/moments',
     featured: true

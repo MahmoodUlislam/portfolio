@@ -33,7 +33,7 @@ export default function AboutPage() {
                 About Me
               </h1>
               <p className={styles.heroSubtitle}>
-                Senior Software Developer | Cloud & AI Specialist
+                Senior Software Engineer | Cloud & AI Specialist
               </p>
             </motion.div>
             <DecorativeElement page="about" />
@@ -87,13 +87,26 @@ export default function AboutPage() {
               <div className={styles.overviewInfo}>
                 <h2 className={styles.overviewTitle}>Professional Overview</h2>
                 <p className={styles.overviewDescription}>
-                  I&apos;m a passionate Senior Software Developer and Cloud & AI Specialist with over 5 years of experience
-                  in building AI-powered healthcare applications and cloud-native solutions. Currently working at Virtual Health Hub in Canada,
-                  I specialize in modern web technologies, AWS cloud infrastructure, and AI/ML integration.
+                  Senior Software Engineer – specializing in cloud-native and AI-powered application development for the healthcare industry. Currently leading end-to-end development of production-grade telemedicine platforms.
                 </p>
                 <p className={styles.overviewDescription}>
-                  My expertise spans across full-stack development, cloud architecture, AI/ML, and healthcare technology.
-                  I love solving complex problems and creating innovative solutions that make a real impact in healthcare.
+                  AWS Certified Machine Learning Engineer – Associate, combining deep full-stack engineering expertise with hands-on machine learning and data engineering capabilities.
+                </p>
+                <p className={styles.overviewDescription}>
+                  My work spans the full technology lifecycle — from designing cloud architectures and building scalable backend systems to training custom computer vision models and deploying multi-agent AI systems in production. I independently architect and manage multiple healthcare platforms, including virtual mental health treatment systems featuring agentic AI with multi-modal interaction, ambient summarization, and clinical risk analytics, as well as AI-powered medical imaging platforms with custom-trained vision transformers for classification and semantic segmentation.
+                </p>
+                <p className={styles.overviewDescription}>
+                  <strong>Key strengths:</strong>
+                </p>
+                <ul className={styles.overviewList}>
+                  <li>Designed and productionized agentic AI systems orchestrating multiple specialized agents with structured memory, context injection, and streaming I/O for real-time interactions</li>
+                  <li>Built end-to-end computer vision pipelines from data preparation and model training to fine-tuning, deployment, and serverless inference at scale</li>
+                  <li>Integrated AI deeply into full-stack applications including NLP, speech-to-text, text-to-speech, medical terminology extraction, and real-time video/audio analysis</li>
+                  <li>Implemented RAG architectures, prompt engineering strategies, and guardrails to ensure safe, accurate, and context-aware AI responses in sensitive healthcare environments</li>
+                  <li>Managed the complete MLOps lifecycle, including model versioning, monitoring, A/B testing, and CI/CD for ML workflows</li>
+                </ul>
+                <p className={styles.overviewDescription}>
+                  Beyond engineering – independently authored peer-reviewed research manuscripts and collaborated on funding and ethics board applications, bridging applied technology with academic contribution. Driven by building technology that directly impacts patient care in communities with limited access to specialists, combining technical depth with a mission-focused approach to healthcare innovation.
                 </p>
               </div>
             </motion.div>
@@ -121,27 +134,11 @@ export default function AboutPage() {
                 },
                 {
                   title: 'Frontend Development',
-                  skills: ['React.js', 'Next.js', 'Vue.js', 'React Native (Expo)', 'PyQt', 'Swift (iOS native)']
-                },
-                {
-                  title: 'State Management & Utilities',
-                  skills: ['Redux', 'Vuex', 'React Query', 'react-i18next']
-                },
-                {
-                  title: 'Data Visualization & UI Components',
-                  skills: ['Chart.js', 'ECharts', 'react-calendar', 'vue-cal', 'PDFMake']
+                  skills: ['React.js', 'Vue.js', 'React Native', 'Swift (iOS)', 'Next.js']
                 },
                 {
                   title: 'Backend Development',
-                  skills: ['Node.js', 'Express.js', 'Next.js (API & Middleware)', 'AWS Lambda', 'AWS Amplify Backend']
-                },
-                {
-                  title: 'API Development',
-                  skills: ['RESTful APIs', 'GraphQL', 'Apollo GraphQL']
-                },
-                {
-                  title: 'Real-Time Communication',
-                  skills: ['WebSockets', 'Server-Sent Events (SSE)', 'Amazon Chime SDK', 'WebRTC', 'Socket.IO']
+                  skills: ['Node.js', 'Express.js', 'Next.js (API & Middleware)', 'AWS Lambda', 'AWS Amplify Backend', 'RESTful APIs', 'GraphQL', 'Apollo GraphQL', 'WebSockets', 'Server-Sent Events (SSE)', 'Amazon Chime SDK', 'WebRTC', 'Socket.IO']
                 },
                 {
                   title: 'Database Management & Storage',
@@ -149,27 +146,55 @@ export default function AboutPage() {
                 },
                 {
                   title: 'Cloud & DevOps (AWS)',
-                  skills: ['AWS Fargate (Amazon ECS)', 'Amazon EC2', 'AWS Lambda', 'Amazon SageMaker', 'Amazon API Gateway', 'VPC', 'Application Load Balancer (ALB)', 'Network Load Balancer (NLB)', 'EventBridge', 'Amazon S3', 'Amazon RDS', 'Amazon DynamoDB', 'Amazon SNS', 'Amazon SQS', 'Amazon SES', 'Amazon Pinpoint', 'Amazon Data Firehose', 'AWS Cognito', 'AWS Identity and Access Management (IAM)', 'AWS Secrets Manager', 'Amazon Bedrock', 'Transcribe', 'Polly', 'Amazon Rekognition', 'HealthLake', 'Amazon Comprehend', 'Amazon CloudWatch', 'AWS Step Functions']
+                  skills: ['Fargate (ECS)', 'Amazon EC2', 'API Gateway', 'VPC', 'ALB', 'NLB', 'Amazon EventBridge', 'Amazon SNS', 'Amazon SQS', 'Amazon SES', 'Amazon Pinpoint', 'AWS Cognito', 'AWS IAM', 'AWS Secrets Manager', 'Amazon CloudWatch', 'CloudTrail', 'AWS Step Functions', 'CloudFormation', 'AWS CDK']
                 },
                 {
-                  title: 'Authentication & Security',
-                  skills: ['OAuth 2.0', 'OpenID Connect (OIDC)', 'AWS Amplify Auth', 'Crypto.js', 'bcrypt.js', 'Auth0', 'AWS Cognito']
+                  title: 'ML Frameworks & Training',
+                  skills: ['Amazon SageMaker AI', 'Model Evaluation', 'Hyperparameter Optimization', 'Bias Detection', 'Training & Fine-tuning', 'Deployment']
                 },
                 {
-                  title: 'Build & Deployment Tools',
-                  skills: ['GitHub', 'Bitbucket', 'GitHub Action', 'AWS Amplify CI/CD', 'Docker', 'Docker Compose', 'Vite', 'Webpack']
-                },
-                {
-                  title: 'Testing & Code Quality',
-                  skills: ['Jest', 'Puppeteer', 'Custom Node.js Scripts', 'ESLint', 'Prettier']
-                },
-                {
-                  title: 'CMS Integration',
-                  skills: ['WordPress', 'Storyblok CMS']
+                  title: 'Generative AI & Agents',
+                  skills: ['Amazon Bedrock', 'Foundation Models', 'Agents', 'Knowledge Bases', 'Guardrails', 'Prompt Engineering', 'RAG Architectures', 'Multi-agent Orchestration']
                 },
                 {
                   title: 'Computer Vision',
-                  skills: ['Custom classifiers on SageMaker', 'Rekognition (pre-screen)', 'OpenCV (preprocessing)', 'image quality gates', 'confidence thresholds']
+                  skills: ['Custom-trained SageMaker Models', 'Semantic Segmentation', 'Image Classification', 'Amazon Rekognition (built-in & custom labels)']
+                },
+                {
+                  title: 'NLP & Medical AI',
+                  skills: ['Amazon Comprehend', 'Comprehend Medical', 'Amazon Transcribe', 'Amazon Polly', 'Amazon HealthLake']
+                },
+                {
+                  title: 'Data Pipelines & ETL',
+                  skills: ['AWS Glue', 'Glue DataBrew', 'Amazon Data Firehose', 'Amazon Kinesis', 'Amazon EMR']
+                },
+                {
+                  title: 'Data Analytics & Warehousing',
+                  skills: ['Amazon Athena', 'Amazon Redshift', 'Amazon QuickSight', 'AWS Lake Formation']
+                },
+                {
+                  title: 'Data Preparation & Analysis',
+                  skills: ['Pandas', 'NumPy', 'Scikit-learn', 'Data Wrangling', 'Feature Selection']
+                },
+                {
+                  title: 'MLOps & Model Management',
+                  skills: ['SageMaker Pipelines', 'Model Monitor', 'SageMaker Feature Store', 'SageMaker Processing', 'A/B Testing', 'Shadow Testing', 'Canary Deployment', 'Model Registry']
+                },
+                {
+                  title: 'ML Concepts',
+                  skills: ['Supervised & Unsupervised Learning', 'Deep Learning (CNNs, Transformers, ViTs)', 'Transfer Learning', 'Ensemble Methods', 'Time-series Forecasting', 'Anomaly Detection']
+                },
+                {
+                  title: 'Authentication & Security',
+                  skills: ['OAuth 2.0', 'OpenID Connect (OIDC)', 'AWS Amplify Auth', 'Auth0']
+                },
+                {
+                  title: 'Build & Deployment Tools',
+                  skills: ['GitHub', 'Bitbucket', 'GitHub Actions', 'AWS Amplify CI/CD', 'CodePipeline', 'CodeBuild', 'CodeDeploy', 'Docker', 'Docker Compose']
+                },
+                {
+                  title: 'Testing & Code Quality',
+                  skills: ['Jest', 'Puppeteer', 'Custom Node.js Scripts']
                 }
               ].map((category, index) => (
                 <motion.div
@@ -238,16 +263,18 @@ export default function AboutPage() {
               {[
                 {
                   company: 'Virtual Health Hub',
-                  position: 'Senior Software Developer | Cloud & AI Specialist',
+                  position: 'Senior Software Engineer | Cloud & AI Specialist',
                   duration: 'March 2025 – Present',
                   location: 'Saskatoon, Saskatchewan, Canada',
                   highlights: [
                     'Managing the Lifeline Project end-to-end, including development, cloud infrastructure, and solution architecture',
-                    'Built highly scalable system using Next.js, Vue.js, React.js, Quasar, and React Native for enterprise-level healthcare applications',
-                    'Created AI chatbot with voice/text integration using Amazon Bedrock and Polly',
-                    'Developed video conference ambient listening with Chime SDK, Transcribe, S3 and Bedrock',
-                    'Built Agentic AI system with multiple agents for chatbot, video summary, and risk analytics',
-                    'Architected and managed AWS cloud infrastructure including Cognito, ECS, RDS, EventBridge, and more'
+                    'Built highly scalable system using Next.js, Vue.js, React.js, Quasar, and React Native, maintaining HIPAA compliance',
+                    'Created multi-modal AI chatbot with voice/text integration using Amazon Bedrock, Polly and Transcribe',
+                    'Developed video conference ambient listening to summarize meetings with Chime SDK, Transcribe, S3 and Bedrock',
+                    'Built Agentic AI system with multiple agents for chatbot, video conference summary, and risk analytics',
+                    'Architected AWS cloud infrastructure including Cognito, ECS Fargate, RDS, EventBridge, API Gateway, and Chime SDK',
+                    'Developed custom native module in Expo using Swift & Kotlin to bridge Amazon Chime SDK with React Native',
+                    'Authored peer-reviewed manuscript on AI safety evaluation in mental health systems'
                   ]
                 },
                 {
@@ -258,20 +285,20 @@ export default function AboutPage() {
                   highlights: [
                     'Developed full-stack healthcare applications using React.js, Vue.js, and Node.js',
                     'Implemented AI integrations and cloud infrastructure',
-                    'Built appointment booking and medication management systems',
+                    'Built dynamic appointment booking and medication management systems with analytics and notifications',
                     'Integrated Amazon Chime SDK with React Native using Swift & Kotlin'
                   ]
                 },
                 {
                   company: 'Saaska Software Inc.',
-                  position: 'Software Engineer and Technical Support Assistant',
+                  position: 'Software Engineer',
                   duration: 'April 2023 – June 2024',
                   location: 'Saskatoon, Saskatchewan, Canada',
                   highlights: [
-                    'Developed esiKidz childcare management software using React.js and React Native',
-                    'Created scalable web and mobile applications',
-                    'Performed optimization of developer toolchain and automated deployment',
-                    'Supported Business Development and Marketing with internal software solutions'
+                    'Developed esiKidz childcare management software using React.js and React Native at the enterprise level',
+                    'Learned data engineering by creating apps for web crawling, data extraction, and manipulation',
+                    'Experienced AWS cloud infrastructure maintenance, including Lambda, Amazon S3, API Gateway',
+                    'Performed optimization of developer toolchain, fully automating deployment and minimizing development friction'
                   ]
                 },
                 {
@@ -280,10 +307,10 @@ export default function AboutPage() {
                   duration: 'June 2022 – Aug 2022',
                   location: 'Switzerland',
                   highlights: [
-                    'Developed Sunrise-club event booking site for Telco users',
-                    'Implemented OAuth 2 + OIDC and Adobe Analytics',
-                    'Maintained web firewall security and URL redirects',
-                    'Created complete language translation system'
+                    'Developed Sunrise-club event booking site for Telco (Sunrise) users of Switzerland',
+                    'Implemented OAuth 2 + OIDC, Storyblok CMS, and MongoDB database',
+                    'Maintained URL redirect with WAF in production and web firewall security',
+                    'Constructed a complete language translation system'
                   ]
                 },
                 {
@@ -292,10 +319,9 @@ export default function AboutPage() {
                   duration: 'Feb 2019 – May 2022',
                   location: 'Bangladesh',
                   highlights: [
-                    'Developed full-stack web applications using React.js, Next.js, and Node.js',
-                    'Implemented responsive designs and REST API solutions',
-                    'Architected frontend & backend solutions with asynchronous client-server communication',
-                    'Customized fully responsive websites with mobile, tablet and desktop views'
+                    'Built fully responsive web applications using React.js, Next.js, and Node.js with MongoDB and Firebase',
+                    'Architected frontend and backend solutions with RESTful API integration and asynchronous client-server communication',
+                    'Implemented data manipulation, search, and sort functionalities using Node.js'
                   ]
                 }
               ].map((job, index) => (

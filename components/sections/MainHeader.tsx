@@ -30,7 +30,7 @@ const socialLinks = [
 
 export default function MainHeader() {
   const { text, isTyping } = useTypingText(
-    "Welcome to my portfolio site! I'm a Senior Software Developer | Cloud & AI Specialist at Virtual Health Hub, currently working in Canada.",
+    "Welcome to my portfolio site! I'm a Senior Software Engineer | Cloud & AI Specialist at Virtual Health Hub, currently working in Canada.",
     50
   )
 

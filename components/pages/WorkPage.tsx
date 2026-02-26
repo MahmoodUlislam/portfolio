@@ -11,11 +11,11 @@ import styles from './WorkPage.module.css'
 const workExperience = [
   {
     company: 'Virtual Health Hub',
-    position: 'Senior Software Developer | Cloud & AI Specialist',
+    position: 'Senior Software Engineer | Cloud & AI Specialist',
     duration: 'March 2025 - Present',
     location: 'Saskatoon, Saskatchewan, Canada',
-    description: 'Leading development of AI-powered healthcare applications including LifeLine and SkinScan. Managing end-to-end project development, cloud infrastructure, and solution architecture.',
-    technologies: ['React.js', 'Vue.js', 'Next.js', 'Node.js', 'AWS', 'Swift', 'Python'],
+    description: 'Leading development of AI-powered healthcare applications including LifeLine and SkinScan. Managing end-to-end project development, cloud infrastructure, and solution architecture ensuring scalability and HIPAA compliance.',
+    technologies: ['React.js', 'Vue.js', 'Next.js', 'Quasar', 'React Native', 'Node.js', 'Swift', 'Python', 'PostgreSQL', 'AWS'],
     logo: '/VHH_Logo.jpg'
   },
   {
@@ -23,17 +23,17 @@ const workExperience = [
     position: 'Software Developer',
     duration: 'August 2024 - February 2025',
     location: 'Saskatoon, Saskatchewan, Canada',
-    description: 'Developed full-stack healthcare applications using React.js, Vue.js, and Node.js. Implemented AI integrations and cloud infrastructure.',
-    technologies: ['React.js', 'Vue.js', 'Node.js', 'AWS', 'PostgreSQL'],
+    description: 'Developed full-stack healthcare applications using React.js, Vue.js, and Node.js. Implemented AI integrations and cloud infrastructure for the LifeLine virtual mental health platform.',
+    technologies: ['React.js', 'Vue.js', 'React Native', 'Node.js', 'Express.js', 'PostgreSQL', 'AWS'],
     logo: '/VHH_Logo.jpg'
   },
   {
     company: 'Saaska Software Inc.',
-    position: 'Software Engineer and Technical Support Assistant',
+    position: 'Software Engineer',
     duration: 'April 2023 - June 2024',
     location: 'Saskatoon, Saskatchewan, Canada',
-    description: 'Developed esiKidz childcare management software using React.js and React Native. Created scalable web and mobile applications.',
-    technologies: ['React.js', 'React Native', 'Node.js', 'MySQL', 'AWS Lambda'],
+    description: 'Developed esiKidz childcare management software using React.js and React Native at enterprise level. Created data engineering apps and maintained AWS cloud infrastructure.',
+    technologies: ['React.js', 'React Native', 'Node.js', 'MySQL', 'AWS Lambda', 'Amazon S3'],
     logo: '/SaaskaLogo.png'
   },
   {
@@ -41,7 +41,7 @@ const workExperience = [
     position: 'Software Engineer',
     duration: 'June 2022 - August 2022',
     location: 'Switzerland',
-    description: 'Developed Sunrise-club event booking site for Telco users. Implemented OAuth 2 + OIDC, Adobe Analytics, and maintained web firewall security.',
+    description: 'Developed Sunrise-club event booking site for Telco (Sunrise) users of Switzerland. Implemented OAuth 2 + OIDC, Storyblok CMS, and maintained web firewall security.',
     technologies: ['React.js', 'Next.js', 'TypeScript', 'MongoDB', 'Storyblok CMS', 'Material UI'],
     logo: '/seliseLogo.jpg'
   },
@@ -50,8 +50,8 @@ const workExperience = [
     position: 'Web Developer',
     duration: 'February 2019 - May 2022',
     location: 'Bangladesh',
-    description: 'Developed full-stack web applications using React.js, Next.js, and Node.js. Implemented responsive designs and REST API solutions.',
-    technologies: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'Firebase', 'Material UI'],
+    description: 'Built fully responsive web applications using React.js, Next.js, and Node.js with MongoDB and Firebase. Architected frontend and backend solutions with RESTful API integration.',
+    technologies: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'Firebase'],
     logo: '/Quantic-Dynamics-Logo-Red-4.0-500px.jpg'
   }
 ]
@@ -193,11 +193,13 @@ export default function WorkPage() {
             <div className={styles.skillsGrid}>
               {[
                 { title: 'Frontend', skills: ['React.js', 'Vue.js', 'Next.js', 'React Native', 'Swift (iOS)'] },
-                { title: 'Backend', skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets'] },
-                { title: 'Cloud & DevOps', skills: ['AWS', 'ECS Fargate', 'Lambda', 'API Gateway', 'CloudWatch'] },
-                { title: 'Databases', skills: ['PostgreSQL', 'MySQL', 'DynamoDB', 'Firebase', 'Prisma'] },
-                { title: 'AI & ML', skills: ['AWS Bedrock', 'SageMaker', 'Rekognition', 'Transcribe', 'Polly'] },
-                { title: 'Tools', skills: ['Git', 'GitHub', 'Docker', 'Jest', 'ESLint'] }
+                { title: 'Backend', skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets', 'Socket.IO'] },
+                { title: 'Cloud & DevOps', skills: ['ECS Fargate', 'Lambda', 'API Gateway', 'CloudFormation', 'AWS CDK', 'CloudWatch'] },
+                { title: 'Databases', skills: ['PostgreSQL', 'MySQL', 'DynamoDB', 'Firebase', 'Prisma', 'Amazon S3'] },
+                { title: 'AI & ML', skills: ['SageMaker AI', 'Bedrock', 'Rekognition', 'Comprehend Medical', 'Transcribe', 'Polly'] },
+                { title: 'Data Engineering', skills: ['AWS Glue', 'Kinesis', 'Athena', 'Redshift', 'QuickSight', 'EMR'] },
+                { title: 'MLOps', skills: ['SageMaker Pipelines', 'Model Monitor', 'Feature Store', 'A/B Testing', 'Model Registry'] },
+                { title: 'Tools & CI/CD', skills: ['Git', 'GitHub Actions', 'Docker', 'CodePipeline', 'CodeBuild', 'Jest'] }
               ].map((category, index) => (
                 <motion.div
                   key={category.title}
