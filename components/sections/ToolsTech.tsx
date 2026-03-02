@@ -89,11 +89,11 @@ const techStack = [
       { name: "Amazon Polly", icon: "/logos/aws-polly.svg", color: "#FF9900" },
       { name: "Amazon HealthLake", icon: "/logos/aws-healthlake.png", color: "#FF9900" },
       { name: "PyTorch", icon: "/logos/pytorch-official.png", color: "#EE4C2C" },
-      { name: "TensorFlow", icon: "/logos/tensorflow-official.png", color: "#FF6F00" },
+      { name: "HuggingFace Transformers", icon: "/logos/python.png", color: "#FFD21E" },
       { name: "Scikit-learn", icon: "/logos/scikit-learn-official.png", color: "#F7931E" },
       { name: "NumPy", icon: "/logos/numpy-official.svg", color: "#4DABCF" },
       { name: "Pandas", icon: "/logos/python.png", color: "#150458" },
-      { name: "OpenCV", icon: "/logos/opencv-official.png", color: "#3776AB" },
+      { name: "Boto3", icon: "/logos/python.png", color: "#FF9900" },
     ],
   },
   {

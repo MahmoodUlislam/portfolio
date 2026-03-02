@@ -33,7 +33,7 @@ const workExperience = [
     duration: 'April 2023 - June 2024',
     location: 'Saskatoon, Saskatchewan, Canada',
     description: 'Developed esiKidz childcare management software using React.js and React Native at enterprise level. Created data engineering apps and maintained AWS cloud infrastructure.',
-    technologies: ['React.js', 'React Native', 'Node.js', 'MySQL', 'AWS Lambda', 'Amazon S3'],
+    technologies: ['React.js', 'React Native', 'Node.js', 'Python', 'MySQL', 'AWS Lambda', 'Amazon S3'],
     logo: '/SaaskaLogo.png'
   },
   {
@@ -196,7 +196,7 @@ export default function WorkPage() {
                 { title: 'Backend', skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets', 'Socket.IO'] },
                 { title: 'Cloud & DevOps', skills: ['ECS Fargate', 'Lambda', 'API Gateway', 'CloudFormation', 'AWS CDK', 'CloudWatch'] },
                 { title: 'Databases', skills: ['PostgreSQL', 'MySQL', 'DynamoDB', 'Firebase', 'Prisma', 'Amazon S3'] },
-                { title: 'AI & ML', skills: ['SageMaker AI', 'Bedrock', 'Rekognition', 'Comprehend Medical', 'Transcribe', 'Polly'] },
+                { title: 'AI & ML', skills: ['SageMaker AI', 'Bedrock', 'PyTorch', 'HuggingFace Transformers', 'Boto3', 'Rekognition', 'Comprehend Medical', 'Transcribe', 'Polly'] },
                 { title: 'Data Engineering', skills: ['AWS Glue', 'Kinesis', 'Athena', 'Redshift', 'QuickSight', 'EMR'] },
                 { title: 'MLOps', skills: ['SageMaker Pipelines', 'Model Monitor', 'Feature Store', 'A/B Testing', 'Model Registry'] },
                 { title: 'Tools & CI/CD', skills: ['Git', 'GitHub Actions', 'Docker', 'CodePipeline', 'CodeBuild', 'Jest'] }

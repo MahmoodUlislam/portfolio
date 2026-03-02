@@ -150,7 +150,7 @@ export default function AboutPage() {
                 },
                 {
                   title: 'ML Frameworks & Training',
-                  skills: ['Amazon SageMaker AI', 'Model Evaluation', 'Hyperparameter Optimization', 'Bias Detection', 'Training & Fine-tuning', 'Deployment']
+                  skills: ['Amazon SageMaker AI', 'PyTorch', 'HuggingFace Transformers', 'Boto3', 'Model Evaluation', 'Hyperparameter Optimization', 'Bias Detection', 'Training & Fine-tuning', 'Deployment']
                 },
                 {
                   title: 'Generative AI & Agents',

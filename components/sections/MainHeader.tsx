@@ -148,7 +148,7 @@ export default function MainHeader() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
-        {['React', 'Next.js', 'Vue.js', 'Node.js', 'AWS', 'React Native', 'Swift', 'TensorFlow', 'PyTorch',].map((skill, index) => (
+        {['React', 'Next.js', 'Vue.js', 'Node.js', 'Python', 'AWS', 'React Native', 'Swift', 'PyTorch',].map((skill, index) => (
           <motion.span
             key={skill}
             className={styles.skillTag}
